@@ -315,74 +315,81 @@ function magic() {
     }
     if (simsubscreennum == 7) {
         var type = sampletype;
-        var slider = document.getElementById("mag");
+        // var slider = document.getElementById("mag");
         var output = document.getElementById("final");
-        var contain = document.getElementById("magcon");
-        var x = document.getElementById("magx");
+        // var contain = document.getElementById("magcon");
+        // var x = document.getElementById("magx");
+        document.getElementById("p3text").style.visibility = "visible";
+        document.getElementById("linedDisplayButton").onclick = function(){
+            output.src = "./images/update/image2.jpg";
+            document.getElementById("p3text").style.visibility = "hidden";
+            document.getElementById("p12text").style.visibility = "visible";
+            document.getElementById("linedDisplayButton").style.visibility = "hidden";
+        }
         //document.getElementById('p3').onclick=function() {
-        if (type == 1)
-        /*return;
-			else*/
-        {
-            document.getElementById('p3text').style.visibility = "visible";
-            //document.getElementById('p12text').style.visibility="hidden";
-            /*if(slider.value==1)*/
-            output.src = "images/microscope/p3_50x.jpg";
-            //else if(slider.value==2) output.src="images/microscope/p3_100x.jpg";
-            //else output.src="images/microscope/p3_500x.jpg";
-            //type=1;
-        }
-        //};
-        //document.getElementById('p12').onclick=function() { 
-        if (type == 2)
-        /*return;
-			else*/
-        {
-            document.getElementById('p12text').style.visibility = "visible";
-            //document.getElementById('p3text').style.visibility="hidden";
-            /*if(slider.value==1)*/
-            output.src = "images/microscope/p12_50x.jpg";
-            //else if(slider.value==2) output.src="images/microscope/p12_100x.jpg";
-            //else output.src="images/microscope/p12_500x.jpg";
-            //type=2;
-        }
-        //};
-        slider.oninput = function() {
-            if (type == 1) {
-                if (this.value == 1) {
-                    output.src = "images/microscope/p3_50x.jpg";
-                    contain.title = "50x";
-                    x.innerHTML = "50x";
-                }
-                else if (this.value == 2) {
-                    output.src = "images/microscope/p3_100x.jpg";
-                    contain.title = "100x";
-                    x.innerHTML = "100x";
-                }
-                else {
-                    output.src = "images/microscope/p3_500x.jpg";
-                    contain.title = "500x";
-                    x.innerHTML = "500x";
-                }
-            }
-            else {
-                if (this.value == 1) {
-                    output.src = "images/microscope/p12_50x.jpg";
-                    contain.title = "50x";
-                    x.innerHTML = "50x";
-                }
-                else if (this.value == 2) {
-                    output.src = "images/microscope/p12_100x.jpg";
-                    contain.title = "100x";
-                    x.innerHTML = "100x";
-                }
-                else {
-                    output.src = "images/microscope/p12_500x.jpg";
-                    contain.title = "500x";
-                    x.innerHTML = "500x";
-                }
-            }
-        };
+        // if (type == 1)
+        // /*return;
+		// 	else*/
+        // {
+        //     document.getElementById('p3text').style.visibility = "visible";
+        //     //document.getElementById('p12text').style.visibility="hidden";
+        //     /*if(slider.value==1)*/
+        //     output.src = "images/microscope/p3_50x.jpg";
+        //     //else if(slider.value==2) output.src="images/microscope/p3_100x.jpg";
+        //     //else output.src="images/microscope/p3_500x.jpg";
+        //     //type=1;
+        // }
+        // //};
+        // //document.getElementById('p12').onclick=function() { 
+        // if (type == 2)
+        // /*return;
+		// 	else*/
+        // {
+        //     document.getElementById('p12text').style.visibility = "visible";
+        //     //document.getElementById('p3text').style.visibility="hidden";
+        //     /*if(slider.value==1)*/
+        //     output.src = "images/microscope/p12_50x.jpg";
+        //     //else if(slider.value==2) output.src="images/microscope/p12_100x.jpg";
+        //     //else output.src="images/microscope/p12_500x.jpg";
+        //     //type=2;
+        // }
+        // //};
+        // slider.oninput = function() {
+        //     if (type == 1) {
+        //         if (this.value == 1) {
+        //             output.src = "images/microscope/p3_50x.jpg";
+        //             contain.title = "50x";
+        //             x.innerHTML = "50x";
+        //         }
+        //         else if (this.value == 2) {
+        //             output.src = "images/microscope/p3_100x.jpg";
+        //             contain.title = "100x";
+        //             x.innerHTML = "100x";
+        //         }
+        //         else {
+        //             output.src = "images/microscope/p3_500x.jpg";
+        //             contain.title = "500x";
+        //             x.innerHTML = "500x";
+        //         }
+        //     }
+        //     else {
+        //         if (this.value == 1) {
+        //             output.src = "images/microscope/p12_50x.jpg";
+        //             contain.title = "50x";
+        //             x.innerHTML = "50x";
+        //         }
+        //         else if (this.value == 2) {
+        //             output.src = "images/microscope/p12_100x.jpg";
+        //             contain.title = "100x";
+        //             x.innerHTML = "100x";
+        //         }
+        //         else {
+        //             output.src = "images/microscope/p12_500x.jpg";
+        //             contain.title = "500x";
+        //             x.innerHTML = "500x";
+        //         }
+        //     }
+        // };
     }
 }
 
