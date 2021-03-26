@@ -1,322 +1,319 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <title>SOLVE</title>
-        <link rel="stylesheet" href="css/sgca.css" />
-        <script type="text/javascript" src="js/jquerymin.js"></script>
-        <script type="text/javascript" src="js/sgca.js"></script>
-        <script>
-            var simsubscreennum = 0;
-            var temp = 0;
-            var lnt = 0;
-            var sample = 1;
-            var n;
-            var sampletype = 1;
-        </script>
-        <style>
-        </style>
-    </head>
-    <body style="margin:0; font-family:verdana; font-size:14px;">
 
-        <!--Simulation Screen start		-->
-        <div id="simscreen">
+<head>
+    <meta charset="UTF-8">
+    <title>SOLVE</title>
+    <link rel="stylesheet" href="css/sgca.css" />
+    <script type="text/javascript" src="js/jquerymin.js"></script>
+    <script type="text/javascript" src="js/sgca.js"></script>
+    <script>
+        var simsubscreennum = 0;
+        var temp = 0;
+        var lnt = 0;
+        var sample = 1;
+        var n;
+        var sampletype = 1;
+    </script>
+    <style>
 
-            <!--Title of Simulation		-->
-            <div id="title">
-                <h4>Microstructural Analysis of Stainless Steels</h4>
-            </div>
+    </style>
+</head>
 
-            <!--SubScreen Home	-->
-            <div class="simsubscreen" id="canvas0">
-                <h4 class="incanvas" style="font-family:verdana; ">Objective</h4>
-                <p class="incanvas" style="font-family:verdana; font-size:15px;">To observe the phases present in the microstructure of stainless steels.</p>
-                </br>
-                <h4 class="incanvas" style="font-family:verdana; ">Apparatus used:</h4>
-                <p class="incanvas" style="font-family:verdana; font-size:14px;">Metallurgical Microscope, Polishing Machine with Abrasives, Belt Grinder, Abrasive paper, Flat Glass plate with Wooden framework, Electric Hot Air Blower, Cotton, Marbles Reagent (etchant), Specimen.</p>
-                <br>
-                <span class="descont" style="border-bottom:1px dotted ; color:red; position:absolute; top:150px; z-index: 500;">Description
+<body style="margin:0; font-family:verdana; font-size:14px;">
+
+    <!--Simulation Screen start		-->
+    <div id="simscreen">
+
+        <!--Title of Simulation		-->
+        <div id="title">
+            <h4>Microstructural Analysis of Stainless Steels</h4>
+        </div>
+
+        <!--SubScreen Home	-->
+        <div class="simsubscreen" id="canvas0">
+            <h4 class="incanvas" style="font-family:verdana; ">Objective</h4>
+            <p class="incanvas" style="font-family:verdana; font-size:15px;">To observe the phases present in the microstructure of stainless steels.</p>
+            </br>
+            <h4 class="incanvas" style="font-family:verdana; ">Apparatus used:</h4>
+            <p class="incanvas" style="font-family:verdana; font-size:14px;">Metallurgical Microscope, Polishing Machine with Abrasives, Belt Grinder, Abrasive paper, Flat Glass plate with Wooden framework, Electric Hot Air Blower, Cotton, Marbles Reagent (etchant), Specimen.</p>
+            <br>
+            <span class="descont" style="border-bottom:1px dotted ; color:red; position:absolute; top:150px; z-index: 500;">Description
                 <span  class="desctext" style=" font-size:16px;">
                 <strong>Austenitic stainless steel</strong> : Type of stainless steel classified by their austenite type crystal structure (FCC crystal structure) which shows resistance to corrosion. It consists of Chromium which forms Cr2O3 to resist corrosion and Nickel, Manganese and nitrogen which stabilize the austenite phase. <br><br>
                 <strong>Austenite</strong> : A high-temperature phase of non-magnetic iron and carbon solid solution which exists only after the eutectic temperature 727 °C. It has an FCC crystal structure.
                 </span></span>
-                <img src="images/human.png" alt="Human" style="position:absolute; margin-left:20px;margin-top:40px;">
-                <img src="images/table.png" height="300px" alt="Table" style="position:absolute; margin-left:150px;margin-top:80px;">
-                <div style="position: absolute;left: 200px;top: 270px;z-index:100;height: 100px;width: 140px;" title="Belt Grinder"></div>
-                <div style="position: absolute;left: 360px;top: 260px;z-index:100;height: 110px;width: 110px;" title="Polish Velvet"></div>
-                <div style="position: absolute;left: 480px;top: 220px;z-index:100;height: 160px;width: 130px;" title="Microscope"></div>
-            </div>
+            <img src="images/human.png" alt="Human" style="position:absolute; margin-left:20px;margin-top:40px;">
+            <img src="images/table.png" height="300px" alt="Table" style="position:absolute; margin-left:150px;margin-top:80px;">
+            <div style="position: absolute;left: 200px;top: 270px;z-index:100;height: 100px;width: 140px;" title="Belt Grinder"></div>
+            <div style="position: absolute;left: 360px;top: 260px;z-index:100;height: 110px;width: 110px;" title="Polish Velvet"></div>
+            <div style="position: absolute;left: 480px;top: 220px;z-index:100;height: 160px;width: 130px;" title="Microscope"></div>
+        </div>
 
-            <div class="simsubscreen" id="canvas0.5" style="visibility: hidden;">
-                <strong id="titlestep" class="incanvas">STEP </strong>
-                <span class="circlebg" id="stepnumber">&nbsp;1&nbsp;</span>
-                <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;">Select a sample to analyse its microstructure.</p>
-                <br>
-                <span style="position: absolute; top:150px; left: 100px">
+        <div class="simsubscreen" id="canvas0.5" style="visibility: hidden;">
+            <strong id="titlestep" class="incanvas">STEP </strong>
+            <span class="circlebg" id="stepnumber">&nbsp;1&nbsp;</span>
+            <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;">Select a sample to analyse its microstructure.</p>
+            <br>
+            <span style="position: absolute; top:150px; left: 100px">
                 <input type="radio" id="selectp3" name="sampletype" value="1" checked>
                 <label for="selectp3">P3 Austenitic Stainless Steel</label>
                 </span>
-                <span style="position: absolute; top:150px; left: 420px">
+            <span style="position: absolute; top:150px; left: 420px">
                 <input type="radio" id="selectp12" name="sampletype" value="2">
                 <label for="selectp12">P12 Martensitic Stainless Steel</label>
                 </span>
-                <img src="images/hands_sample/sample.svg" height="200px" style="position: absolute; top:150px; left:75px;z-index: -1;" />
-                <img src="images/hands_sample/sample.svg" height="200px" style="position: absolute; top:150px; left:400px;z-index: -1;" />
-            </div>
+            <img src="images/hands_sample/sample.svg" height="200px" style="position: absolute; top:150px; left:75px;z-index: -1;" />
+            <img src="images/hands_sample/sample.svg" height="200px" style="position: absolute; top:150px; left:400px;z-index: -1;" />
+        </div>
 
-            <!--Step2	-->
-            <div class="simsubscreen" id="canvas1" style="visibility:hidden">
-                <strong id="titlestep" class="incanvas">STEP </strong>
-                <span class="circlebg" id="stepnumber">&nbsp;2&nbsp;</span>
-                <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;">Obtain a flat surface on the specimen by belt grinding.</p>
-                <br>
-                <img id="belt" src="images/beltgrinder/beltgrinder.svg" height="500px" width="auto">
-                <img id="beltSample" src="images/beltgrinder/hand_sample.svg" height="500px" width="auto" style="position: absolute; top:-100px; z-index: 20; left:150px; transition: all 1s ease;">
-                <img id="rr" src="images/rr.svg" height="10px" style="position: absolute; top:380px; left:200px; visibility: hidden; transition-duration: 0.5s;">
-                <img id="rr1" src="images/rr.svg" height="10px" style="position: absolute; top:380px; left:200px; visibility: hidden; transition-duration: 0.5s;">
-                <img id="rr2" src="images/rr.svg" height="10px" style="position: absolute; top:380px; left:200px; visibility: hidden; transition-duration: 0.5s;">
-                <img id="rr3" src="images/rr.svg" height="10px" style="position: absolute; top:380px; left:200px; visibility: hidden; transition-duration: 0.5s;">
-                <img id="rr4" src="images/rr.svg" height="10px" style="position: absolute; top:380px; left:200px; visibility: hidden; transition-duration: 0.5s;">
-                <img id="rrc" src="images/rrc.svg" height="40px" style="position: absolute; top:430px; left:180px; visibility: hidden; transition: all 2s linear;">
-                <img id="rrc1" src="images/rrc.svg" height="40px" style="position: absolute; top:420px; left:463px; visibility: hidden; transition: all 2s linear;">
-            </div>
+        <!--Step2	-->
+        <div class="simsubscreen" id="canvas1" style="visibility:hidden">
+            <strong id="titlestep" class="incanvas">STEP </strong>
+            <span class="circlebg" id="stepnumber">&nbsp;2&nbsp;</span>
+            <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;">Obtain a flat surface on the specimen by belt grinding.</p>
+            <br>
+            <img id="belt" src="images/beltgrinder/beltgrinder.svg" height="500px" width="auto">
+            <img id="beltSample" src="images/beltgrinder/hand_sample.svg" height="500px" width="auto" style="position: absolute; top:-100px; z-index: 20; left:150px; transition: all 1s ease;">
+            <img id="rr" src="images/rr.svg" height="10px" style="position: absolute; top:380px; left:200px; visibility: hidden; transition-duration: 0.5s;">
+            <img id="rr1" src="images/rr.svg" height="10px" style="position: absolute; top:380px; left:200px; visibility: hidden; transition-duration: 0.5s;">
+            <img id="rr2" src="images/rr.svg" height="10px" style="position: absolute; top:380px; left:200px; visibility: hidden; transition-duration: 0.5s;">
+            <img id="rr3" src="images/rr.svg" height="10px" style="position: absolute; top:380px; left:200px; visibility: hidden; transition-duration: 0.5s;">
+            <img id="rr4" src="images/rr.svg" height="10px" style="position: absolute; top:380px; left:200px; visibility: hidden; transition-duration: 0.5s;">
+            <img id="rrc" src="images/rrc.svg" height="40px" style="position: absolute; top:430px; left:180px; visibility: hidden; transition: all 2s linear;">
+            <img id="rrc1" src="images/rrc.svg" height="40px" style="position: absolute; top:420px; left:463px; visibility: hidden; transition: all 2s linear;">
+        </div>
 
-            <!--Step3	-->
-            <div class="simsubscreen" id="canvas2" style="visibility:hidden">
-                <strong id="titlestep" class="incanvas">STEP </strong>
-                <span class="circlebg" id="stepnumber">&nbsp;3&nbsp;</span>
-                <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;">Support a polish paper of 1/0 fineness on a flat glass plate. Polish the specimen rubbing in forward direction only.</p>
-                <br>
-                <br>
-                <img id="glassPaper" src="images/polish_velvet/polish_paper.svg" height="500px" width="auto" style="margin-top: -100px;">
-                <img id="beltSample2" src="images/beltgrinder/hand_sample.svg" height="400px" width="auto" style="position: absolute; top:-65px; z-index: 20; left:170px; transition: all 0.3s ease;">
-                <!--Note-->
-                <span id="note1" class="tooltip" style="font-family:verdana; font-size:18px;border-bottom:1px dotted ; color:red; position:absolute; visibility: hidden;">
+        <!--Step3	-->
+        <div class="simsubscreen" id="canvas2" style="visibility:hidden">
+            <strong id="titlestep" class="incanvas">STEP </strong>
+            <span class="circlebg" id="stepnumber">&nbsp;3&nbsp;</span>
+            <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;">Support a polish paper of 1/0 fineness on a flat glass plate. Polish the specimen rubbing in forward direction only.</p>
+            <br>
+            <br>
+            <img id="glassPaper" src="images/polish_velvet/polish_paper.svg" height="500px" width="auto" style="margin-top: -100px;">
+            <img id="beltSample2" src="images/beltgrinder/hand_sample.svg" height="400px" width="auto" style="position: absolute; top:-65px; z-index: 20; left:170px; transition: all 0.3s ease;">
+            <!--Note-->
+            <span id="note1" class="tooltip" style="font-family:verdana; font-size:18px;border-bottom:1px dotted ; color:red; position:absolute; visibility: hidden;">
                 <span id="10" class="tooltiptext" style="font-family:verdana; font-size:14px;color:white;width:600px;left:-650px;top:250px;text-align: justify;">Note:<br><br>Move to the next finer paper (2/0 and 3/0) once the scratches on the specimen are uniform. While changing from one paper to another, the specimen and your hands should be cleaned free from the abrasive of the previous paper, and the specimen turned through 90°, so that the scratches from the previous paper are at right angles to the scratches from the next paper. </br></br>
                 <input id="ok" type="button" name="ok" value="Ok" />&nbsp;&nbsp;&nbsp;</span>
-                </span>
-            </div>
+            </span>
+        </div>
 
-            <!--Step4	-->
-            <div class="simsubscreen" id="canvas3" style="visibility:hidden">
-                <strong id="titlestep" class="incanvas">STEP </strong>
-                <span class="circlebg" id="stepnumber">&nbsp;4&nbsp;</span>
-                <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;"> Finish polishing the specimen on 4/0 abrasive paper, wash hands and specimen.</p>
-                <br>
-                <br>
-                <img id="glassPaper2" src="images/polish_velvet/polish_paper_2.svg" height="500px" width="auto">
-                <img id="beltSample3" src="images/beltgrinder/hand_sample.svg" height="500px" width="auto" style=" position: absolute; top:-50px; z-index: 20; left:100px; transition: all 0.3s ease;">
-            </div>
+        <!--Step4	-->
+        <div class="simsubscreen" id="canvas3" style="visibility:hidden">
+            <strong id="titlestep" class="incanvas">STEP </strong>
+            <span class="circlebg" id="stepnumber">&nbsp;4&nbsp;</span>
+            <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;"> Finish polishing the specimen on 4/0 abrasive paper, wash hands and specimen.</p>
+            <br>
+            <br>
+            <img id="glassPaper2" src="images/polish_velvet/polish_paper_2.svg" height="500px" width="auto">
+            <img id="beltSample3" src="images/beltgrinder/hand_sample.svg" height="500px" width="auto" style=" position: absolute; top:-50px; z-index: 20; left:100px; transition: all 0.3s ease;">
+        </div>
 
-            <!--Step5	-->
-            <div class="simsubscreen" id="canvas4" style="visibility:hidden">
-                <strong id="titlestep" class="incanvas">STEP </strong>
-                <span class="circlebg" id="stepnumber">&nbsp;5&nbsp;</span>
-                <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;">Do the fine polishing on the disc polishing unit.</p>
-                <br>
-                <br>
-                <img id="velvet" src="images/polish_velvet/velvet.svg" height="440px" width="auto" style="margin-left: 75px; margin-top: 80px;">
-                <img id="handBottle" src="images/polish_velvet/velvet_water_alumina.svg" height="440px" width="auto" style="position: absolute; top:-40px; z-index: 20; left:-150px; transition: all 0.7s ease;">
-                <img id="velvetSample" src="images/polish_velvet/hand_sample.svg" height="440px" width="auto" style="visibility: hidden; position: absolute; top:-40px; z-index: 20; left:-220px; transition: all 0.7s ease;">
-                <img id="drop" src="images/polish_velvet/drop.svg" height="100px" style="visibility: hidden; position: absolute; z-index: 30; left:280px; top:257px; transition: all 0.4s ease-in;">
-                <div id="velveton" style="position: absolute; width: 10px; height: 6px; background-color: green; left:326px; top:246px; z-index: 100; cursor: pointer; opacity: 0.4;"></div>
-                <div id="velvetoff" style="position: absolute; width: 10px; height: 6px; background-color: red; left:355px; top:246px; z-index: 100; cursor: pointer;opacity: 0.4;"></div>
-                <div id="onoff" style="position: absolute; width:40px; height:15px; background-color: white; left:325px; top:216px; z-index: 100;">OFF</div>
-                <div id='arrows'>
-                    <img id="r0" src="images/r0.svg" height="10px" style="position: absolute;left: 310px;top:325px;opacity: 0; transition: all 0.1s linear;">
-                    <img id="r1" src="images/r1.svg" height="20px" style="position: absolute;left: 360px;top: 328px;opacity: 0; transition: all 0.1s linear;">
-                    <img id="r2" src="images/r2.svg" height="30px" style="position: absolute;left: 390px;top:340px;opacity: 0; transition: all 0.1s linear;">
-                    <img id="r3" src="images/r3.svg" height="25px" style="position: absolute;left: 370px;top: 358px;opacity: 0; transition: all 0.1s linear;">
-                    <img id="r4" src="images/r4.svg" height="8px" style="position: absolute;left: 310px;top: 380px;opacity: 0; transition: all 0.1s linear;">
-                    <img id="r5" src="images/r5.svg" height="25px" style="position: absolute;left: 290px;top: 362px;opacity: 0; transition: all 0.1s linear;">
-                    <img id="r6" src="images/r6.svg" height="30px" style="position: absolute;left: 280px;top: 340px;opacity: 0; transition: all 0.1s linear;">
-                    <img id="r7" src="images/r7.svg" height="20px" style="position: absolute;left: 280px;top:332px;opacity: 0; transition: all 0.1s linear;">
-                </div>
-                <span id="note3" class="tooltip" style="font-family:verdana; font-size:18px;border-bottom:1px dotted ; color:red; position:absolute; visibility: hidden;">
+        <!--Step5	-->
+        <div class="simsubscreen" id="canvas4" style="visibility:hidden">
+            <strong id="titlestep" class="incanvas">STEP </strong>
+            <span class="circlebg" id="stepnumber">&nbsp;5&nbsp;</span>
+            <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;">Do the fine polishing on the disc polishing unit.</p>
+            <br>
+            <br>
+            <img id="velvet" src="images/polish_velvet/velvet.svg" height="440px" width="auto" style="margin-left: 75px; margin-top: 80px;">
+            <img id="handBottle" src="images/polish_velvet/velvet_water_alumina.svg" height="440px" width="auto" style="position: absolute; top:-40px; z-index: 20; left:-150px; transition: all 0.7s ease;">
+            <img id="velvetSample" src="images/polish_velvet/hand_sample.svg" height="440px" width="auto" style="visibility: hidden; position: absolute; top:-40px; z-index: 20; left:-220px; transition: all 0.7s ease;">
+            <img id="drop" src="images/polish_velvet/drop.svg" height="100px" style="visibility: hidden; position: absolute; z-index: 30; left:280px; top:257px; transition: all 0.4s ease-in;">
+            <div id="velveton" style="position: absolute; width: 10px; height: 6px; background-color: green; left:326px; top:246px; z-index: 100; cursor: pointer; opacity: 0.4;"></div>
+            <div id="velvetoff" style="position: absolute; width: 10px; height: 6px; background-color: red; left:355px; top:246px; z-index: 100; cursor: pointer;opacity: 0.4;"></div>
+            <div id="onoff" style="position: absolute; width:40px; height:15px; background-color: white; left:325px; top:216px; z-index: 100;">OFF</div>
+            <div id='arrows'>
+                <img id="r0" src="images/r0.svg" height="10px" style="position: absolute;left: 310px;top:325px;opacity: 0; transition: all 0.1s linear;">
+                <img id="r1" src="images/r1.svg" height="20px" style="position: absolute;left: 360px;top: 328px;opacity: 0; transition: all 0.1s linear;">
+                <img id="r2" src="images/r2.svg" height="30px" style="position: absolute;left: 390px;top:340px;opacity: 0; transition: all 0.1s linear;">
+                <img id="r3" src="images/r3.svg" height="25px" style="position: absolute;left: 370px;top: 358px;opacity: 0; transition: all 0.1s linear;">
+                <img id="r4" src="images/r4.svg" height="8px" style="position: absolute;left: 310px;top: 380px;opacity: 0; transition: all 0.1s linear;">
+                <img id="r5" src="images/r5.svg" height="25px" style="position: absolute;left: 290px;top: 362px;opacity: 0; transition: all 0.1s linear;">
+                <img id="r6" src="images/r6.svg" height="30px" style="position: absolute;left: 280px;top: 340px;opacity: 0; transition: all 0.1s linear;">
+                <img id="r7" src="images/r7.svg" height="20px" style="position: absolute;left: 280px;top:332px;opacity: 0; transition: all 0.1s linear;">
+            </div>
+            <span id="note3" class="tooltip" style="font-family:verdana; font-size:18px;border-bottom:1px dotted ; color:red; position:absolute; visibility: hidden;">
                 <span id="10" class="tooltiptext" style="font-family:verdana; font-size:14px;color:white;width:510px;left:-500px;top:-10px; text-align: justify;">Note:</br>After fine polishing, clean off the polished surface of the specimen with water and dry it with an electric hot air blower.</br></br>
                 <input id="ok3" type="button" name="ok" value="Ok" />&nbsp;&nbsp;&nbsp;</span>
-                </span>
-            </div>
+            </span>
+        </div>
 
-            <!--Step6	-->
-            <div class="simsubscreen" id="canvas5" style="visibility:hidden">
-                <strong id="titlestep" class="incanvas">STEP </strong>
-                <span class="circlebg" id="stepnumber">&nbsp;6&nbsp;</span>
-                <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;">Etch the specimen with marbles reagent by swabbing for a few seconds. Wash and dry.</p>
-                <br>
-                <br>
-                <img id="handCotton" src="images/hands_sample/hand_cotton.svg" height="500px" width="auto" style="visibility: hidden; position: absolute; top:-50px; z-index: 5; left:100px; transition: all 0.3s ease;">
-                <img id="cap" src="images/etching/cap.svg" height="250px" width="auto" style="position:absolute; margin-left: -50px; margin-top: 205px;transition:all 0.5s ease; z-index: -1;">
-                <img id="reagent" src="images/etching/bottle_without_cap.svg" height="250px" width="auto" style=" margin-left: -50px; margin-top: 205px;transition: all 0.7s ease; z-index: 30; position: absolute;">
-                <img id="etchSample" src="images/etching/etching_with_hand.svg" height="350px" width="auto" style=" margin-left: 150px; margin-top: 100px; visibility: hidden; z-index: 100; transition-duration: 0.5s; ">
-                <span id="note2" class="tooltip" style="font-family:verdana; font-size:18px;border-bottom:1px dotted ; color:red; position:absolute; visibility: hidden;">
+        <!--Step6	-->
+        <div class="simsubscreen" id="canvas5" style="visibility:hidden">
+            <strong id="titlestep" class="incanvas">STEP </strong>
+            <span class="circlebg" id="stepnumber">&nbsp;6&nbsp;</span>
+            <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;">Etch the specimen with marbles reagent by swabbing for a few seconds. Wash and dry.</p>
+            <br>
+            <br>
+            <img id="handCotton" src="images/hands_sample/hand_cotton.svg" height="500px" width="auto" style="visibility: hidden; position: absolute; top:-50px; z-index: 5; left:100px; transition: all 0.3s ease;">
+            <img id="cap" src="images/etching/cap.svg" height="250px" width="auto" style="position:absolute; margin-left: -50px; margin-top: 205px;transition:all 0.5s ease; z-index: -1;">
+            <img id="reagent" src="images/etching/bottle_without_cap.svg" height="250px" width="auto" style=" margin-left: -50px; margin-top: 205px;transition: all 0.7s ease; z-index: 30; position: absolute;">
+            <img id="etchSample" src="images/etching/etching_with_hand.svg" height="350px" width="auto" style=" margin-left: 150px; margin-top: 100px; visibility: hidden; z-index: 100; transition-duration: 0.5s; ">
+            <span id="note2" class="tooltip" style="font-family:verdana; font-size:18px;border-bottom:1px dotted ; color:red; position:absolute; visibility: hidden;">
                 <span id="10" class="tooltiptext" style="font-family:verdana; font-size:14px;color:white;width:610px;left:-600px;top:20px; text-align: justify;">Note:</br></br>Marbles reagent : A solution of hydrochloric acid (HCl) and copper sulphate (CuSO4) dissolved in water. A standard mixture contains 20ml HCl and 4g CuSO4 added to 20ml water. It forms a green solution, with a pungent acidic odour and a pH below 1. </br></br>
                 <input id="ok2" type="button" name="ok" value="Ok" />&nbsp;&nbsp;&nbsp;</span>
-                </span>
-            </div>
+            </span>
+        </div>
 
-            <!--Step7	-->
-            <div class="simsubscreen" id="canvas6" style="visibility:hidden">
-                <strong id="titlestep" class="incanvas">STEP </strong>
-                <span class="circlebg" id="stepnumber">&nbsp;7&nbsp;</span>
-                <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;">Examine the specimen under the microscope and observe the structural features. </p>
-                <br>
-                <img id="microscope" src="images/microscope/man_microscope_specimen.svg" height="800px" style="margin-top: -180px; visibility: hidden; transition: all 1s ease; ">
-                <img id="scz" src="images/microscope/scope_zoom.svg" height="225px" style="position: absolute;left: 213px;top: 94px;transition: all 0.5s; opacity: 0;">
-                <img id="preview" src="images/microscope/p3_sq50x.jpg" height="280px" style="position: absolute; top:41px; left: 330px;transition-duration: 0.5s;border-radius: 50%;opacity: 0; ">
-                <img id="lup" src="images/microscope/lens_up.svg" height="70px" style="position: absolute; top:350px; left:420px;opacity: 0; transition: all 0.3s ease; visibility: hidden;">
-                <img id="ldn" src="images/microscope/lens_down.svg" height="70px" style="position: absolute; top:440px; left:420px;opacity: 0;transition: all 0.3s ease; visibility: hidden;">
-                <img id="man" src="images/microscope/man.svg" height="400px" style="position: absolute; margin-top: 25px; transition: all 1s ease; visibility: hidden;">
-                <div id='vsc' style="transition:all 0.5s ease; position: absolute;left: 316px;top: 350px;height: 60px;width: 60px;border-radius: 50%;background-color: teal;opacity: 0;"></div>
-                <img id='zl' src="images/microscope/zoom_lens.svg" height="180px" style="position: absolute;left:100px;top: 340px;opacity: 0; transition: all 0.5s ease;">
-                <img id='lsw' src="images/microscope/lens_switch.svg" height="160px" style="position: absolute;left: 266px;top: 350px;transition: all 1s ease; opacity: 0;">
-            </div>
+        <!--Step7	-->
+        <div class="simsubscreen" id="canvas6" style="visibility:hidden">
+            <strong id="titlestep" class="incanvas">STEP </strong>
+            <span class="circlebg" id="stepnumber">&nbsp;7&nbsp;</span>
+            <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;">Examine the specimen under the microscope and observe the structural features. </p>
+            <br>
+            <img id="microscope" src="images/microscope/man_microscope_specimen.svg" height="800px" style="margin-top: -180px; visibility: hidden; transition: all 1s ease; ">
+            <img id="scz" src="images/microscope/scope_zoom.svg" height="225px" style="position: absolute;left: 213px;top: 94px;transition: all 0.5s; opacity: 0;">
+            <img id="preview" src="images/microscope/p3_sq50x.jpg" height="280px" style="position: absolute; top:41px; left: 330px;transition-duration: 0.5s;border-radius: 50%;opacity: 0; ">
+            <img id="lup" src="images/microscope/lens_up.svg" height="70px" style="position: absolute; top:350px; left:420px;opacity: 0; transition: all 0.3s ease; visibility: hidden;">
+            <img id="ldn" src="images/microscope/lens_down.svg" height="70px" style="position: absolute; top:440px; left:420px;opacity: 0;transition: all 0.3s ease; visibility: hidden;">
+            <img id="man" src="images/microscope/man.svg" height="400px" style="position: absolute; margin-top: 25px; transition: all 1s ease; visibility: hidden;">
+            <div id='vsc' style="transition:all 0.5s ease; position: absolute;left: 316px;top: 350px;height: 60px;width: 60px;border-radius: 50%;background-color: teal;opacity: 0;"></div>
+            <img id='zl' src="images/microscope/zoom_lens.svg" height="180px" style="position: absolute;left:100px;top: 340px;opacity: 0; transition: all 0.5s ease;">
+            <img id='lsw' src="images/microscope/lens_switch.svg" height="160px" style="position: absolute;left: 266px;top: 350px;transition: all 1s ease; opacity: 0;">
+        </div>
 
-            <!--Note	-->
-            <div class="simsubscreen" id="canvas7" style="visibility:hidden">
-                <strong id="titlestep" class="incanvas">Observations </strong>
-                <br/>
-                <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;">Heading here!</p>
-                <br>
-                <br>
-                <!-- <div class="slidecontainer" id="magcon" style="width:150px; margin:auto;" title="50x">
+        <!--Note	-->
+        <div class="simsubscreen" id="canvas7" style="visibility:hidden">
+            <strong id="titlestep" class="incanvas">Observations </strong>
+            <br/>
+            <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;">Heading here!</p>
+            <br>
+            <br>
+            <!-- <div class="slidecontainer" id="magcon" style="width:150px; margin:auto;" title="50x">
                     <center><span id="magx">50x</span></center>
                     <br>
                     <input type="range" min="1" max="3" value="1" class="slider" id="mag">
                 </div> -->
-                <!--div id="switch" style="position: absolute; top: 100px; left:230px; padding: 5px;">
+            <!--div id="switch" style="position: absolute; top: 100px; left:230px; padding: 5px;">
                     <button id="p3" style="padding: 5px;border-radius: 5px; cursor: pointer;">P3 Austenitic Steel</button>
                     <button id="p12" style="padding: 5px;border-radius: 5px; cursor: pointer;">P12 Martensitic Steel</button>
                     </div-->
-                <img id="final" src="./images/update/image1.jpg" height="300px" style="margin-top: 2em;">
-                <div id="p3text" style="position: absolute; left:420px;top:80px;visibility: hidden; margin-left: 20px; height: 370px; overflow: scroll;">
-                    <b>Planimetric method</b>
+            <img id="final" src="./images/update/image1.jpg" height="300px" style="margin-top: 2em;">
+            <div id="p3text" style="position: absolute; left:420px;top:80px;visibility: hidden; margin-left: 20px; height: 370px; overflow: scroll;">
+                <b>Planimetric method</b>
 
-                    <br>
-                    <br> N1 (number of full grains in circle) = 33
+                <br>
+                <br> N1 (number of full grains in circle) = 33
 
-                    <br>
-                    <br> N2 (number of grains intercepted by circle) = 22 
-                    <br>
-                    <br>
-                         NA = f*(N1 + N2/2) ( NA = number of grains per mm2 at 1x)
-                    <br>
-                    <br>
-                         Where f is jefferies multiplier = (magnification2)/circle area
-                         <br>
-                    <br>
-                        Circle here has 20 mm radius and magnification is 20x
-                        <br>
-                    <br>
-                    So f = (200 * 200)/(π*20*20)
-                    <br> &nbsp; &nbsp; &nbsp; &nbsp;= 32
-                    <br>
-                        NA = 32*(33 + 22/2)
-                    <br> &nbsp; &nbsp; &nbsp; = 1408 number of grains per mm2 at 1x
-                    <br>
-                    <br>
-                    ASTM grain size, G, can be found using the equation
-                    <br>
-                    <br>
-                    <b>G = 3.322 * (log NA) - 2.95 (at 100x) </b>
-                    <br>
-                    G = 3.322 * (log 1408) - 2.95
-                    <br> &nbsp; &nbsp; = 7.51
-                </div>
-                <div id="p12text" style="position: absolute; left:420px;top:80px;visibility: hidden; margin-left: 20px; height: 370px; overflow: scroll">
-                    <b>Line Intercept method</b>
-                    <br>
-                    <br>
-                    <table style="width:100%; border: 1px solid black;">
-                        <tr>
-                          <th>Line no.</th>
-                          <th>No. of grains intercepted</th>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>9</td>
-                  
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>9</td>
-                         
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>11</td>
-                           
-                          </tr>
-                          <tr>
-                            <td>4</td>
-                            <td>14</td>
-                           
-                          </tr>
-                          <tr>
-                            <td>5</td>
-                            <td>11</td>
-                           
-                          </tr>
-                          <tr>
-                            <td>6</td>
-                            <td>9</td>
-                           
-                          </tr>
-                          <tr>
-                            <td>7</td>
-                            <td>10</td>
-                           
-                          </tr>
-                          <tr>
-                            <td>8</td>
-                            <td>13</td>
-                           
-                          </tr>
+                <br>
+                <br> N2 (number of grains intercepted by circle) = 22
+                <br>
+                <br> NA = f*(N1 + N2/2) ( NA = number of grains per mm2 at 1x)
+                <br>
+                <br> Where f is jefferies multiplier = (magnification2)/circle area
+                <br>
+                <br> Circle here has 20 mm radius and magnification is 20x
+                <br>
+                <br> So f = (200 * 200)/(π*20*20)
+                <br> &nbsp; &nbsp; &nbsp; &nbsp;= 32
+                <br> NA = 32*(33 + 22/2)
+                <br> &nbsp; &nbsp; &nbsp; = 1408 number of grains per mm2 at 1x
+                <br>
+                <br> ASTM grain size, G, can be found using the equation
+                <br>
+                <br>
+                <b>G = 3.322 * (log NA) - 2.95 (at 100x) </b>
+                <br> G = 3.322 * (log 1408) - 2.95
+                <br> &nbsp; &nbsp; = 7.51
+            </div>
+            <div id="p12text" style="position: absolute; left:420px;top:80px;visibility: hidden; margin-left: 20px; height: 370px; overflow: scroll">
+                <b>Line Intercept method</b>
+                <br>
+                <br>
+                <table style="width:100%; border: 1px solid black;">
+                    <tr>
+                        <th>Line no.</th>
+                        <th>No. of grains intercepted</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>9</td>
 
-                      </table> 
-                    <br>
-                    <br> Each line was 50mm
-                    <br>
-                    <br> Average number of grains intercepted = 10.75
-                    <br>
-                    <br>Average line length intersected = 50/10.75 = 4.65
-                    <br>
-                    <br>Average grain diameter d = 4.65 / 200(magnification) = 0.023255 mm
-                    <br>
-                    <br>d = 1/(NA1/2)
-                    <br>Substituting d = 0.23255
-                    <br>
-                    <br>NA = 18.5
-                    <br>
-                    <br>G = 3.322 * (log NA) - 2.95
-                    <br> &nbsp; &nbsp; = 1.26
-                </div>
-                <div style="position: absolute; left: 85%; top: 90%;">
-                    <button id="linedDisplayButton">NEXT</button>
-                </div>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>9</td>
+
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>11</td>
+
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>14</td>
+
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>11</td>
+
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>9</td>
+
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>10</td>
+
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>13</td>
+
+                    </tr>
+
+                </table>
+                <br>
+                <br> Each line was 50mm
+                <br>
+                <br> Average number of grains intercepted = 10.75
+                <br>
+                <br>Average line length intersected = 50/10.75 = 4.65
+                <br>
+                <br>Average grain diameter d = 4.65 / 200(magnification) = 0.023255 mm
+                <br>
+                <br>d = 1/(NA1/2)
+                <br>Substituting d = 0.23255
+                <br>
+                <br>NA = 18.5
+                <br>
+                <br>G = 3.322 * (log NA) - 2.95
+                <br> &nbsp; &nbsp; = 1.26
+            </div>
+            <div style="position: absolute; left: 85%; top: 90%;">
+                <button id="linedDisplayButton">NEXT</button>
             </div>
         </div>
-        <div id="questDiv" style="position:absolute; font-size: 14px; background-color:grey; color:white; padding:7.5px; border-radius:5px; visibility:hidden; text-align:justify; z-index: 200;">
-            <p id="q"></p>
-            <select id="answer">
+    </div>
+    <div id="questDiv" style="position:absolute; font-size: 14px; background-color:grey; color:white; padding:7.5px; border-radius:5px; visibility:hidden; text-align:justify; z-index: 200;">
+        <p id="q"></p>
+        <select id="answer">
             </select>
-            <p id="a"></p>
-        </div>
+        <p id="a"></p>
+    </div>
 
-        <!--Trial text	-->
-        <div id="">
-            <p id="trial" style="text-transform: uppercase;visibility :hidden;font-weight: bold;font-family:verdana; "><strong>Trial = </strong></p>
-        </div>
+    <!--Trial text	-->
+    <div id="">
+        <p id="trial" style="text-transform: uppercase;visibility :hidden;font-weight: bold;font-family:verdana; "><strong>Trial = </strong></p>
+    </div>
 
-        <!--next  Arrow	-->
-        <div id="nav">
-            <img id="nextButton" onclick="navNext(); " src="images/Next.png" />
-        </div>
+    <!--next  Arrow	-->
+    <div id="nav">
+        <img id="nextButton" onclick="navNext(); " src="images/Next.png" />
+    </div>
 
-        <!--Blinking Arrow	-->
-        <img class="" id="arrow1" style="visibility:hidden" src="images/arrow1.png" />
+    <!--Blinking Arrow	-->
+    <img class="" id="arrow1" style="visibility:hidden" src="images/arrow1.png" />
 
-        <div id="copyright"> &copy; 2020 SOLVE - The Virtual Lab @ NITK Surathkal, Department of Applied Mechanics & Hydraulics</div>
+    <div id="copyright"> &copy; 2021 SOLVE - The Virtual Lab @ NITK Surathkal, Department of Water Resources & Ocean Engineering</div>
 
-    </body>
+</body>
+
 </html>
