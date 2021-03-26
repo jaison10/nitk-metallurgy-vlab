@@ -176,46 +176,126 @@
             <div class="simsubscreen" id="canvas7" style="visibility:hidden">
                 <strong id="titlestep" class="incanvas">Observations </strong>
                 <br/>
-                <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;">Use the slider to view the microstructure at different magnification levels.</p>
+                <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;">Heading here!</p>
                 <br>
                 <br>
-                <div class="slidecontainer" id="magcon" style="width:150px; margin:auto;" title="50x">
+                <!-- <div class="slidecontainer" id="magcon" style="width:150px; margin:auto;" title="50x">
                     <center><span id="magx">50x</span></center>
                     <br>
                     <input type="range" min="1" max="3" value="1" class="slider" id="mag">
-                </div>
+                </div> -->
                 <!--div id="switch" style="position: absolute; top: 100px; left:230px; padding: 5px;">
                     <button id="p3" style="padding: 5px;border-radius: 5px; cursor: pointer;">P3 Austenitic Steel</button>
                     <button id="p12" style="padding: 5px;border-radius: 5px; cursor: pointer;">P12 Martensitic Steel</button>
                     </div-->
-                <img id="final" src="" height="300px" style="margin-top: 2em;">
-                <div id="p3text" style="position: absolute; left:420px;top:180px;visibility: hidden;">
-                    Sample Code P3 - Austenite Stainless steel (Cr-25%, Ni-12%, C-0.45%)
+                <img id="final" src="./images/update/image1.jpg" height="300px" style="margin-top: 2em;">
+                <div id="p3text" style="position: absolute; left:420px;top:80px;visibility: hidden; margin-left: 20px; height: 370px; overflow: scroll;">
+                    <b>Planimetric method</b>
+
                     <br>
-                    <br> Number of phases: 2
+                    <br> N1 (number of full grains in circle) = 33
+
                     <br>
-                    <br> Features of each phase :
-                    <ul>
-                        <li>Austenite: Dendrites of Austenites can be observed. The presence of Ni stabilizes the Austenitic structure.</li>
-                        <li>Eutectic Carbide phases: M23C6 phases are observed due to the presence of Chromium and carbon.</li>
-                    </ul>
+                    <br> N2 (number of grains intercepted by circle) = 22 
+                    <br>
+                    <br>
+                         NA = f*(N1 + N2/2) ( NA = number of grains per mm2 at 1x)
+                    <br>
+                    <br>
+                         Where f is jefferies multiplier = (magnification2)/circle area
+                         <br>
+                    <br>
+                        Circle here has 20 mm radius and magnification is 20x
+                        <br>
+                    <br>
+                    So f = (200 * 200)/(π*20*20)
+                    <br> &nbsp; &nbsp; &nbsp; &nbsp;= 32
+                    <br>
+                        NA = 32*(33 + 22/2)
+                    <br> &nbsp; &nbsp; &nbsp; = 1408 number of grains per mm2 at 1x
+                    <br>
+                    <br>
+                    ASTM grain size, G, can be found using the equation
+                    <br>
+                    <br>
+                    <b>G = 3.322 * (log NA) - 2.95 (at 100x) </b>
+                    <br>
+                    G = 3.322 * (log 1408) - 2.95
+                    <br> &nbsp; &nbsp; = 7.51
                 </div>
-                <div id="p12text" style="position: absolute; left:420px;top:130px; visibility: hidden;">
-                    Sample code: P12 - Martensitic Stainless Steel (C-0.21%, Mn-0.56%, Si0.29%, Cr-12.05%)
+                <div id="p12text" style="position: absolute; left:420px;top:80px;visibility: hidden; margin-left: 20px; height: 370px; overflow: scroll">
+                    <b>Line Intercept method</b>
                     <br>
-                    <br> Number of phases: 3
                     <br>
-                    <br> Features of each phase:
-                    <ul>
-                        <li>Martensite: needle-like structures</li>
-                        <li>Retained austenite: Present along the grain boundaries due to incomplete transformation.</li>
-                        <li>Carbide Phases: Precipitated along grain boundaries.</li>
-                    </ul>
-                    Other Observations: Martensite also reveals the Austenitic grain size. Precipitation of Chromium Carbides can be seen along grain boundaries which plays a major role in determining sensitization.
+                    <table style="width:100%; border: 1px solid black;">
+                        <tr>
+                          <th>Line no.</th>
+                          <th>No. of grains intercepted</th>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>9</td>
+                  
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>9</td>
+                         
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>11</td>
+                           
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>14</td>
+                           
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td>11</td>
+                           
+                          </tr>
+                          <tr>
+                            <td>6</td>
+                            <td>9</td>
+                           
+                          </tr>
+                          <tr>
+                            <td>7</td>
+                            <td>10</td>
+                           
+                          </tr>
+                          <tr>
+                            <td>8</td>
+                            <td>13</td>
+                           
+                          </tr>
+
+                      </table> 
+                    <br>
+                    <br> Each line was 50mm
+                    <br>
+                    <br> Average number of grains intercepted = 10.75
+                    <br>
+                    <br>Average line length intersected = 50/10.75 = 4.65
+                    <br>
+                    <br>Average grain diameter d = 4.65 / 200(magnification) = 0.023255 mm
+                    <br>
+                    <br>d = 1/(NA1/2)
+                    <br>Substituting d = 0.23255
+                    <br>
+                    <br>NA = 18.5
+                    <br>
+                    <br>G = 3.322 * (log NA) - 2.95
+                    <br> &nbsp; &nbsp; = 1.26
+                </div>
+                <div style="position: absolute; left: 85%; top: 90%;">
+                    <button id="linedDisplayButton">NEXT</button>
                 </div>
             </div>
         </div>
-
         <div id="questDiv" style="position:absolute; font-size: 14px; background-color:grey; color:white; padding:7.5px; border-radius:5px; visibility:hidden; text-align:justify; z-index: 200;">
             <p id="q"></p>
             <select id="answer">
