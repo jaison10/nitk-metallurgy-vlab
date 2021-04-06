@@ -27,7 +27,7 @@
 
         <!--Title of Simulation		-->
         <div id="title">
-            <h4>Quantitative Metallography
+            <h4>Grain Size Measurement
             </h4>
         </div>
 
@@ -59,12 +59,12 @@
             <br>
             <span style="position: absolute; top:150px; left: 100px">
                 <input type="radio" id="selectp3" name="sampletype" value="1" checked>
-                <label for="selectp3">P3 Austenitic Stainless Steel</label>
-                </span>
+                <label for="selectp3">Pure Mg</label>
+                <!-- </span>
             <span style="position: absolute; top:150px; left: 420px">
                 <input type="radio" id="selectp12" name="sampletype" value="2">
                 <label for="selectp12">P12 Martensitic Stainless Steel</label>
-                </span>
+                </span> -->
             <img src="images/hands_sample/sample.svg" height="200px" style="position: absolute; top:150px; left:75px;z-index: -1;" />
             <img src="images/hands_sample/sample.svg" height="200px" style="position: absolute; top:150px; left:400px;z-index: -1;" />
         </div>
@@ -198,26 +198,36 @@
                 <b>Planimetric method</b>
 
                 <br>
-                <br> N1 (number of full grains in circle) = 33
+                <br> N
+                <subscript>1</subscript>(number of full grains in circle) = 33
 
                 <br>
-                <br> N2 (number of grains intercepted by circle) = 22
+                <br> N
+                <subscript>2</subscript> (number of grains intercepted by circle) = 22
                 <br>
-                <br> NA = f*(N1 + N2/2) ( NA = number of grains per mm2 at 1x)
+                <br> N
+                <subscript>A</subscript> = f*(N
+                <subscript>1</subscript> + N
+                <subscript>2</subscript>/2) ( N
+                <subscript>A</subscript> = number of grains per mm
+                <superscript></superscript> at 1x)
                 <br>
-                <br> Where f is jefferies multiplier = (magnification2)/circle area
+                <br> Where f is jefferies multiplier = (magnifications
+                <superscript>2</superscript>)/circle area
                 <br>
-                <br> Circle here has 20 mm radius and magnification is 20x
+                <br> Circle here has 20 mm radius and magnification is 200x
                 <br>
                 <br> So f = (200 * 200)/(π*20*20)
                 <br> &nbsp; &nbsp; &nbsp; &nbsp;= 32
-                <br> NA = 32*(33 + 22/2)
-                <br> &nbsp; &nbsp; &nbsp; = 1408 number of grains per mm2 at 1x
+                <br> N
+                <subscript>A</subscript> = 32*(33 + 22/2)
+                <br> &nbsp; &nbsp; &nbsp; = 1408 number of grains per mm
+                <superscript>2</superscript> at 1x
                 <br>
                 <br> ASTM grain size, G, can be found using the equation
                 <br>
                 <br>
-                <b>G = 3.322 * (log NA) - 2.95 (at 100x) </b>
+                <b>G = 3.322 * (log N<subscript>A</subscript>) - 2.95 (at 100x) </b>
                 <br> G = 3.322 * (log 1408) - 2.95
                 <br> &nbsp; &nbsp; = 7.51
             </div>
@@ -281,12 +291,15 @@
                 <br>
                 <br>Average grain diameter d = 4.65 / 200(magnification) = 0.023255 mm
                 <br>
-                <br>d = 1/(NA1/2)
+                <br>d = 1/(N
+                <subscript>A</subscript>1/2)
                 <br>Substituting d = 0.23255
                 <br>
-                <br>NA = 18.5
+                <br>N
+                <subscript>A</subscript> = 18.5
                 <br>
-                <br>G = 3.322 * (log NA) - 2.95
+                <br>G = 3.322 * (log N
+                <subscript>A</subscript>) - 2.95
                 <br> &nbsp; &nbsp; = 1.26
             </div>
             <div style="position: absolute; left: 85%; top: 90%;">
