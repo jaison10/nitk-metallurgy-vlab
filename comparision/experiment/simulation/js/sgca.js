@@ -1,3 +1,5 @@
+var selectedSample;
+
 function navNext() {
     document.getElementById('canvas' + (simsubscreennum)).style.display = "none";
     for (temp = 0; temp <= 7; temp++) {
@@ -9,8 +11,37 @@ function navNext() {
     }
     if (sample) {
         document.getElementById("canvas0.5").style.visibility = "visible";
+        console.log(simsubscreennum);
+
+        // console.log(simsubscreennum);
         sample = 0;
     } else {
+
+        if (simsubscreennum == 0) {
+
+
+            console.log("Inside 0.5 canvas");
+            console.log('true');
+            if (document.getElementById('solder_alloy').checked) {
+                selectedSample = "solder_alloy";
+                console.log("Solder alloy chosen!");
+            }
+            if (document.getElementById('brass').checked) {
+                selectedSample = "brass";
+                console.log("Brass is chosen");
+            }
+            if (document.getElementById('solder_alloy1').checked) {
+                selectedSample = "solder_alloy1";
+                console.log("X2 is chosen");
+            }
+            if (document.getElementById('solder_alloy2').checked) {
+                selectedSample = "solder_alloy2";
+                console.log("X3 is chosen");
+
+            }
+            console.log(selectedSample);
+
+        }
         simsubscreennum += 1;
         if (simsubscreennum == 1) {
             //var p3radio = document.getElementById('selectp3');
@@ -18,6 +49,7 @@ function navNext() {
             //if (p3radio.checked) sampletype = 1;
             //else if (p12radio.checked) sampletype = 2;
             //console.log(sampletype);
+
             document.getElementById("canvas0.5").style.display = "none";
         }
         document.getElementById('canvas' + (simsubscreennum)).style.visibility = "visible";
@@ -26,11 +58,18 @@ function navNext() {
     }
 }
 
+function solder_select() {
+    document.getElementById('solder_alloy1').style.visibility = "visible";
+    document.getElementById('solder_alloy2').style.visibility = "visible";
+    document.getElementById('solder_alloy').style.visibility = "hidden";
+
+}
 
 var ca;
 var questions = ["Why is the specimen rubbed in one direction only?",
     "Why is the specimen turned through 90°?",
-    "What is the etchant used for Solder alloy and Brass?"
+    "What is the etchant used for Solder alloy?",
+    "What is the etchant used for Brass?"
 ];
 
 var options2 = [
@@ -40,7 +79,9 @@ var options2 = [
         "None of these"
     ],
     ["1. To make it even for clean smooth finish", "2. To level all the scratches", "3. Both (1) and (2)", "4. None of the above"],
-    ["Marbles Reagent", "2% Nital Reagent", "Carpenters Reagent", "None of the above"]
+    ["Marbles Reagent", "2% Nital Reagent", "Carpenters Reagent", "None of the above"],
+    ["Marbles Reagent", "Acidified Ferric Chloride", "Carpenters Reagent", "None of the above"],
+
 ];
 
 function validateAnswer(qn, ans, left, top) {
@@ -94,6 +135,7 @@ function myStopFunction() {
 
 //-------------------------------------function magic starts here----------------------------------------------------
 function magic() {
+    console.log(simsubscreennum);
 
     if (simsubscreennum == 1) {
         myInt = setInterval(function() {
@@ -158,6 +200,25 @@ function magic() {
     }
 
     if (simsubscreennum == 5) {
+        if (selectedSample == "brass") {
+            console.log('brass');
+
+            document.getElementById("reagent").src = "images/afc_bottle.png";
+
+            document.getElementById('pumptext2').innerText = "Etch the specimen with Acidified Ferric Chloride by swabbing for a few seconds. Wash and dry.";
+            document.getElementById('10_1').innerText = "Ferric chloride is mixed with water in an one to one ratio to form hydrochloric acid in solution thus enabling acid etching of a given sample. Acidic Ferric Chloride solution is a common etchant for etching stainless steel, Damascus steel, copper alloys, Cu-Al bronze, Cu-Ni.";
+
+        }
+        if (selectedSample == "solder_alloy" || selectedSample == "solder_alloy1" || selectedSample == "solder_alloy2") {
+
+
+            console.log('solder_alloy');
+            document.getElementById('pumptext2').innerText = "Etch the specimen with Nital 2% reagent by swabbing for a few seconds. Wash and dry.";
+            document.getElementById('10_1').innerText = "Nital reagent : Nital is the name given to an oxidizing etchant solution composed of aqueous nitric acid and ethanol. ";
+
+        }
+
+
         document.getElementById("note2").style.visibility = "visible";
         document.getElementById("ok2").onclick = function() {
             this.onclick = null;
@@ -174,14 +235,16 @@ function magic() {
             document.getElementById('reagent').onclick = function() {
                 this.onclick = null;
                 step6();
-            }
-        };
+            };
+
+        }
     }
     if (simsubscreennum == 6) {
         var level = 1;
         var type = sampletype;
         var deg = 0;
-        if (type != 1) document.getElementById('preview').src = 'images/microscope/p12_sq50x.jpg';
+        // if (type != 1) document.getElementById('preview').src = 'images/microscope/p12_sq50x.jpg';
+
         document.getElementById("man").style.visibility = "visible";
         document.getElementById("microscope").style.visibility = "visible";
         document.getElementById("man").style.marginLeft = "-216px";
@@ -204,7 +267,7 @@ function magic() {
         setTimeout(function() {
             document.getElementById('scz').style.opacity = '1';
             document.getElementById('preview').style.opacity = '1';
-            document.getElementById('preview2').style.opacity = '1';
+
             document.getElementById('n1').style.opacity = '1';
             document.getElementById('n2').style.opacity = '1';
         }, 4500)
@@ -219,118 +282,229 @@ function magic() {
             // Standard syntax
             document.getElementById("arrow1").style.transform = "rotate(180deg)";
         }, 5500)
-        document.getElementById('lup').onclick = function() {
-            myStopFunction();
-            deg -= 120;
-            document.getElementById("lsw").style.WebkitTransform = "rotate(" + deg + "deg)";
-            document.getElementById("lsw").style.msTransform = "rotate(" + deg + "deg)";
-            document.getElementById("lsw").style.transform = "rotate(" + deg + "deg)";
-            document.getElementById('preview').style.WebkitFilter = "blur(10px)";
-            document.getElementById('preview2').style.WebkitFilter = "blur(10px)";
-            //if (type == 1) {
-            if (level == 1)
-                setTimeout(function() {
-                    document.getElementById('preview').src = 'images/microscope/ms_sq100x.jpg';
-                    document.getElementById('preview').style.WebkitFilter = "blur(0px)";
-                    document.getElementById('preview2').src = 'images/microscope/gci_sq100x.jpg';
-                    document.getElementById('preview2').style.WebkitFilter = "blur(0px)";
-                    level++;
-                }, 500);
-            else if (level == 2)
-                setTimeout(function() {
-                    document.getElementById('preview').src = 'images/microscope/ms_sq500x.jpg';
-                    document.getElementById('preview').style.WebkitFilter = "blur(0px)";
-                    document.getElementById('preview2').src = 'images/microscope/gci_sq500x.jpg';
-                    document.getElementById('preview2').style.WebkitFilter = "blur(0px)";
-                    level++;
-                }, 500);
-            else
-                setTimeout(function() {
-                    document.getElementById('preview').src = 'images/microscope/ms_sq50x.jpg';
-                    document.getElementById('preview').style.WebkitFilter = "blur(0px)";
-                    document.getElementById('preview2').src = 'images/microscope/gci_sq50x.jpg';
-                    document.getElementById('preview2').style.WebkitFilter = "blur(0px)";
-                    level = 1;
-                }, 500);
-            /*}
-            else {
+        if (selectedSample == "brass") {
+            console.log('brass');
+            document.getElementById("lsw").src = "images/brass_micro_reading.png";
+            document.getElementById("lsw").style.left = "55px";
+            document.getElementById("lsw").style.top = "76px";
+            document.getElementById('n1').innerText = "Brass";
+            document.getElementById("preview").src = "images/Brass_500x.png";
+            document.getElementById("vsc").style.left = "110px";
+            document.getElementById('lup').onclick = function() {
+                myStopFunction();
+                deg -= 120;
+
+                document.getElementById("lsw").style.WebkitTransform = "rotate(" + deg + "deg)";
+                document.getElementById("lsw").style.msTransform = "rotate(" + deg + "deg)";
+                document.getElementById("lsw").style.transform = "rotate(" + deg + "deg)";
+                document.getElementById('preview').style.WebkitFilter = "blur(10px)";
+                // document.getElementById('preview2').style.WebkitFilter = "blur(0px)";
+                //if (type == 1) {
                 if (level == 1)
                     setTimeout(function() {
-                        document.getElementById('preview').src = 'images/microscope/p12_sq100x.jpg';
-                        document.getElementById('preview').style.WebkitFilter = "blur(0px)";
+                        if (selectedSample == "brass") {
+                            document.getElementById('preview').style.WebkitFilter = "blur(0px)";
+
+                            document.getElementById('preview').src = 'images/Brass_500x.png';
+                            document.getElementById('preview').style.WebkitFilter = "blur(0px)";
+                        }
+
+
                         level++;
                     }, 500);
                 else if (level == 2)
                     setTimeout(function() {
-                        document.getElementById('preview').src = 'images/microscope/p12_sq500x.jpg';
-                        document.getElementById('preview').style.WebkitFilter = "blur(0px)";
+
+
+                        if (selectedSample == "brass") {
+                            document.getElementById('preview').src = 'images/Brass_1000x.png';
+                            document.getElementById('preview').style.WebkitFilter = "blur(0px)";
+                        }
+
                         level++;
                     }, 500);
                 else
                     setTimeout(function() {
-                        document.getElementById('preview').src = 'images/microscope/p12_sq50x.jpg';
-                        document.getElementById('preview').style.WebkitFilter = "blur(0px)";
+
+
+                        if (selectedSample == "brass") {
+                            document.getElementById('preview').src = 'images/Brass_50x.png';
+                            document.getElementById('preview').style.WebkitFilter = "blur(0px)";
+                        }
+
                         level = 1;
                     }, 500);
-            }*/
-        }
-        document.getElementById('ldn').onclick = function() {
-            myStopFunction();
-            deg += 120;
-            document.getElementById("lsw").style.WebkitTransform = "rotate(" + deg + "deg)";
-            document.getElementById("lsw").style.msTransform = "rotate(" + deg + "deg)";
-            document.getElementById("lsw").style.transform = "rotate(" + deg + "deg)";
-            document.getElementById('preview').style.WebkitFilter = "blur(10px)";
-            //if (type == 1) {
-            if (level == 1)
-                setTimeout(function() {
-                    document.getElementById('preview').src = 'images/microscope/ms_sq500x.jpg';
-                    document.getElementById('preview').style.WebkitFilter = "blur(0px)";
-                    document.getElementById('preview2').src = 'images/microscope/gci_sq500x.jpg';
-                    document.getElementById('preview2').style.WebkitFilter = "blur(0px)";
-                    level = 3;
-                }, 500);
-            else if (level == 2)
-                setTimeout(function() {
-                    document.getElementById('preview').src = 'images/microscope/ms_sq50x.jpg';
-                    document.getElementById('preview').style.WebkitFilter = "blur(0px)";
-                    document.getElementById('preview2').src = 'images/microscope/gci_sq50x.jpg';
-                    document.getElementById('preview2').style.WebkitFilter = "blur(0px)";
-                    level--;
-                }, 500);
-            else
-                setTimeout(function() {
-                    document.getElementById('preview').src = 'images/microscope/ms_sq100x.jpg';
-                    document.getElementById('preview').style.WebkitFilter = "blur(0px)";
-                    document.getElementById('preview2').src = 'images/microscope/gci_sq100x.jpg';
-                    document.getElementById('preview2').style.WebkitFilter = "blur(0px)";
-                    level--;
-                }, 500);
-            /*}
-            else {
+
+            }
+            document.getElementById('ldn').onclick = function() {
+                myStopFunction();
+                deg += 120;
+                document.getElementById("lsw").style.WebkitTransform = "rotate(" + deg + "deg)";
+                document.getElementById("lsw").style.msTransform = "rotate(" + deg + "deg)";
+                document.getElementById("lsw").style.transform = "rotate(" + deg + "deg)";
+                document.getElementById('preview').style.WebkitFilter = "blur(10px)";
+                //if (type == 1) {
                 if (level == 1)
                     setTimeout(function() {
-                        document.getElementById('preview').src = 'images/microscope/p12_sq500x.jpg';
-                        document.getElementById('preview').style.WebkitFilter = "blur(0px)";
+                        if (selectedSample == "brass") {
+                            document.getElementById('preview').style.WebkitFilter = "blur(0px)";
+
+                            document.getElementById('preview').src = 'images/Brass_1000x.png';
+                            document.getElementById('preview').style.WebkitFilter = "blur(0px)";
+                        }
+
+
+
                         level = 3;
                     }, 500);
                 else if (level == 2)
                     setTimeout(function() {
-                        document.getElementById('preview').src = 'images/microscope/p12_sq50x.jpg';
-                        document.getElementById('preview').style.WebkitFilter = "blur(0px)";
+                        if (selectedSample == "brass") {
+                            document.getElementById('preview').style.WebkitFilter = "blur(0px)";
+
+                            document.getElementById('preview').src = 'images/Brass_50x.png';
+                            document.getElementById('preview').style.WebkitFilter = "blur(0px)";
+                        }
+
                         level--;
                     }, 500);
                 else
                     setTimeout(function() {
-                        document.getElementById('preview').src = 'images/microscope/p12_sq100x.jpg';
-                        document.getElementById('preview').style.WebkitFilter = "blur(0px)";
+                        if (selectedSample == "brass") {
+                            document.getElementById('preview').style.WebkitFilter = "blur(0px)";
+
+                            document.getElementById('preview').src = 'images/Brass_500x.png';
+                            document.getElementById('preview').style.WebkitFilter = "blur(0px)";
+                        }
+
                         level--;
                     }, 500);
-            }*/
+
+            }
+
         }
+        if (selectedSample == "solder_alloy1" || selectedSample == "solder_alloy2") {
+            console.log('solder_alloy');
+            if (selectedSample == "solder_alloy1") {
+                document.getElementById("preview").src = "./images/PbSnX2_100x.png";
+                document.getElementById('n1').innerText = "X2 : Bearing metal";
+
+            } else {
+                document.getElementById("preview").src = "./images/PbSnX3_100x.png";
+                document.getElementById('n1').innerText = "X3 : Lead Base Bearing metal";
+
+            }
+            document.getElementById("lsw").src = "./images/pbsn_reading.png";
+            document.getElementById("vsc").style = "transition: all 0.5s ease 0s; position: absolute; left: 104px; top: 81px; height: 75px; width: 75px; border-radius: 50%; background-color: teal; opacity: 0;";
+
+            document.getElementById('lup').onclick = function() {
+                myStopFunction();
+                deg -= 180;
+
+                document.getElementById("lsw").style.WebkitTransform = "rotate(" + deg + "deg)";
+                document.getElementById("lsw").style.msTransform = "rotate(" + deg + "deg)";
+                document.getElementById("lsw").style.transform = "rotate(" + deg + "deg)";
+                document.getElementById('preview').style.WebkitFilter = "blur(10px)";
+                // document.getElementById('preview2').style.WebkitFilter = "blur(0px)";
+                //if (type == 1) {
+                if (level == 1)
+                    setTimeout(function() {
+
+                        if (selectedSample == 'solder_alloy1') {
+                            document.getElementById('preview').style.WebkitFilter = "blur(0px)";
+                            document.getElementById('preview').src = './images/PbSnX2_500x.png';
+                            document.getElementById('preview').style.WebkitFilter = "blur(0px)";
+                        }
+                        if (selectedSample == 'solder_alloy2') {
+                            document.getElementById('preview').style.WebkitFilter = "blur(0px)";
+                            document.getElementById('preview').src = './images/PbSnX3_500x.png';
+                            document.getElementById('preview').style.WebkitFilter = "blur(0px)";
+
+                        }
+
+
+                        level++;
+                    }, 500);
+                if (level == 2)
+                    setTimeout(function() {
+                        if (selectedSample == 'solder_alloy1') {
+                            document.getElementById('preview').style.WebkitFilter = "blur(0px)";
+                            document.getElementById('preview').src = './images/PbSnX2_100x.png';
+                            document.getElementById('preview').style.WebkitFilter = "blur(0px)";
+                        }
+                        if (selectedSample == 'solder_alloy2') {
+                            document.getElementById('preview').style.WebkitFilter = "blur(0px)";
+                            document.getElementById('preview').src = './images/PbSnX3_100x.png';
+                            document.getElementById('preview').style.WebkitFilter = "blur(0px)";
+                        }
+
+
+                        level = 1;
+
+                    }, 500);
+
+
+
+            }
+            document.getElementById('ldn').onclick = function() {
+                myStopFunction();
+                deg += 180;
+                document.getElementById("lsw").style.WebkitTransform = "rotate(" + deg + "deg)";
+                document.getElementById("lsw").style.msTransform = "rotate(" + deg + "deg)";
+                document.getElementById("lsw").style.transform = "rotate(" + deg + "deg)";
+                document.getElementById('preview').style.WebkitFilter = "blur(10px)";
+
+                if (level == 1)
+                    setTimeout(function() {
+
+                        if (selectedSample == 'solder_alloy1') {
+                            document.getElementById('preview').style.WebkitFilter = "blur(0px)";
+                            document.getElementById('preview').src = './images/PbSnX2_500x.png';
+                            document.getElementById('preview').style.WebkitFilter = "blur(0px)";
+                        }
+                        if (selectedSample == 'solder_alloy2') {
+                            document.getElementById('preview').style.WebkitFilter = "blur(0px)";
+                            document.getElementById('preview').src = './images/PbSnX3_500x.png';
+                            document.getElementById('preview').style.WebkitFilter = "blur(0px)";
+
+                        }
+
+                        level = 2;
+                    }, 500);
+                if (level == 2)
+                    setTimeout(function() {
+
+                        if (selectedSample == 'solder_alloy1') {
+                            document.getElementById('preview').style.WebkitFilter = "blur(0px)";
+                            document.getElementById('preview').src = './images/PbSnX2_100x.png';
+                            document.getElementById('preview').style.WebkitFilter = "blur(0px)";
+                        }
+                        if (selectedSample == 'solder_alloy2') {
+                            document.getElementById('preview').style.WebkitFilter = "blur(0px)";
+                            document.getElementById('preview').src = './images/PbSnX3_100x.png';
+                            document.getElementById('preview').style.WebkitFilter = "blur(0px)";
+
+                        }
+
+                        level--;
+                    }, 500);
+
+
+            }
+
+        }
+
+
         setTimeout(function() {
             myStopFunction();
-            validateAnswer(2, 1, "230px", "420px");
+            if (selectedSample == "solder_alloy1" || selectedSample == "solder_alloy2") {
+                validateAnswer(2, 1, "230px", "420px");
+            }
+            if (selectedSample == "brass") {
+                validateAnswer(3, 1, "230px", "420px");
+
+            }
+
         }, 15000)
     }
     if (simsubscreennum == 7) {
@@ -683,11 +857,20 @@ function step6() {
     document.getElementById('handCotton').onclick = function() {
         myStopFunction();
         this.onclick = null;
-        document.getElementById('handCotton').style.top = "-135px";
-        document.getElementById('handCotton').style.left = "-50px";
+        if (selectedSample == 'solder_alloy1' || selectedSample == 'solder_alloy2') {
+            document.getElementById('handCotton').style.top = "-150px";
+            document.getElementById('handCotton').style.left = "-45px";
+
+        } else {
+            document.getElementById('handCotton').style.top = "-135px";
+            document.getElementById('handCotton').style.left = "-45px";
+
+        }
         document.getElementById('reagent').style.transform = "rotate(30deg)";
         document.getElementById('reagent').style.WebkitTransform = "rotate(30deg)";
         document.getElementById('reagent').style.msTransform = "rotate(30deg)";
+
+
         setTimeout(function() {
             //document.getElementById('etchSample').style.visibility="visible";
             //document.getElementById('handCotton').style.top="-100px";
@@ -697,6 +880,8 @@ function step6() {
             document.getElementById('reagent').style.transform = "rotate(0deg)";
             document.getElementById('reagent').style.WebkitTransform = "rotate(0deg)";
             document.getElementById('reagent').style.msTransform = "rotate(0deg)";
+
+
             myInt = setInterval(function() {
                 animatearrow();
             }, 500);
@@ -713,7 +898,7 @@ function step6() {
             myStopFunction();
             this.onclick = null;
             document.getElementById('cap').style.zIndex = "-1";
-            document.getElementById('cap').style.marginTop = "205px";
+            document.getElementById('cap').style.marginTop = "189px";
             setTimeout(function() {
                 document.getElementById('etchSample').style.visibility = "visible";
                 document.getElementById('etchSample').style.opacity = "1";
@@ -735,7 +920,7 @@ function step6() {
                 myStopFunction();
                 document.getElementById('etchSample').style.zIndex = "0";
                 document.getElementById('handCotton').style.zIndex = "10";
-                document.getElementById('handCotton').style.top = "-100px";
+                document.getElementById('handCotton').style.top = "-88px";
                 document.getElementById('handCotton').style.marginTop = "0px";
                 document.getElementById('handCotton').style.left = "115px";
                 setTimeout(function() {
@@ -757,6 +942,7 @@ function step6() {
                     document.getElementById('handCotton').style.marginTop = "-15px";
                     document.getElementById('handCotton').style.marginLeft = "100px";
                     document.getElementById('reagent').style.opacity = "0";
+
                     document.getElementById('cap').style.opacity = "0";
                     validateAnswer(1, 2, "50px", "110px");
                 }, 2500);
