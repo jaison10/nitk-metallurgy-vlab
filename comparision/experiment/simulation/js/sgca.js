@@ -12,7 +12,11 @@ function navNext() {
     if (sample) {
         document.getElementById("canvas0.5").style.visibility = "visible";
         console.log(simsubscreennum);
+        // document.getElementById('nextButton').style.visibility = "hidden";
+        // if (document.getElementById('solder_alloy1').checked) {
+        // document.getElementById('nextButton').style.visibility = "visible";
 
+        // }
         // console.log(simsubscreennum);
         sample = 0;
     } else {
@@ -22,23 +26,40 @@ function navNext() {
 
             console.log("Inside 0.5 canvas");
             console.log('true');
-            if (document.getElementById('solder_alloy').checked) {
-                selectedSample = "solder_alloy";
-                console.log("Solder alloy chosen!");
-            }
+            // if (document.getElementById('solder_alloy').checked) {
+            //     selectedSample = "solder_alloy";
+            //     console.log("Solder alloy chosen!");
+
+
+            // } else
             if (document.getElementById('brass').checked) {
                 selectedSample = "brass";
                 console.log("Brass is chosen");
-            }
-            if (document.getElementById('solder_alloy1').checked) {
+                document.getElementById('nextButton').style.visibility = "visible";
+
+
+            } else if (document.getElementById('solder_alloy1').checked) {
                 selectedSample = "solder_alloy1";
                 console.log("X2 is chosen");
-            }
-            if (document.getElementById('solder_alloy2').checked) {
+                document.getElementById('nextButton').style.visibility = "visible";
+
+            } else if (document.getElementById('solder_alloy2').checked) {
                 selectedSample = "solder_alloy2";
                 console.log("X3 is chosen");
+                document.getElementById('nextButton').style.visibility = "visible";
 
+            } else {
+                selectedSample = "null";
+                alert('Select a sample to proceed!');
+                simsubscreennum--;
+                sample = 0;
+                console.log('Im here');
             }
+
+
+
+
+
             console.log(selectedSample);
 
         }
@@ -51,9 +72,11 @@ function navNext() {
             //console.log(sampletype);
 
             document.getElementById("canvas0.5").style.display = "none";
+            document.getElementById('nextButton').style.visibility = "hidden";
+
         }
         document.getElementById('canvas' + (simsubscreennum)).style.visibility = "visible";
-        document.getElementById('nextButton').style.visibility = "hidden";
+        // document.getElementById('nextButton').style.visibility = "visible";
         magic();
     }
 }
@@ -62,6 +85,11 @@ function solder_select() {
     document.getElementById('solder_alloy1').style.visibility = "visible";
     document.getElementById('solder_alloy2').style.visibility = "visible";
     document.getElementById('solder_alloy').style.visibility = "hidden";
+    // document.getElementsByClassName('s1').style.left = "20px";
+    document.getElementById('sa1').style.left = "20px";
+    document.getElementById('sa2').style.left = "20px";
+
+
 
 }
 
@@ -156,6 +184,8 @@ function magic() {
         myInt = setInterval(function() {
             animatearrow();
         }, 500);
+        document.getElementById('nextButton').style.visibility = "hidden";
+
         document.getElementById('arrow1').style = "visibility:visible ;position:absolute; left: 340px; top: 220px; height: 40px; z-index: 10;";
         document.getElementById("arrow1").style.WebkitTransform = "rotate(180deg)";
         // Code for IE9
@@ -171,6 +201,8 @@ function magic() {
         myInt = setInterval(function() {
             animatearrow();
         }, 500);
+        document.getElementById('nextButton').style.visibility = "hidden";
+
         document.getElementById('arrow1').style = "visibility:visible ;position:absolute; left: 320px; top: 300px; height: 40px; z-index: 10;";
         document.getElementById("arrow1").style.WebkitTransform = "rotate(180deg)";
         // Code for IE9
@@ -187,6 +219,8 @@ function magic() {
         myInt = setInterval(function() {
             animatearrow();
         }, 500);
+        document.getElementById('nextButton').style.visibility = "hidden";
+
         document.getElementById('arrow1').style = "visibility:visible ;position:absolute; left: 75px; top: 270px; height: 40px; z-index: 10;";
         document.getElementById("arrow1").style.WebkitTransform = "rotate(90deg)";
         // Code for IE9
@@ -200,6 +234,8 @@ function magic() {
     }
 
     if (simsubscreennum == 5) {
+        document.getElementById('nextButton').style.visibility = "hidden";
+
         if (selectedSample == "brass") {
             console.log('brass');
 
@@ -226,7 +262,14 @@ function magic() {
             myInt = setInterval(function() {
                 animatearrow();
             }, 500);
-            document.getElementById('arrow1').style = "visibility:visible ;position:absolute; left: 60px; top: 310px; height: 40px; z-index: 10;";
+            if (selectedSample == 'solder_alloy1' || selectedSample == 'solder_alloy2') {
+                document.getElementById('arrow1').style = "visibility:visible ;position:absolute; left: 60px; top: 290px; height: 40px; z-index: 10;";
+
+            } else {
+                document.getElementById('arrow1').style = "visibility:visible ;position:absolute; left: 60px; top: 310px; height: 40px; z-index: 10;";
+
+            }
+
             document.getElementById("arrow1").style.WebkitTransform = "rotate(180deg)";
             // Code for IE9
             document.getElementById("arrow1").style.msTransform = "rotate(180deg)";
@@ -244,6 +287,7 @@ function magic() {
         var type = sampletype;
         var deg = 0;
         // if (type != 1) document.getElementById('preview').src = 'images/microscope/p12_sq50x.jpg';
+        document.getElementById('nextButton').style.visibility = "hidden";
 
         document.getElementById("man").style.visibility = "visible";
         document.getElementById("microscope").style.visibility = "visible";
@@ -269,7 +313,6 @@ function magic() {
             document.getElementById('preview').style.opacity = '1';
 
             document.getElementById('n1').style.opacity = '1';
-            document.getElementById('n2').style.opacity = '1';
         }, 4500)
         setTimeout(function() {
             myInt = setInterval(function() {
@@ -288,6 +331,9 @@ function magic() {
             document.getElementById("lsw").style.left = "55px";
             document.getElementById("lsw").style.top = "76px";
             document.getElementById('n1').innerText = "Brass";
+
+            document.getElementById('n1').style.top = "259px";
+            document.getElementById('n1').style.left = "235px";
             document.getElementById("preview").src = "images/Brass_500x.png";
             document.getElementById("vsc").style.left = "110px";
             document.getElementById('lup').onclick = function() {
@@ -389,9 +435,13 @@ function magic() {
                 document.getElementById("preview").src = "./images/PbSnX2_100x.png";
                 document.getElementById('n1').innerText = "X2 : Bearing metal";
 
+
             } else {
                 document.getElementById("preview").src = "./images/PbSnX3_100x.png";
                 document.getElementById('n1').innerText = "X3 : Lead Base Bearing metal";
+                document.getElementById('n1').style.left = "212px";
+                document.getElementById('n1').style.fontSize = "10px";
+
 
             }
             document.getElementById("lsw").src = "./images/pbsn_reading.png";
@@ -505,33 +555,57 @@ function magic() {
 
             }
 
-        }, 15000)
+        }, 8000);
     }
     if (simsubscreennum == 7) {
         //var type = sampletype;
+        document.getElementById('nextButton').style.visibility = "hidden";
+
         var slider = document.getElementById("mag");
         var output = document.getElementById("final");
+        var output1 = document.getElementById("final1");
         var output2 = document.getElementById("final2");
         var contain = document.getElementById("magcon");
         var x = document.getElementById("magx");
-        output.onmouseover = function() {
-            document.getElementById('gcitext').style.visibility = "hidden";
-            document.getElementById('mstext').style.visibility = "visible";
+        if (selectedSample == 'solder_alloy1') {
+            document.getElementById('gcitext').style.visibility = "visible";
+            document.getElementById('gcitext1').style.visibility = "hidden";
+            document.getElementById('mstext').style.visibility = "hidden";
+            document.getElementById('final').style.visibility = "visible";
+            output.src = "./images/PbSnX2_100x.png";
+
+
         }
-        output2.onmouseover = function() {
-                document.getElementById('mstext').style.visibility = "hidden";
-                document.getElementById('gcitext').style.visibility = "visible";
-            }
-            //document.getElementById('p3').onclick=function() {
-            //if (type == 1)
-            /*return;
+
+
+        if (selectedSample == 'solder_alloy2') {
+
+            document.getElementById('mstext').style.visibility = "hidden";
+            document.getElementById('gcitext').style.visibility = "hidden";
+            document.getElementById('gcitext1').style.visibility = "visible";
+            document.getElementById('final1').style.visibility = "visible";
+            output1.src = "./images/PbSnX3_100x.png";
+        }
+        if (selectedSample == 'brass') {
+            document.getElementById('mstext').style.visibility = "visible";
+            document.getElementById('gcitext').style.visibility = "hidden";
+            document.getElementById('gcitext1').style.visibility = "hidden";
+            document.getElementById('final2').style.visibility = "visible";
+            output2.src = "./images/Brass_50x.png";
+
+
+
+        }
+        //document.getElementById('p3').onclick=function() {
+        //if (type == 1)
+        /*return;
 			else*/
-            //{
-            //document.getElementById('p3text').style.visibility = "visible";
-            //document.getElementById('p12text').style.visibility="hidden";
-            /*if(slider.value==1)*/
-        output.src = "images/microscope/ms_50x.jpg";
-        output2.src = "images/microscope/gci_50x.jpg";
+        //{
+        //document.getElementById('p3text').style.visibility = "visible";
+        //document.getElementById('p12text').style.visibility="hidden";
+        /*if(slider.value==1)*/
+
+
         //else if(slider.value==2) output.src="images/microscope/p3_100x.jpg";
         //else output.src="images/microscope/p3_500x.jpg";
         //type=1;
@@ -551,43 +625,86 @@ function magic() {
         //type=2;
         //}
         //};
-        slider.oninput = function() {
-            //if (type == 1) {
-            if (this.value == 1) {
-                output.src = "images/microscope/ms_50x.jpg";
-                output2.src = "images/microscope/gci_50x.jpg";
-                contain.title = "50x";
-                x.innerHTML = "50x";
-            } else if (this.value == 2) {
-                output.src = "images/microscope/ms_100x.jpg";
-                output2.src = "images/microscope/gci_100x.jpg";
-                contain.title = "100x";
-                x.innerHTML = "100x";
-            } else {
-                output.src = "images/microscope/ms_500x.jpg";
-                output2.src = "images/microscope/gci_500x.jpg";
-                contain.title = "500x";
-                x.innerHTML = "500x";
-            }
-            /*}
-            else {
+        if (selectedSample == 'solder_alloy1' || selectedSample == 'solder_alloy2') {
+            document.getElementById('mag').max = "2";
+            contain.title = "100x";
+            x.innerHTML = "100x";
+            slider.oninput = function() {
+
+                //if (type == 1) {
                 if (this.value == 1) {
-                    output.src = "images/microscope/p12_50x.jpg";
-                    contain.title = "50x";
-                    x.innerHTML = "50x";
-                }
-                else if (this.value == 2) {
-                    output.src = "images/microscope/p12_100x.jpg";
+                    output.src = "images/PbSnX2_100x.png";
+                    output1.src = "images/PbSnX3_100x.png";
+                    // output2.src = "images/Brass_50x.png";
                     contain.title = "100x";
                     x.innerHTML = "100x";
-                }
-                else {
-                    output.src = "images/microscope/p12_500x.jpg";
+                } else {
+                    output.src = "images/PbSnX2_500x.png";
+                    output1.src = "images/PbSnX3_500x.png";
+                    // output2.src = "images/Brass_500x.png";
+
                     contain.title = "500x";
                     x.innerHTML = "500x";
                 }
-            }*/
-        };
+
+                // } else {
+                //     output.src = "images/PbSnX2_500x.png";
+                //     output1.src = "images/PbSnX3_500x.png";
+                //     output2.src = "images/Brass_1000x.png";
+
+                //     contain.title = "1000x";
+                //     x.innerHTML = "1000x";
+                // }
+            };
+        }
+        if (selectedSample == 'brass') {
+            contain.title = "50x";
+            x.innerHTML = "50x";
+            slider.oninput = function() {
+                //if (type == 1) {
+
+                if (this.value == 1) {
+                    // output.src = "images/PbSnX2_100x.png";
+                    // output1.src = "images/PbSnX3_100x.png";
+                    output2.src = "images/Brass_50x.png";
+                    contain.title = "50x";
+                    x.innerHTML = "50x";
+                } else if (this.value == 2) {
+                    // output.src = "images/PbSnX2_100x.png";
+                    // output1.src = "images/PbSnX3_100x.png";
+                    output2.src = "images/Brass_500x.png";
+
+                    contain.title = "500x";
+                    x.innerHTML = "500x";
+                } else {
+                    // output.src = "images/PbSnX2_500x.png";
+                    // output1.src = "images/PbSnX3_500x.png";
+                    output2.src = "images/Brass_1000x.png";
+
+                    contain.title = "1000x";
+                    x.innerHTML = "1000x";
+                }
+            };
+        }
+        /*}
+        else {
+            if (this.value == 1) {
+                output.src = "images/microscope/p12_50x.jpg";
+                contain.title = "50x";
+                x.innerHTML = "50x";
+            }
+            else if (this.value == 2) {
+                output.src = "images/microscope/p12_100x.jpg";
+                contain.title = "100x";
+                x.innerHTML = "100x";
+            }
+            else {
+                output.src = "images/microscope/p12_500x.jpg";
+                contain.title = "500x";
+                x.innerHTML = "500x";
+            }
+        }*/
+
     }
 }
 
@@ -837,7 +954,14 @@ function step6() {
     document.getElementById('handCotton').style.marginTop = "60px";
     document.getElementById('handCotton').style.opacity = "0";
     setTimeout(function() {
-        document.getElementById('cap').style.marginTop = "75px";
+        if (selectedSample == 'solder_alloy1' || selectedSample == 'solder_alloy2') {
+            document.getElementById('cap').style.marginTop = "75px";
+
+        } else {
+            document.getElementById('cap').style.marginTop = "60px";
+
+        }
+
         document.getElementById('handCotton').style.display = "block";
         document.getElementById('handCotton').style.transitionDuration = "1.2s";
         document.getElementById('handCotton').style.visibility = "visible";
@@ -920,7 +1044,13 @@ function step6() {
                 myStopFunction();
                 document.getElementById('etchSample').style.zIndex = "0";
                 document.getElementById('handCotton').style.zIndex = "10";
-                document.getElementById('handCotton').style.top = "-88px";
+                if (selectedSample == 'solder_alloy1' || selectedSample == 'solder_alloy2') {
+                    document.getElementById('handCotton').style.top = "-93px";
+                } else {
+                    document.getElementById('handCotton').style.top = "-80px";
+
+                }
+
                 document.getElementById('handCotton').style.marginTop = "0px";
                 document.getElementById('handCotton').style.left = "115px";
                 setTimeout(function() {

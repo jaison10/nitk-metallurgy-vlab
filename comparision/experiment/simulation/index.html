@@ -70,15 +70,15 @@
                 </span-->
             <img src="images/hands_sample/sample.svg" height="200px" style="position: absolute; top:130px; left: -80px; z-index: -1;" />
             <img src="images/hands_sample/sample.svg" height="200px" style="position: absolute; top:130px; left:320px;z-index: -1;" />
-            <span style="position: absolute; top:300px; width: 300px; ">
+            <span style="position: absolute; top:302px; width: 300px; ">
                 <input type="radio" id="solder_alloy" name="sampletype" value="1" onclick="solder_select();" >
                 <label for="solder_alloy"> <b>Solder alloy (Pb-Sn)</b><br></label>   
                 <br>
                 <input type="radio" id="solder_alloy1" name="sampletype" style="visibility: hidden;" value="1_1" >
-                 <label for="solder_alloy1">X2 : Bearing metal (Sn-60%, Sb - 10%, Pb-27%, Cu-3%)</label>
+                 <label  id="sa1" for="solder_alloy1" style="position:absolute;left:5px;font-size:14px;">X2 : Bearing metal (Sn-60%, Sb - 10%, Pb-27%, Cu-3%)</label>
                     <br>
-                <input type="radio" id="solder_alloy2" name="sampletype" style="visibility: hidden;" value="1_2" >
-                <label for="solder_alloy2">X3 : Lead Base Bearing metal (Pb-74%, Sn- 10%, Sb-16%, Cu-Remainder)</label>
+                <input type="radio" id="solder_alloy2" name="sampletype" style="visibility: hidden;position: absolute;top: 73px;" value="1_2" >
+                <label  id="sa2" for="solder_alloy2" style="position:absolute;left:5px;top:73px;font-size:14px;">X3 : Lead Base Bearing metal (Pb-74%, Sn- 10%, Sb-16%, Cu-Remainder)</label>
                     <br>
                 </span>
             <span style="position: absolute; top:300px; left:400px;width: 300px;">
@@ -205,43 +205,63 @@
             <div id="vsc" style="transition: all 0.5s ease 0s;position: absolute;left: 100px;top: 78px;height: 60px;width: 60px;border-radius: 50%;background-color: teal;opacity: 0;"></div>
             <img id="zl" src="images/microscope/zoom_lens.svg" height="180px" style="position: absolute;left: -15px;top: 145px;opacity: 0;transform: rotate(-100deg);transition: all 0.5s ease 0s;">
             <img id="lsw" src="images/pbsn_reading.png" height="160px" style="position: absolute;left: 30px; top: 75px; height: 170px; transition: all 1s ease 0s; opacity: 0;">
-            <strong id="n1" style="position:absolute;top: 226px;opacity: 0;left: 250px;transform: rotate(-21deg);"></strong>
+            <strong id="n1" style="position:absolute;top: 245px; opacity: 0; left: 230px;transform: rotate(-21deg);"></strong>
             <!-- <strong id="n2" style="position:absolute;top: 310px;left: 230px;transform: rotate(12deg);opacity: 0;">Grey Cast Iron</strong> -->
         </div>
 
         <!--Note	-->
         <div class="simsubscreen" id="canvas7" style="visibility:hidden">
-            <strong id="titlestep" class="incanvas">Observations </strong><br>
-            <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;">View the microstructures at different magnification levels and compare the microstructural features. Move mouse on image to see its properties below.</p>
+            <strong id="titlestep" style="position:absolute;top:5px;font-weight:800;font-size:15px;" class="incanvas">Observations </strong><br>
+            <p id="pumptext" class="steptext" style=" position:absolute;top:20px;left:5px;font-family:verdana; font-size:14px;">View the microstructures at different magnification levels and compare the microstructural features. Move mouse on image to see its properties below.</p>
             <br>
-            <div class="slidecontainer" id="magcon" style="width:150px; margin:auto;" title="50x">
-                <center><span id="magx">50x</span></center>
+            <div class="slidecontainer" id="magcon" style="position:absolute;top:75px;left:280px;width:180px; margin:auto;" title="">
+                <center><span id="magx"></span></center>
                 <input type="range" min="1" max="3" value="1" class="slider" id="mag">
             </div>
             <!--div id="switch" style="position: absolute; top: 100px; left:230px; padding: 5px;">
                     <button id="p3" style="padding: 5px;border-radius: 5px; cursor: pointer;">P3 Austenitic Steel</button>
                     <button id="p12" style="padding: 5px;border-radius: 5px; cursor: pointer;">P12 Martensitic Steel</button>
                     </div-->
-            <img id="final" src="" width="320px" style="position:absolute;top: 100px; border-radius: 10px; cursor: help;">
+            <img id="final" src="images/PbSnX2_500x.png" width="260px" style=" visibility:hidden;position:absolute;top: 130px; left: 230px; border-radius: 15px;" height="220px">
+            <img id="final1" src="images/PbSnX3_500x.png" width="260px" style="visibility:hidden;position:absolute;top: 130px; left: 230px; border-radius: 15px;" height="220px">
+            <img id="final2" src="images/Brass_1000x.png" width="260px" style="visibility:hidden;position:absolute;top: 130px; left: 230px; border-radius: 15px;" height="220px">
+
+            <strong style="position:absolute;top:330px;left:0px;visibility: hidden;">PbSn:X2(Bearing metal)</strong>
+            <strong style="position:absolute;top:330px;left:250px;visibility: hidden;">PbSn:X3(lead base bearing metal)</strong>
+            <strong style="position:absolute;top:330px;left:590px;visibility: hidden;">Brass</strong>
+            <!-- <img id="final" src="" width="320px" style="position:absolute;top: 100px; border-radius: 10px; cursor: help;">
+            <img id="final1" src="" width="320px" style="position:absolute;top: 100px; left:370px; border-radius: 10px; cursor: help;">
             <img id="final2" src="" width="320px" style="position:absolute;top: 100px; left:370px; border-radius: 10px; cursor: help;">
-            <strong style="position:absolute;top:345px;left:100px;">Solder alloy (Pb-Sn)</strong>
-            <strong style="position:absolute;top:345px;left:480px;">Brass</strong>
-            <div id="mstext" style="position: absolute; left:-20px;top:380px;">
-                Number of phases : 2 (<b>Solder alloy (Pb-Sn)</b>)
-                <br> Features of each phase :
+
+            <strong style="position:absolute;top:345px;left:100px;">Solder alloy:X2 (Bearing metal)</strong>
+            <strong style="position:absolute;top:345px;left:100px;">Solder alloy:X3 (lead base bearing metal)</strong>
+            <strong style="position:absolute;top:345px;left:480px;">Brass</strong> -->
+            <div id="mstext" style="position: absolute; left:-20px;top:380px;visibility: hidden;">
+                <!-- Number of phases : 2 (<b>Solder alloy (Pb-Sn)</b>) -->
+                <!-- <br> Features of each phase : -->
                 <ul>
-                    <li>Ferrite: The lighter region represents this phase. It forms the soft α-matrix. It consists of pro-eutectoid ferrite mainly.</li>
-                    <li>Pearlite: The darker region represents this phase. It has a lamellar morphology which can be observed at higher magnification (at 500x). It imparts strength to the material. It consists of ferrite and cementite (Fe2O3) arranged alternatively.
+                    <li>Brass specimen is etched using Acidified Ferric Chloride.
+                    </li>
+                    <li>In the etched microstructure, (shown under observation) : Alpha phase appears as a light region (Zn precipitate) and Beta phase appears as the Dark region.
                     </li>
                 </ul>
             </div>
             <div id="gcitext" style="position: absolute; left:-20px;top:380px;visibility: hidden;">
-                Number of phases : 3 (<b>Brass</b>)
-                <br> Features of each phase:
+                <!-- Number of phases : 3 (<b>Brass</b>) -->
+                <!-- <br> Features of each phase: -->
                 <ul>
-                    <li>Graphite: Flaky graphite</li>
-                    <li>Pro-eutectoid Ferrite: Concentrated at the graphite-pearlite grain boundaries, whiter compared to other phases.</li>
-                    <li>Pearlite: Matrix, darker than ferrite. A lamellar structure consisting of alternate layers of ferrite and cementite.</li>
+                    <li>X2 ( Bearing metal) : </li><br>
+                    <li>X2 specimen is etched using 2% Nital. In the etched microstructure, (shown under observation) : white cuboids of Sb-Sn, white needles of Cu6Sn5 and dark Pb-Sn-Sb eutectic matrix can be observed.</li><br>
+
+                </ul>
+            </div>
+            <div id="gcitext1" style="position: absolute; left:-20px;top:380px;visibility: hidden;">
+                <!-- Number of phases : 3 (<b>Brass</b>) -->
+                <!-- <br> Features of each phase: -->
+                <ul>
+
+                    <li>X3 ( lead base bearing metal) :</li><br>
+                    <li>X3 specimen is etched using 2% Nital. In the etched microstructure, (shown under observation) : white cuboids of Sb-Sn, Black & white matrix of ternary eutectic Pb-Sn-Sb and dark globules of lead can be observed.</li><br>
                 </ul>
             </div>
         </div>
