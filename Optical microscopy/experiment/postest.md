@@ -1,66 +1,62 @@
 ## Post test
 <br>
-Q 1. What is the temperature in a core box typically?<br>
-a. 120°C – 160°C<br>
-<b>b. 180°C – 260°C</b> <br>
-c. 200°C – 270°C<br>
-d. 290°C – 350°C<br><br>
+Q 1. A 34.6% Pb-Sn alloy is cooled just below the eutectic temperature (183°C). What is the fraction of proeutectic α and eutectic mixture (α+β)?<br>
+a. 70% and 30%<br>
+<b>b. 64% and 36%</b> <br>
+c. 36% and 64%<br>
+d. 30% and 70%<br><br>
 
-Q 2. Up to what mass of grey cast irons can shell moulds take?<br>
-a. 300 kg<br>
-b. 400 kg<br>
-<b>c. 500 kg</b><br>
-d. 600 kg<br>
+Q 2. In hypoeutectic alloys micro structure at room temperature consists of?<br>
+a. Proeutectic β and α<br>
+b. Eutectic mixture (α+β)<br>
+<b>c. Proeutectic α and eutectic mixture (α+β)</b><br>
+d. Proeutectic β and eutectic mixture (α+β)<br>
 
-Q 3. What should be the range of percentage of carbon (C) in iron (Fe) to be called as cast iron?<br>
-a. 0.1-0.5<br>
-b. 0.5-1.0<br>
-c. 1.0-2.0<br>
-<b>d. 2.0-5.0</b> <br>
+Q 3. Why Pb-Sn eutectic alloys are used for soldering purpose?<br>
+a. The melting point at eutectic point is maximum<br>
+b. The melting point at the eutectic point is constant<br>
+c. The boiling point at the eutectic point is maximum<br>
+<b>d. The melting point at the eutectic point is minimum</b> <br>
 
-Q 4. Which of the following types of iron represents purest form of iron in the manufacturing process?<br>
-a. Pig iron<br>
-b. White cast iron<br>
-<b>c. Wrought iron</b> <br>
-d. Grey cast iron<br>
+Q 4. How much copper is present in deoxidized copper?<br>
+a.  > 99.9%<br>
+b.  > 99.5%<br>
+<b>c. > 99.85%</b> <br>
+d. > 99.35%<br>
 
-Q 5. Which of the following types of cast iron includes black flakes of graphite in it?<br>
-a. White cast iron<br>
-<b>b. Grey cast iron</b> <br>
-c. Ductile cast iron<br>
-d. Malleable cast iron<br>
+Q 5. What is the melting point of Copper?<br>
+a. 419<br>
+<b>b. 1084</b> <br>
+c. 600<br>
+d. 2562<br>
 
 
-Q 6. What is the permissible percentage of Sulphur and Phosphorous content in steel?<br>
-<b>a. 0.1%, 0.12%</b> <br>
-b. 1.0%, 3.0%<br>
-c. 3.0%, 1.0%<br>
-d. 1.0%, 1.0%<br>
+Q 6. Brass is an alloy of copper and?<br>
+<b>a. Zinc</b> <br>
+b. Tin<br>
+c. Tin and zinc<br>
+d. Nickel<br>
 
-Q 7. What happens when Manganese is added to steel?<br>
-a. decreases strength and hardness of steel<br>
-b. improves corrosion resistance<br>
-c. decreases ductility<br>
-<b>d. improves strength and hardness of steel</b> <br>
+Q 7. α brasses contain ____ of zinc?<br>
+a. 0%<br>
+b. >36%<br>
+c. 100%<br>
+<b>d. <=36% </b> <br>
 
-Q 8. Which of the following is the effect of increased content of Sulphur and Phosphorus in Steel?<br>
-a. yields high strength<br>
-<b>b. affects weldability</b> <br>
-c. increases resistance to corrosion<br>
-d. improves resistance to high temperature<br>
+Q 8. Yellow metal is more commonly known as?<br>
+a. Cartridge brass<br>
+<b>b. Muntz metal</b> <br>
+c. Naval brass<br>
+d.  Admiralty brass<br>
 
-Q 9. Which of the following properties are affected due to addition of carbon and manganese to steel?<br>
-i.  tensile strength and yield property<br>
-ii.  Ductility<br>
-iii.  Welding<br>
-iv.  Corrosion resistance<br><Br>
-a.  i and ii only<br>
-b.  i and iii only<br>
-<b>c.  i, ii, iii only</b> <br>
-d.  i and iv only<br>
+Q 9. Which brass alloy has high tensile strength and can be used for cast molding?<br>
+a.  Free cutting brass<br>
+b.  Standard brass<br>
+<b>c.  Manganese brass</b> <br>
+d.  Gilding metal<br>
 
-Q 10.  Chrome and Nickel are added to Steel to improve_________<br>
-<b>a. corrosion resistance and high temperature resistance</b> <br>
-b. strength<br>
-c. ductility<br>
-d. weldability<br>
+Q 10.  Which brass alloy is used to make imitation jewelry and decorative work?<br>
+<b>a. Leaded brass</b> <br>
+b. High tensile brass<br>
+c. Muntz metal<br>
+d. Gilding metal<br>
