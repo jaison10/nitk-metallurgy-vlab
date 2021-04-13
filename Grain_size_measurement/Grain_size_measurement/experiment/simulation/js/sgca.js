@@ -198,120 +198,15 @@ function magic() {
             document.getElementById('vsc').style.opacity = '0.4';
             document.getElementById('lsw').style.opacity = '1';
             document.getElementById('zl').style.opacity = '1';
-            document.getElementById('lup').style.visibility = 'visible';
-            document.getElementById('ldn').style.visibility = 'visible';
-            document.getElementById('lup').style.opacity = '0.6';
-            document.getElementById('ldn').style.opacity = '0.6';
+
         }, 3500)
         setTimeout(function() {
             document.getElementById('scz').style.opacity = '1';
             document.getElementById('preview').style.opacity = '1';
         }, 4500)
         setTimeout(function() {
-            myInt = setInterval(function() {
-                animatearrow();
-            }, 500);
-            document.getElementById('arrow1').style = "visibility:visible ;position:absolute; left: 550px; top: 460px; height: 40px; z-index: 10;";
-        }, 5500)
-        document.getElementById('lup').onclick = function() {
-            myStopFunction();
-            deg -= 120;
-            document.getElementById("lsw").style.WebkitTransform = "rotate(" + deg + "deg)";
-            document.getElementById("lsw").style.msTransform = "rotate(" + deg + "deg)";
-            document.getElementById("lsw").style.transform = "rotate(" + deg + "deg)";
-            document.getElementById('preview').style.WebkitFilter = "blur(10px)";
-            if (type == 1) {
-                if (level == 1)
-                    setTimeout(function() {
-                        document.getElementById('preview').src = 'images/microscope/p3_sq100x.jpg';
-                        document.getElementById('preview').style.WebkitFilter = "blur(0px)";
-                        level++;
-                    }, 500);
-                else if (level == 2)
-                    setTimeout(function() {
-                        document.getElementById('preview').src = 'images/microscope/p3_sq500x.jpg';
-                        document.getElementById('preview').style.WebkitFilter = "blur(0px)";
-                        level++;
-                    }, 500);
-                else
-                    setTimeout(function() {
-                        document.getElementById('preview').src = 'images/microscope/p3_sq50x.jpg';
-                        document.getElementById('preview').style.WebkitFilter = "blur(0px)";
-                        level = 1;
-                    }, 500);
-            }
-            else {
-                if (level == 1)
-                    setTimeout(function() {
-                        document.getElementById('preview').src = 'images/microscope/p12_sq100x.jpg';
-                        document.getElementById('preview').style.WebkitFilter = "blur(0px)";
-                        level++;
-                    }, 500);
-                else if (level == 2)
-                    setTimeout(function() {
-                        document.getElementById('preview').src = 'images/microscope/p12_sq500x.jpg';
-                        document.getElementById('preview').style.WebkitFilter = "blur(0px)";
-                        level++;
-                    }, 500);
-                else
-                    setTimeout(function() {
-                        document.getElementById('preview').src = 'images/microscope/p12_sq50x.jpg';
-                        document.getElementById('preview').style.WebkitFilter = "blur(0px)";
-                        level = 1;
-                    }, 500);
-            }
-        }
-        document.getElementById('ldn').onclick = function() {
-            myStopFunction();
-            deg += 120;
-            document.getElementById("lsw").style.WebkitTransform = "rotate(" + deg + "deg)";
-            document.getElementById("lsw").style.msTransform = "rotate(" + deg + "deg)";
-            document.getElementById("lsw").style.transform = "rotate(" + deg + "deg)";
-            document.getElementById('preview').style.WebkitFilter = "blur(10px)";
-            if (type == 1) {
-                if (level == 1)
-                    setTimeout(function() {
-                        document.getElementById('preview').src = 'images/microscope/p3_sq500x.jpg';
-                        document.getElementById('preview').style.WebkitFilter = "blur(0px)";
-                        level = 3;
-                    }, 500);
-                else if (level == 2)
-                    setTimeout(function() {
-                        document.getElementById('preview').src = 'images/microscope/p3_sq50x.jpg';
-                        document.getElementById('preview').style.WebkitFilter = "blur(0px)";
-                        level--;
-                    }, 500);
-                else
-                    setTimeout(function() {
-                        document.getElementById('preview').src = 'images/microscope/p3_sq100x.jpg';
-                        document.getElementById('preview').style.WebkitFilter = "blur(0px)";
-                        level--;
-                    }, 500);
-            }
-            else {
-                if (level == 1)
-                    setTimeout(function() {
-                        document.getElementById('preview').src = 'images/microscope/p12_sq500x.jpg';
-                        document.getElementById('preview').style.WebkitFilter = "blur(0px)";
-                        level = 3;
-                    }, 500);
-                else if (level == 2)
-                    setTimeout(function() {
-                        document.getElementById('preview').src = 'images/microscope/p12_sq50x.jpg';
-                        document.getElementById('preview').style.WebkitFilter = "blur(0px)";
-                        level--;
-                    }, 500);
-                else
-                    setTimeout(function() {
-                        document.getElementById('preview').src = 'images/microscope/p12_sq100x.jpg';
-                        document.getElementById('preview').style.WebkitFilter = "blur(0px)";
-                        level--;
-                    }, 500);
-            }
-        }
-        setTimeout(function() {
             validateAnswer(2, 0, "530px", "400px");
-        }, 15000)
+        }, 2000)
     }
     if (simsubscreennum == 7) {
         var type = sampletype;
@@ -324,7 +219,18 @@ function magic() {
             output.src = "./images/update/image2.jpg";
             document.getElementById("p3text").style.visibility = "hidden";
             document.getElementById("p12text").style.visibility = "visible";
+            document.getElementById("linedDisplayButtonPrev").style.visibility = "visible";
             document.getElementById("linedDisplayButton").style.visibility = "hidden";
+            document.getElementById("pumptext").innerText = "Line Intercept method";
+        }
+        document.getElementById("linedDisplayButtonPrev").onclick = function(){
+            output.src = "./images/update/image1.jpg";
+            document.getElementById("p3text").style.visibility = "visible";
+            document.getElementById("p12text").style.visibility = "hidden";
+            document.getElementById("linedDisplayButton").style.visibility = "visible";
+            document.getElementById("linedDisplayButtonPrev").style.visibility = "hidden";
+            document.getElementById("pumptext").innerText = "Planimetric method";
+
         }
         //document.getElementById('p3').onclick=function() {
         // if (type == 1)

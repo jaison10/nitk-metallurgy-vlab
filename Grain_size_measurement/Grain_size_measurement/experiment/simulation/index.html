@@ -152,7 +152,7 @@
             <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;">Etch the specimen with marbles reagent by swabbing for a few seconds. Wash and dry.</p>
             <br>
             <br>
-            <img id="handCotton" src="images/hands_sample/hand_cotton.svg" height="500px" width="auto" style="visibility: hidden; position: absolute; top:-50px; z-index: 5; left:100px; transition: all 0.3s ease;">
+            <img id="handCotton" src="images/hands_sample/hand_cotton.svg" height="500px" width="auto" style="visibility: hidden; position: absolute; top:-50px; z-index: 55; left:100px; transition: all 0.3s ease;">
             <img id="cap" src="images/etching/cap.svg" height="250px" width="auto" style="position:absolute; margin-left: -50px; margin-top: 205px;transition:all 0.5s ease; z-index: -1;">
             <img id="reagent" src="images/bottle_without_cap2.png" height="250px" width="auto" style=" margin-left: -50px; margin-top: 205px;transition: all 0.7s ease; z-index: 30; position: absolute;">
             <img id="etchSample" src="images/etching/etching_with_hand.svg" height="350px" width="auto" style=" margin-left: 150px; margin-top: 100px; visibility: hidden; z-index: 100; transition-duration: 0.5s; ">
@@ -170,11 +170,11 @@
             <br>
             <img id="microscope" src="images/microscope/man_microscope_specimen.svg" height="800px" style="margin-top: -180px; visibility: hidden; transition: all 1s ease; ">
             <img id="scz" src="images/microscope/scope_zoom.svg" height="225px" style="position: absolute;left: 213px;top: 94px;transition: all 0.5s; opacity: 0;">
-            <img id="preview" src="images/microscope/p3_sq50x.jpg" height="280px" style="position: absolute; top:41px; left: 330px;transition-duration: 0.5s;border-radius: 50%;opacity: 0; ">
-            <img id="lup" src="images/microscope/lens_up.svg" height="70px" style="position: absolute; top:350px; left:420px;opacity: 0; transition: all 0.3s ease; visibility: hidden;">
-            <img id="ldn" src="images/microscope/lens_down.svg" height="70px" style="position: absolute; top:440px; left:420px;opacity: 0;transition: all 0.3s ease; visibility: hidden;">
+            <img id="preview" src="images/image1.jpg" height="280px" style="position: absolute; top: 44px; left: 322px; transition-duration: 0.5s;border-radius: 50%;opacity: 0; ">
+            <!-- <img id="lup" src="images/microscope/lens_up.svg" height="70px" style="position: absolute; top:350px; left:420px;opacity: 0; transition: all 0.3s ease; visibility: hidden;">
+            <img id="ldn" src="images/microscope/lens_down.svg" height="70px" style="position: absolute; top:440px; left:420px;opacity: 0;transition: all 0.3s ease; visibility: hidden;"> -->
             <img id="man" src="images/microscope/man.svg" height="400px" style="position: absolute; margin-top: 25px; transition: all 1s ease; visibility: hidden;">
-            <div id='vsc' style="transition:all 0.5s ease; position: absolute;left: 316px;top: 350px;height: 60px;width: 60px;border-radius: 50%;background-color: teal;opacity: 0;"></div>
+            <div id='vsc' style="transition:all 0.5s ease; position: absolute;left: 316px;top: 399px;height: 60px;width: 60px;border-radius: 50%;background-color: teal;opacity: 0;"></div>
             <img id='zl' src="images/microscope/zoom_lens.svg" height="180px" style="position: absolute;left:100px;top: 340px;opacity: 0; transition: all 0.5s ease;">
             <img id='lsw' src="images/lens_switch200.png" height="160px" style="position: absolute;left: 266px;top: 350px;transition: all 1s ease; opacity: 0;">
         </div>
@@ -183,7 +183,7 @@
         <div class="simsubscreen" id="canvas7" style="visibility:hidden">
             <strong id="titlestep" class="incanvas">Observations </strong>
             <br/>
-            <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;">Heading here!</p>
+            <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;">Planimetric method</p>
             <br>
             <br>
             <!-- <div class="slidecontainer" id="magcon" style="width:150px; margin:auto;" title="50x">
@@ -305,7 +305,8 @@
                 <br> &nbsp; &nbsp; = 1.26
             </div>
             <div style="position: absolute; left: 85%; top: 90%;">
-                <button id="linedDisplayButton">NEXT</button>
+                <button id="linedDisplayButton" style="visibility: block;position: absolute; left: 85%; top: 90%;">NEXT</button>
+                <button id="linedDisplayButtonPrev" style="visibility: hidden; position: absolute; left: 85%; top: 90%;">PREV</button>
             </div>
         </div>
     </div>
