@@ -1,1 +1,1 @@
-To compare the microstructures of mild steel and grey cast iron.
+To obtain microstructures of non ferrous alloys like Solder alloy (Pb-Sn) and Brass.

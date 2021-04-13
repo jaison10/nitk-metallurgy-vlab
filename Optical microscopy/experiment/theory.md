@@ -4,9 +4,10 @@
 
 
 
-<p style="text-indent:50px;">Mild steel is a type of steel containing 0.15-0.25% carbon content and very few additional alloying elements. It is also called low carbon steel or study steel. Cast iron is a brittle alloy of iron and carbon that can be readily cast in a mould. Cast iron contains about 2-4% of carbon. It also contains various impurities like Phosphorus, silicon, manganese and sulphur.</p>
+<p style="text-indent:50px;">Brass is an alloy made from copper and zinc and also includes a small percentage of other metals like iron, nickel, lead, tin, aluminum and antimony. The composition of pure brass is 85% copper and 15% zinc, where the high percentage of copper imparts ductility and zinc imparts the strength of brass. The % of zinc added to brass varies from 30 to 42% and is easily hot worked to improve strength, but the higher content of zinc also increases brittleness.
+</p>
 
-<p style="text-indent:50px;">Mild steel has a fibrous structure while the structure of cast iron is granular and crystalline with a whitish or greyish tinge. Mild steel has lesser strength, more toughness and corrosion resistance than grey cast iron. </p>
+<!-- <p style="text-indent:50px;">Mild steel has a fibrous structure while the structure of cast iron is granular and crystalline with a whitish or greyish tinge. Mild steel has lesser strength, more toughness and corrosion resistance than grey cast iron. </p>
 Mild Steel is used in the form of :
 <ul>
 <li>Rolled sections
@@ -19,29 +20,16 @@ Mild Steel is used in the form of :
 <li>Bolts
 <li>Rivets
 <li>Sheets
-</ul>
+</ul> -->
 
-<center><img src="images/uses.jpg" height="300px"></center><br>
-<center>Mild Steel Applications</center><br>
-<center>Source : (<a href="https://gharpedia.com/blog/what-is-the-difference-between-mild-steel-and-stainless-steel/">https://gharpedia.com/blog/what-is-the-difference-between-mild-steel-and-stainless-steel/</a>)</center>
+<center><img src="images/600px-Cu-Zn-phase-diagram-greek.svg.png" height="300px"></center><br>
+<center>Cu-Zn PHASE DIAGRAM</center><br>
+<center>Source : (<a href=" https://commons.m.wikimedia.org/wiki/File:Cu-Zn-phase-diagram-greek.svg"> https://commons.m.wikimedia.org/wiki/File:Cu-Zn-phase-diagram-greek.svg</a>)</center>
 <br><br>
-Cast Iron is used in the form of :
-<ul>
-<li>Ball mills
-<li>Cement mixers
-<li>Nozzles
-<li>Pipe fittings
-<li>Railroad equipment
-<li>Industrial casters
-<li>Chain-hoist assemblies
-<li>Camshaft
-<li>Crankshaft
-<li>Furnace doors
-<li>Elevator doors
-</ul>
+<p style="text-indent:50px;">Lead based solder is the most common mixture used for soldering with composition of 60/40 (tin/lead) blend with a melting point around 180-190°C. Known colloquially as soft solder, tin is selected for its lower melting point while lead is used to inhibit the growth of tin whiskers. The higher the tin concentration, the better the tensile and shear strengths. A solder joint is the result of an intermetallic formation between the elements of the low temperature solder (typically some mixture of tin, lead, silver, bismuth, gold, indium or copper) and the substrate metallization being soldered.
+</p>
 
 <br>
-<center><img src="images/uses2.jpg" height="400px"></center><br>
-<center><img src="images/uses3.jpg" height="400px"></center><br>
-<center>Cast Iron Applications</center><br>
-<center>Source : (<a href="https://www.slideshare.net/mobile/usamatahir66/cast-iron-amp-its-structure">https://www.slideshare.net/mobile/usamatahir66/cast-iron-amp-its-structure</a>)</center>
+<center><img src="images/600px-Pb-Sn-phase-diagram-greek.svg.png" height="300px"></center><br>
+<center>Pb-Sn PHASE DIAGRAM </center><br>
+<center>Source : (<a href="https://commons.m.wikimedia.org/wiki/File:Pb-Sn-phase-diagram-greek.svg ">https://commons.m.wikimedia.org/wiki/File:Pb-Sn-phase-diagram-greek.svg </a>)</center>

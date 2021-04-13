@@ -548,10 +548,10 @@ function magic() {
         setTimeout(function() {
             myStopFunction();
             if (selectedSample == "solder_alloy1" || selectedSample == "solder_alloy2") {
-                validateAnswer(2, 1, "230px", "420px");
+                validateAnswer(2, 1, "300px", "420px");
             }
             if (selectedSample == "brass") {
-                validateAnswer(3, 1, "230px", "420px");
+                validateAnswer(3, 1, "300px", "420px");
 
             }
 
