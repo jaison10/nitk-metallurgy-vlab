@@ -1,191 +1,209 @@
-
 // Don't touch the below code
 
 (function() {
-  function buildQuiz() {
-    // we'll need a place to store the HTML output
-    const output = [];
+    function buildQuiz() {
+        // we'll need a place to store the HTML output
+        const output = [];
 
-    // for each question...
-    myQuestions.forEach((currentQuestion, questionNumber) => {
-      // we'll want to store the list of answer choices
-      const answers = [];
+        // for each question...
+        myQuestions.forEach((currentQuestion, questionNumber) => {
+            // we'll want to store the list of answer choices
+            const answers = [];
 
-      // and for each available answer...
-      for (letter in currentQuestion.answers) {
-        // ...add an HTML radio button
-        answers.push(
-          `<label>
+            // and for each available answer...
+            for (letter in currentQuestion.answers) {
+                // ...add an HTML radio button
+                answers.push(
+                    `<label>
             <input type="radio" name="question${questionNumber}" value="${letter}">
             ${letter} :
             ${currentQuestion.answers[letter]}
           </label>`
-        );
-      }
+                );
+            }
 
-      // add this question and its answers to the output
-      output.push(
-        `<div class="question"> ${currentQuestion.question} </div>
+            // add this question and its answers to the output
+            output.push(
+                `<div class="question"> ${currentQuestion.question} </div>
         <div class="answers"> ${answers.join("")} </div>`
-      );
-    });
+            );
+        });
 
-    // finally combine our output list into one string of HTML and put it on the page
-    quizContainer.innerHTML = output.join("");
-  }
+        // finally combine our output list into one string of HTML and put it on the page
+        quizContainer.innerHTML = output.join("");
+    }
 
-  function showResults() {
-    // gather answer containers from our quiz
-    const answerContainers = quizContainer.querySelectorAll(".answers");
+    function showResults() {
+        // gather answer containers from our quiz
+        const answerContainers = quizContainer.querySelectorAll(".answers");
 
-    // keep track of user's answers
-    let numCorrect = 0;
+        // keep track of user's answers
+        let numCorrect = 0;
 
-    // for each question...
-    myQuestions.forEach((currentQuestion, questionNumber) => {
-      // find selected answer
-      const answerContainer = answerContainers[questionNumber];
-      const selector = `input[name=question${questionNumber}]:checked`;
-      const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+        // for each question...
+        myQuestions.forEach((currentQuestion, questionNumber) => {
+            // find selected answer
+            const answerContainer = answerContainers[questionNumber];
+            const selector = `input[name=question${questionNumber}]:checked`;
+            const userAnswer = (answerContainer.querySelector(selector) || {}).value;
 
-      // if answer is correct
-      if (userAnswer === currentQuestion.correctAnswer) {
-        // add to the number of correct answers
-        numCorrect++;
+            // if answer is correct
+            if (userAnswer === currentQuestion.correctAnswer) {
+                // add to the number of correct answers
+                numCorrect++;
 
-        // color the answers green
-        //answerContainers[questionNumber].style.color = "lightgreen";
-      } else {
-        // if answer is wrong or blank
-        // color the answers red
-        answerContainers[questionNumber].style.color = "red";
-      }
-    });
+                // color the answers green
+                //answerContainers[questionNumber].style.color = "lightgreen";
+            } else {
+                // if answer is wrong or blank
+                // color the answers red
+                answerContainers[questionNumber].style.color = "red";
+            }
+        });
 
-    // show number of correct answers out of total
-    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
-  }
+        // show number of correct answers out of total
+        resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+    }
 
-  const quizContainer = document.getElementById("quiz");
-  const resultsContainer = document.getElementById("results");
-  const submitButton = document.getElementById("submit");
-
-
-// Don't touch the above code
+    const quizContainer = document.getElementById("quiz");
+    const resultsContainer = document.getElementById("results");
+    const submitButton = document.getElementById("submit");
 
 
+    // Don't touch the above code
 
 
-// Write your MCQs here --- Start --- --------------------
 
-  const myQuestions = [
-  {
-      question: "The melting point of mild steel is approximately",
-      answers: {
-        a: "500 degree centigrade",
-        b: "800 degree centigrade ",
-        c: "1000 degree centigrade ",
-        d: "1500 degree centigrade"
-      },
-      correctAnswer: "d"
-    },
-  {
-      question: "Mild steel is also known as_________",
-      answers: {
-        a: "low nickel steel",
-        b: "low iron steel ",
-        c: "low carbon steel ",
-        d: "low manganese steel"
-      },
-      correctAnswer: "c"
-    },
-  {
-      question: "What is the effect of silicon on the structure of cast iron?<br>i. Blowholes are present in the castings<br>ii. Increases fluidity<br>iii. Influences the solidification of liquid alloys<br>iv. Reacts with iron to form iron sulphide<br>",
-      answers: {
-        a: "1 and 2",
-        b: "2 and 3 ",
-        c: "3 and 4 ",
-        d: "All of the above"
-      },
-      correctAnswer: "b"
-    },
-  {
-      question: "Fire resistant steels are also called as____________",
-      answers: {
-        a: "Stainless steel",
-        b: "Weathering steel ",
-        c: "High strength steel ",
-        d: "Thermomechanically treated steel"
-      },
-      correctAnswer: "d"
-    },
-  {
-      question: "In mottled cast iron, slow cooling rate is used to obtain_____________",
-      answers: {
-        a: "white cast iron",
-        b: "grey cast iron ",
-        c: "Both a. and b ",
-        d: "None of the above"
-      },
-      correctAnswer: "b"
-    },
-  {
-      question: "What is weathering steel?",
-      answers: {
-        a: "low-alloy atmospheric corrosion-resistant steel",
-        b: "low-carbon steel ",
-        c: "high strength quenched and tempered steel ",
-        d: "fire resistant steel"
-      },
-      correctAnswer: "a"
-    },
-  {
-      question: "What is the effect of increased carbon content on chilled cast iron?",
-      answers: {
-        a: "Chilling depth increases",
-        b: "Hardness of chilled zone increases ",
-        c: "Both a. and b ",
-        d: "None of the above"
-      },
-      correctAnswer: "b"
-    },
-  {
-      question: "Presence of which material in a grey cast iron causes reduced ductility?",
-      answers: {
-        a: "Graphite",
-        b: "Aluminium ",
-        c: "Coke ",
-        d: "Zinc"
-      },
-      correctAnswer: "a"
-    },
-  {
-      question: "What is the tensile strength of thick gray cast iron?",
-      answers: {
-        a: "71 MPa",
-        b: "83 MPa ",
-        c: "95 MPa ",
-        d: "107 MPa"
-      },
-      correctAnswer: "b"
-    },
-    {
-        question: "Up to what thickness can hot box process can be used for production?",
-        answers: {
-          a: "10 mm- 40 mm",
-          b: "30 mm- 50 mm ",
-          c: "40 mm- 80 mm ",
-          d: "70 mm- 100 mm"
+
+    // Write your MCQs here --- Start --- --------------------
+
+    const myQuestions = [{
+            question: "What is the line that defines the solubility limit of A in B and B in A from the figure?",
+            answers: {
+                a: "Solidus line",
+                b: "Liquidus line",
+                c: "Solidus line and Liquidus line",
+                d: "Solvus line"
+            },
+            correctAnswer: "d"
         },
-        correctAnswer: "d"
-      }
-  ];
+        {
+            question: "Three phases (L+α+β) coexist at point E. This point is called ___________. ",
+            answers: {
+                a: "Peritectic point",
+                b: "Eutectic point",
+                c: "Eutectic point or composition",
+                d: "Eutectoid point"
+            },
+            correctAnswer: "c"
+        },
+        {
+            question: "In hypoeutectic alloys micro structure at room temperature consists of",
+            answers: {
+                a: "Proeutectic β and α",
+                b: "Proeutectic α and eutectic mixture (α+β)",
+                c: "Eutectic mixture (α+β)",
+                d: "Proeutectic β and eutectic mixture (α+β)"
+            },
+            correctAnswer: "b"
+        },
+        {
+            question: "Why Pb-Sn eutectic alloys are used for soldering purpose?",
+            answers: {
+                a: "The melting point at eutectic point is maximum",
+                b: "The melting point at the eutectic point is constant",
+                c: "The boiling point at the eutectic point is maximum",
+                d: "The melting point at the eutectic point is minimum"
+            },
+            correctAnswer: "d"
+        },
+        {
+            question: "Crystals of which material begin to form at point a from the figure?",
+            answers: {
+                a: "Crystals of proeutectic β",
+                b: "Crystals of proeutectic α",
+                c: "Crystals of eutectic (α+β)",
+                d: "Crystals of proeutectic α and β"
+            },
+            correctAnswer: "b"
+        },
+        {
+            question: "At any point b, the α fraction is given by the lever rule as",
+            answers: {
+                a: "bn/mn",
+                b: "mn/bn",
+                c: "ab/be",
+                d: "be/ab"
+            },
+            correctAnswer: "a"
+        },
+        {
+            question: "The inflection in the cooling curve between points a and e is due to",
+            answers: {
+                a: "Low temperature",
+                b: "Latent heat",
+                c: "High temperature",
+                d: "Specific heat"
+            },
+            correctAnswer: "b"
+        },
+        {
+            question: "At the eutectic point (e) the eutectic reaction proceeds at a constant temperature as ",
+            answers: {
+                a: "F = 0",
+                b: "F = 1 ",
+                c: "F = 2 ",
+                d: "F = 3"
+            },
+            correctAnswer: "a"
+        },
+        {
+            question: "Any composition left of point c or right of a point will cool and solidify like a",
+            answers: {
+                a: "Eutectic",
+                b: "Isomorphous system",
+                c: "Proeutectic",
+                d: "Eutectoid"
+            },
+            correctAnswer: "b"
+        },
+        {
+            question: "A 34.6% Pb-Sn alloy is cooled just below the eutectic temperature (183°C). What is the fraction of proeutectic α and eutectic mixture (α+β)?",
+            answers: {
+                a: "70% and 30%",
+                b: "36% and 64%",
+                c: "30% and 70%",
+                d: "64% and 36%"
+            },
+            correctAnswer: "d"
+        },
+        {
+            question: "On heating, one solid phase results in another solid phase and a liquid phase during _____________ reaction.",
+            answers: {
+                a: "Eutectoid",
+                b: "Peritectic",
+                c: "Eutectic",
+                d: "Peritectoid"
+            },
+            correctAnswer: "b"
+        },
+        {
+            question: "A first solid phase results in a second solid phase and another third solid phase on cooling during _______________ reaction.",
+            answers: {
+                a: "Eutectoid",
+                b: "Peritectic",
+                c: "Eutectic",
+                d: "Peritectoid"
+            },
+            correctAnswer: "a"
+        }
+    ];
 
-// ---------------------------- End -------------------------------
+    // ---------------------------- End -------------------------------
 
-  // display quiz right away
-  buildQuiz();
+    // display quiz right away
+    buildQuiz();
 
-  // on submit, show results
-  submitButton.addEventListener("click", showResults);
+    // on submit, show results
+    submitButton.addEventListener("click", showResults);
 })();
