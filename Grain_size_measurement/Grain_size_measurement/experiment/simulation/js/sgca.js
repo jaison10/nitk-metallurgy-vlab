@@ -31,7 +31,7 @@ function navNext() {
 var ca;
 var questions = ["What is the glass plate used for?",
     "What is poured on the disc polisher in the previous step?",
-    "What is the etchant used for austenitic stainless steel?"
+    "What is the etchant used in the previous step?"
 ];
 
 var options2 = [
@@ -41,7 +41,7 @@ var options2 = [
         "4. Both (2) and (3)."
     ],
     ["Alumina solution", "Silica solution", "Calcium Carbonate solution", "None of the above"],
-    ["Marbles Reagent", "2% Nital Reagent", "Carpenters Reagent", "None of the above"]
+    ["Marbles Reagent", "2% Nital Reagent", "Carpenters Reagent", "Acetic-Picral"]
 ];
 
 function validateAnswer(qn, ans, left, top) {
