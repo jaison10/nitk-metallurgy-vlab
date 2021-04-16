@@ -22,7 +22,7 @@ Mild Steel is used in the form of :
 <li>Sheets
 </ul> -->
 
-<center><img src="images/600px-Cu-Zn-phase-diagram-greek.svg.png" height="300px"></center><br>
+<center><img src="images/600px-Cu-Zn-phase-diagram-greek.svg.png" style=" margin-left: auto;margin-right: auto;" width="50%" height="300px"></center><br>
 <center>Cu-Zn PHASE DIAGRAM</center><br>
 <center>Source : (<a href=" https://commons.m.wikimedia.org/wiki/File:Cu-Zn-phase-diagram-greek.svg"> https://commons.m.wikimedia.org/wiki/File:Cu-Zn-phase-diagram-greek.svg</a>)</center>
 <br><br>
@@ -30,6 +30,6 @@ Mild Steel is used in the form of :
 </p>
 
 <br>
-<center><img src="images/600px-Pb-Sn-phase-diagram-greek.svg.png" height="300px"></center><br>
+<center><img src="images/600px-Pb-Sn-phase-diagram-greek.svg.png"style=" margin-left: auto;margin-right: auto;" width="50%" height="300px"></center><br>
 <center>Pb-Sn PHASE DIAGRAM </center><br>
 <center>Source : (<a href="https://commons.m.wikimedia.org/wiki/File:Pb-Sn-phase-diagram-greek.svg ">https://commons.m.wikimedia.org/wiki/File:Pb-Sn-phase-diagram-greek.svg </a>)</center>
