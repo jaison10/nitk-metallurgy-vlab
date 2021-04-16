@@ -2,68 +2,75 @@
 #### Please attempt the following questions
 
 <br>
-Q 1. The melting point of mild steel is approximately<br>
-a. 500 degree centigrade<br>
-b. 800 degree centigrade<br>
-c. 1000 degree centigrade<br>
-<b>d. 1500 degree centigrade</b><br><br>
+Q 1.  What is the line that defines the solubility limit of A in B and B in A from the figure?<br>
+a. Solidus line<br>
+b. Liquidus line<br>
+c. Solidus line and Liquidus line<br>
+<b>d. Solvus line</b><br><br>
 
-Q 2. Mild steel is also known as_________<br>
-a. low nickel steel<br>
-b. low iron steel<br>
-<b>c. low carbon steel</b> <br>
-d. low manganese steel<br>
+Q 2.  Three phases (L+α+β) coexist at point E. This point is called ___________.<br>
+a. Peritectic point<br>
+b. Eutectic point<br>
+<b>c. Eutectic point or composition</b> <br>
+d. Eutectoid point<br>
 
-Q 3. What is the effect of silicon on the structure of cast iron?<br>
-i. Blowholes are present in the castings<br>
-ii. Increases fluidity<br>
-iii. Influences the solidification of liquid alloys<br>
-iv. Reacts with iron to form iron sulphide<br>
+Q 3.  In hypoeutectic alloys micro structure at room temperature consists of<br>
+a. Proeutectic β and α<br>
+<b>b. Proeutectic α and eutectic mixture (α+β)</b><br>
+c. Eutectic mixture (α+β)<br>
+d. Proeutectic β and eutectic mixture (α+β)<br>
 
-a. 1 and 2<br>
-<b>b. 2 and 3</b><br>
-c. 3 and 4<br>
-d. All of the above<br>
+Q 4.  Why Pb-Sn eutectic alloys are used for soldering purpose?<br>
+a. The melting point at eutectic point is maximum<br>
+b. The melting point at the eutectic point is constant<br>
+c. The boiling point at the eutectic point is maximum<br>
+<b>d. The melting point at the eutectic point is minimum</b><br>
 
-Q 4. Fire resistant steels are also called as____________<br>
-a.  Stainless steel<br>
-b.  Weathering steel<br>
-c.  High strength steel<br>
-<b>d.  Thermomechanically treated steel</b><br>
-
-Q 5. In mottled cast iron, slow cooling rate is used to obtain_____________<br>
-a. white cast iron<br>
-<b>b. grey cast iron</b> <br>
-c. Both a. and b.<br>
-d. None of the above<br>
+Q 5.  Crystals of which material begin to form at point a from the figure?<br>
+a. Crystals of proeutectic β<br>
+<b>b. Crystals of proeutectic α</b> <br>
+c. Crystals of eutectic (α+β)<br>
+d. Crystals of proeutectic α and β<br>
 
 
-Q 6. What is weathering steel?<br>
-<b>a. low-alloy atmospheric corrosion-resistant steel</b> <br>
-b. low-carbon steel<br>
-c. high strength quenched and tempered steel<br>
-d. fire resistant steel<br>
+Q 6.  At any point b, the α fraction is given by the lever rule as<br>
+<b>a. bn/mn</b> <br>
+b. mn/bn<br>
+c. ab/be<br>
+d. be/ab<br>
 
-Q 7. What is the effect of increased carbon content on chilled cast iron?<br>
-a. Chilling depth increases<br>
-<b>b. Hardness of chilled zone increases</b><br>
-c. Both a. and b.<br>
-d. None of the above<br>
+Q 7.  The inflection in the cooling curve between points a and e is due to<br>
+a. Low temperature<br>
+<b>b. Latent heat </b><br>
+c. High temperature<br>
+d. Specific heat<br>
 
-Q 8. Presence of which material in a grey cast iron causes reduced ductility?<br>
-<b>a.  Graphite</b> <br>
-b.  Aluminium<br>
-c.  Coke<br>
-d.  Zinc<br>
+Q 8.  At the eutectic point (e) the eutectic reaction proceeds at a constant temperature as <br>
+<b>a. F = 0</b> <br>
+b. F = 1<br>
+c. F = 2<br>
+d. F = 3<br>
 
-Q 9. What is the tensile strength of thick gray cast iron?<br>
-a.  71 MPa<br>
-<b>b.  83 MPa</b> <br>
-c.  95 MPa<br>
-d.  107 MPa<br>
+Q 9.  Any composition left of point c or right of a point will cool and solidify like a<br>
+a. Eutectic<br>
+<b>b. Isomorphous system</b> <br>
+c. Proeutectic<br>
+d. Eutectoid<br>
 
-Q 10. Up to what thickness can hot box process can be used for production?<br>
-a. 10 mm- 40 mm<br>
-b. 30 mm- 50 mm<br>
-c. 40 mm- 80 mm<br>
-<b>d. 70 mm- 100 mm</b> <br>
+Q 10.  A 34.6% Pb-Sn alloy is cooled just below the eutectic temperature (183°C). What is the fraction of proeutectic α and eutectic mixture (α+β)?<br>
+a. 70% and 30%<br>
+b. 36% and 64%<br>
+c. 30% and 70%<br>
+<b>d. 64% and 36%</b> <br>
+
+Q 11.  On heating, one solid phase results in another solid phase and a liquid phase during _____________ reaction.<br>
+a. Eutectoid<br>
+<b>b. Peritectic</b> <br>
+c. Eutectic<br>
+d. Peritectoid<br>
+
+Q 12.  A first solid phase results in a second solid phase and another third solid phase on cooling during _______________ reaction.<br>
+<b>a. Eutectoid</b> <br>
+b. Peritectic<br>
+c. Eutectic<br>
+d. Peritectoid<br>

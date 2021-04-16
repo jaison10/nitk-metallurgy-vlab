@@ -1,62 +1,74 @@
 ## Post test
 <br>
-Q 1. A 34.6% Pb-Sn alloy is cooled just below the eutectic temperature (183°C). What is the fraction of proeutectic α and eutectic mixture (α+β)?<br>
-a. 70% and 30%<br>
-<b>b. 64% and 36%</b> <br>
-c. 36% and 64%<br>
-d. 30% and 70%<br><br>
+Q 1.  A first solid phase results in a second solid plus another third solid phase upon heating during ___________ reaction.<br>
+a. Eutectoid<br>
+<b>b. Peritectoid</b> <br>
+c. Peritectic<br>
+d. Eutectic<br>
 
-Q 2. In hypoeutectic alloys micro structure at room temperature consists of?<br>
-a. Proeutectic β and α<br>
-b. Eutectic mixture (α+β)<br>
-<b>c. Proeutectic α and eutectic mixture (α+β)</b><br>
-d. Proeutectic β and eutectic mixture (α+β)<br>
+Q 2.  Which phase will crystallize first just below the liquidus line?<br>
+a. (L+α) phase<br>
+b. (L+β) phase<br>
+<b>c. α phase</b><br>
+d. β phase<br>
 
-Q 3. Why Pb-Sn eutectic alloys are used for soldering purpose?<br>
-a. The melting point at eutectic point is maximum<br>
-b. The melting point at the eutectic point is constant<br>
-c. The boiling point at the eutectic point is maximum<br>
-<b>d. The melting point at the eutectic point is minimum</b> <br>
+Q 3.  At what temperature, all liquid and α will convert to β?<br>
+a. Eutectic temperature<br>
+b. Eutectoid temperature<br>
+c. Peritectoid temperature<br>
+<b>d. Peritectic temperature</b> <br>
 
-Q 4. How much copper is present in deoxidized copper?<br>
-a.  > 99.9%<br>
-b.  > 99.5%<br>
-<b>c. > 99.85%</b> <br>
+Q 4.  Any composition left and right of P will generate<br>
+a. Excess of liquid and α<br>
+b. Excess of liquid and β<br>
+<b>c. Excess of α and liquid</b> <br>
+d. Excess of β and liquid<br>
+
+Q 5.  How much copper is present in deoxidized copper?<br>
+a. > 99.9%<br>
+<b>b. > 99.85%</b> <br>
+c. > 99.5%<br>
 d. > 99.35%<br>
 
-Q 5. What is the melting point of Copper?<br>
-a. 419<br>
-<b>b. 1084</b> <br>
-c. 600<br>
+
+Q 6.  What is the melting point of Copper? <br>
+<b>a. 1084 </b> <br>
+b. 600<br>
+c. 419<br>
 d. 2562<br>
 
+Q 7.  Brass is an alloy of copper and<br>
+a. Tin<br>
+b. Tin and zinc<br>
+c. Nickel<br>
+<b>d. Zinc  </b> <br>
 
-Q 6. Brass is an alloy of copper and?<br>
-<b>a. Zinc</b> <br>
-b. Tin<br>
-c. Tin and zinc<br>
-d. Nickel<br>
-
-Q 7. α brasses contain ____ of zinc?<br>
+Q 8.  α brasses contain _______ of zinc.<br>
 a. 0%<br>
-b. >36%<br>
-c. 100%<br>
-<b>d. <=36% </b> <br>
+<b>b. <=36%</b> <br>
+c. >36%<br>
+d. 100%<br>
 
-Q 8. Yellow metal is more commonly known as?<br>
+Q 9.  Yellow metal is more commonly known as<br>
 a. Cartridge brass<br>
-<b>b. Muntz metal</b> <br>
-c. Naval brass<br>
-d.  Admiralty brass<br>
+b. Naval brass<br>
+<b>c. Muntz metal</b> <br>
+d. Admiralty brass<br>
 
-Q 9. Which brass alloy has high tensile strength and can be used for cast molding?<br>
-a.  Free cutting brass<br>
-b.  Standard brass<br>
-<b>c.  Manganese brass</b> <br>
-d.  Gilding metal<br>
-
-Q 10.  Which brass alloy is used to make imitation jewelry and decorative work?<br>
-<b>a. Leaded brass</b> <br>
-b. High tensile brass<br>
-c. Muntz metal<br>
+Q 10.  Which brass alloy has high tensile strength and can be used for cast molding?<br>
+<b>a. Manganese brass</b> <br>
+b. Free cutting brass<br>
+c. Standard brass<br>
 d. Gilding metal<br>
+
+Q 11.  Which brass alloy is used to make imitation jewelry and decorative work?<br>
+<b>a. Gilding metal </b> <br>
+b. Standard brass<br>
+c. Admiralty brass<br>
+d. Free cutting brass<br>
+
+Q 12.  Which brass alloy is suitable for high-speed machining?<br>
+a. Gilding metal<br>
+<b>b. Leaded brass </b> <br>
+c. High tensile brass<br>
+d. Muntz metal<br>
