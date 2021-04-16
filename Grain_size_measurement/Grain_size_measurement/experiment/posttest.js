@@ -80,96 +80,94 @@
 
   const myQuestions = [
     {
-        question: "Vapour-jacket cooling stage of quenching process occurs______ ",
+        question: "Which of the following is the size of brass grain?",
         answers: {
-          a: "below boiling point",
-          b: "above boiling point",
-          c: "below melting point",
-          d: "at recrystallisation temperature"
+          a: "0.4mm",
+          b: "0.04mm",
+          c: "0.004mm",
+          d: "0.0004mm"
         },
         correctAnswer: "b"
     },{
-        question: "Which stage of quenching is slowest?",
+        question: "Quartz grains are generally fine or small in shape and size during analysis of quartz.",
         answers: {
-          a: "vapour-jacket",
-          b: "vapour-transport cooling",
-          c: "liquid cooling",
-          d: "they are all equally slow"
-        },
-        correctAnswer: "c"
-    },{
-        question: "Which quenching medium is used for quenching of carbon and low alloy steels?",
-        answers: {
-          a: "vegetable oil",
-          b: "water",
-          c: "air",
-          d: "animal oil"
+          a: "True",
+          b: "False",
         },
         correctAnswer: "b"
     },{
-        question: "Which among the following media of quenching the slowest?",
+        question: "What is NAE?",
         answers: {
-          a: "caustic soda",
-          b: "sodium chloride",
-          c: "mineral oil",
-          d: "air"
+          a: "Number of grains per square inch at 10X magnification.",
+          b: "Number of grains per square inch at 100X magnification.",
+          c: "Number of grains per square inch at 50X magnification.",
+          d: "Number of grains per square inch at 500X magnification."
+        },
+        correctAnswer: "b"
+    },{
+        question: "In Jefferies Planimetric Method, In equation n=2^(G-1), G represents",
+        answers: {
+          a: "ASTM grain size number",
+          b: "ASTM grain size number",
+          c: "ASRN grain size number",
+          d: "ASTM grain size number"
         },
         correctAnswer: "d"
     },{
-        question: "________ is used to predict quenching reactions in steels.",
+        question: "The planimetric method which is a grain size measurement method describes…",
         answers: {
-          a: "isothermal transformation diagram",
-          b: "iron-iron carbide equilibrium diagram",
+          a: "Isothermal transformation diagram",
+          b: "Density of grains per cubic millimeter volume",
           c: "continuous cooling transformation diagram",
           d: "logarithm scale"
         },
         correctAnswer: "a"
     },{
-        question: "Examination of transformation time after quenching is done______",
+        question: "The relation between average grain size and yield strength is formulated as: σ= σ0+k*d^(-0.5). Where k is a constant called____",
         answers: {
-          a: "at room temperature",
-          b: "below melting point",
-          c: "above eutectoid temperature",
-          d: "above boiling temperature"
+          a: "Hall-petch slope",
+          b: "Hall-herald slope",
+          c: "James-petch slope",
+          d: "James-herald slope"
         },
         correctAnswer: "a"
     },{
-        question: "Isothermal transformation of eutectoid steel between 723⁰C and 550⁰C produces _________ microstructure.",
+        question: "In Germany in 1904, Emil Heyn published an intercept approach for measuring grain size. In this method_________ ",
         answers: {
-          a: "pearlite",
-          b: "bainite",
-          c: "ferrite",
-          d: "cementite"
+          a: "True line length is divided by the number of grains intercepted by the line.",
+          b: "True line length is divided by the number density of grains intercepted by the line.",
+          c: "True line length is divided by the area density of grains intercepted by the line.",
+          d: "True line length is divided by the average length of grains intercepted by the line."
         },
         correctAnswer: "a"
     },{
-        question: "Rapid quenching of eutectoid steel ________ transforms the austenite into martensite.",
+        question: "What is Grain intercept count?",
         answers: {
-          a: "at room temperature",
-          b: "below 320⁰C",
-          c: "at 550⁰C",
-          d: "above 723⁰C"
-        },
-        correctAnswer: "d"
-    },{
-        question: "For hardening of steel by quenching, the steel is cooled in ________",
-        answers: {
-          a: "furnace",
-          b: "still air",
-          c: "oil bath",
-          d: "cooling tower"
+          a: "Determination of the number of times a test line touches individual grains on the polish plane.",
+          b: "Determination of the number of times a test line does not touch individual grains on the polish plane.",
+          c: "Determination of the number of times a test line cuts through individual grains on the polish plane."
         },
         correctAnswer: "c"
-    },{
-        question: "The cooling rate must be _______ the critical cooling rate for hardening of steel by quenching.",
-        answers: {
-          a: "higher than",
-          b: "lower than",
-          c: "equal to",
-          d: "half of"
-        },
-        correctAnswer: "a"
-    }    
+    }
+    // ,{
+    //     question: "For hardening of steel by quenching, the steel is cooled in ________",
+    //     answers: {
+    //       a: "furnace",
+    //       b: "still air",
+    //       c: "oil bath",
+    //       d: "cooling tower"
+    //     },
+    //     correctAnswer: "c"
+    // },{
+    //     question: "The cooling rate must be _______ the critical cooling rate for hardening of steel by quenching.",
+    //     answers: {
+    //       a: "higher than",
+    //       b: "lower than",
+    //       c: "equal to",
+    //       d: "half of"
+    //     },
+    //     correctAnswer: "a"
+    // }    
   ];
 
 // ---------------------------- End -------------------------------

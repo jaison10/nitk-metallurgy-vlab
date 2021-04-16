@@ -1,61 +1,58 @@
 ## Post test
 <br>
-Q 1. Vapour-jacket cooling stage of quenching process occurs______ <br>
-a) below boiling point<br>
-<b>b) above boiling point</b><br>
-c) below melting point<br>
-d) at recrystallisation temperature<br><br>
+Q 1. Which of the following is the size of brass grain<br>
+a) 0.4mm<br>
+<b>b) 0.04mm</b><br>
+c) 0.004mm<br>
+d) 0.0004mm<br><br>
 
-Q 2. Which stage of quenching is slowest? <br>
-a) vapour-jacket<br>
-b) vapour-transport cooling<br>
-<b>c) liquid cooling</b><br>
-d) they are all equally slow<br>
+Q 2. Quartz grains are generally fine or small in shape and size during analysis of quartz.<br>
+a) True<br>
+<b>b) False</b><br>
 
-Q 3. Which quenching medium is used for quenching of carbon and low alloy steels? <br>
-a) vegetable oil<br>
-<b>b) water</b><br>
-c) air<br>
-d) animal oil<br>
+Q 3. What is NAE? <br>
+a) Number of grains per square inch at 10X magnification.<br>
+<b>b) Number of grains per square inch at 100X magnification.</b><br>
+c) Number of grains per square inch at 50X magnification.<br>
+d) Number of grains per square inch at 500X magnification.<br>
 
-Q 4. Which among the following media of quenching the slowest? <br>
-a) caustic soda<br>
-b) sodium chloride<br>
-c) mineral oil<br>
-<b>d) air</b><br>
+Q 4. In Jefferies Planimetric Method, In equation n=2^(G-1), G represents <br>
+a) ASTM grain size number<br>
+b) ASTM grain size number<br>
+c) ASRN grain size number<br>
+<b>d) ASTM grain size number</b><br>
 
-Q 5. ________ is used to predict quenching reactions in steels. <br>
-<b>a) isothermal transformation diagram</b><br>
-b) iron-iron carbide equilibrium diagram<br>
+Q 5.The planimetric method which is a grain size measurement method describes… <br>
+<b>a) Isothermal transformation diagram</b><br>
+b)Density of grains per cubic millimeter volume<br>
 c) continuous cooling transformation diagram<br>
 d) logarithm scale<br>
 
-Q 6. Examination of transformation time after quenching is done______ <br>
-<b>a) at room temperature</b><br>
-b) below melting point<br>
-c) above eutectoid temperature<br>
-d) above boiling temperature <br>
+Q 6. The relation between average grain size and yield strength is formulated as: σ= σ0+k*d^(-0.5). Where k is a constant called____ <br>
+<b>a) Hall-petch slope</b><br>
+b) Hall-herald slope<br>
+c) James-petch slope<br>
+d) James-herald slope<br>
 
-Q 7. Isothermal transformation of eutectoid steel between 723⁰C and 550⁰C produces _________ microstructure. <br>
-<b>a) pearlite</b><br>
-b) bainite<br>
-c) ferrite<br>
-d) cementite<br>
+Q 7. In Germany in 1904, Emil Heyn published an intercept approach for measuring grain size. In this method_________ <br>
+<b>a) True line length is divided by the number of grains intercepted by the line.</b><br>
+b) True line length is divided by the number density of grains intercepted by the line.<br>
+c) True line length is divided by the area density of grains intercepted by the line.<br>
+d) True line length is divided by the average length of grains intercepted by the line.<br>
 
-Q 8. Rapid quenching of eutectoid steel ________ transforms the austenite into martensite. <br>
-a) at room temperature<br>
-b) below 320⁰C<br>
-c) at 550⁰C<br>
-<b>d) above 723⁰C</b><br>
+Q 8. What is Grain intercept count?<br>
+a) Determination of the number of times a test line touches individual grains on the polish plane.<br>
+b) Determination of the number of times a test line does not touch individual grains on the polish plane.<br>
+<b>c) Determination of the number of times a test line cuts through individual grains on the polish plane.</b><br>
 
-Q 9. For hardening of steel by quenching, the steel is cooled in ________ <br>
+<!-- Q 9. For hardening of steel by quenching, the steel is cooled in ________ <br>
 a) furnace<br>
 b) still air<br>
 <b>c) oil bath</b><br>
-d) cooling tower<br>
+d) cooling tower<br> -->
 
-Q 10. The cooling rate must be _______ the critical cooling rate for hardening of steel by quenching. <br>
+<!-- Q 10. The cooling rate must be _______ the critical cooling rate for hardening of steel by quenching. <br>
 <b>a) higher than</b><br>
 b) lower than<br>
 c) equal to<br>
-d) half of<br>
+d) half of<br> -->

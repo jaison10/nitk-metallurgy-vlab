@@ -80,92 +80,78 @@
 
   const myQuestions = [
   {
-      question: "Quenching is the process of _______ ",
+      question: "In calibration we use a _______to determine the true linear magnification for each objective, eyepiece and bellows",
       answers: {
-        a: "rapid cooling",
-        b: "slow cooling",
-        c: "rapid heating",
-        d: "slow heating"
+        a: " stage micrometer",
+        b: "stage nanometer",
+        c: "stage thermometer",
+        d: "stage millimeter"
       },
       correctAnswer: "a"
     },{
-      question: "Quenching medium is decided on the basis of________",
+      question: "NA =f(N Inside +N intercepted/2). In this equation ‘f’ represents …..",
       answers: {
-        a: "weight of the specimen",
-        b: "material of the specimen",
-        c: "thickness of the specimen",
-        d: "application of the specimen"
+        a: "James’ multiplier",
+        b: "Thomsons’ multiplier",
+        c: "Jeffries’ multiplier",
+        d: "Albert multiplier"
       },
       correctAnswer: "c"
     },{
-      question: "How many types of quenching are there?",
+      question: "Which of the following is a precaution before measurement in the Hilliard Single Circle procedure.?",
       answers: {
-        a: "2",
-        b: "3",
-        c: "4",
-        d: "5"
+        a: "Test circle radius must be smaller than the largest observed grain.",
+        b: "Test circle diameter should never be smaller the the largest observed grain.",
+        c: "Test circle diameter must be equal to the largest observed grain.",
+        d: "Test circle diameter must be smaller than the smallest observed grain."
       },
       correctAnswer: "b"
     },{
-      question: "An alloy quenching past the nose of the C-curve in the isothermal transformation diagram will undergo______ transformation.",
+      question: "In Abrams Three-Circle procedure , The test pattern consists of three concentric and equally spaced circles of circumference____",
       answers: {
-        a: "martensitic",
-        b: "perlitic",
-        c: "austenitic",
-        d: "ferritic"
+        a: "500mm",
+        b: "400mm",
+        c: "600mm",
+        d: "300mm"
       },
       correctAnswer: "a"
     },{
-      question: "Quenching is generally carried out to_______ ",
+      question: "The precision and bias of grain size measurements depends on….",
       answers: {
-        a: "remove brittleness",
-        b: "remove rust",
-        c: "freeze the highest temperature structure",
-        d: "oxidise the surface of the component for good reason"
+        a: "degree of hardness of the specimens selected and the areas on the polish planes",
+        b: "density of the specimens selected and the areas on the polish planes",
+        c: "Representativeness of the specimens selected and the areas on the polish planes",
+        d: "thickness of the specimens selected and the areas on the polish planes"
       },
       correctAnswer: "c"
     },{
-      question: "Quenching is can also be used for______",
+      question: "The region closest to the weld metal will have larger diameter and is called…..",
       answers: {
-        a: "fibres",
-        b: "polymers",
-        c: "metallic glasses",
-        d: "plastics"
+        a: "Fine grain heat affected zone",
+        b: "Hot grain heat affected zone",
+        c: "Coarse grain heat affected zone",
+        d: "cold grain heat affected zone"
       },
       correctAnswer: "c"
     },{
-      question: "The heat transfer during quenching is related to heat transfer during________ ",
+      question: ")Which of the following instrument can be used for measuring Grain size? ",
       answers: {
-        a: "annealing",
-        b: "boiling",
-        c: "martempering",
-        d: "hardening"
+        a: "Electrical microscope",
+        b: "Optical microscope",
+        c: "Compound microscope",
+        d: "laser microscope"
       },
       correctAnswer: "b"
     },{
-      question: "If a quenching medium cools slower than the required rate, the final product will have different properties than desired.",
+      question: "What is the approximate size of ferrite grain?",
       answers: {
-        a: "true",
-        b: "false"
+        a: "10 μm",
+        b: "1000 μm",
+        c: "50 μm",
+        d: "500 μm"
       },
       correctAnswer: "a"
-    },{
-      question: "If the quenching medium cools the specimen at a faster rate, cracks might occur in the specimen.",
-      answers: {
-        a: "true",
-        b: "false"
-      },
-      correctAnswer: "a"
-    },{
-      question: "During quenching, there could be a mechanism like_____",
-      answers: {
-        a: "vacancy diffusion",
-        b: "vacancy formation",
-        c: "grain diffusion",
-        d: "grain boundary distortion"
-      },
-      correctAnswer: "a"
-    }  
+    }
   ];
 
 // ---------------------------- End -------------------------------
