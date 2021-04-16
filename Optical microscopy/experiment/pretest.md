@@ -2,6 +2,7 @@
 #### Please attempt the following questions
 
 <br>
+<img src="./images/quiz1.png" height="200px" width="300px" ><br>
 Q 1.  What is the line that defines the solubility limit of A in B and B in A from the figure?<br>
 a. Solidus line<br>
 b. Liquidus line<br>
@@ -26,6 +27,8 @@ b. The melting point at the eutectic point is constant<br>
 c. The boiling point at the eutectic point is maximum<br>
 <b>d. The melting point at the eutectic point is minimum</b><br>
 
+<img src="./images/quiz5.png" height="200px" width="300px"><br>
+
 Q 5.  Crystals of which material begin to form at point a from the figure?<br>
 a. Crystals of proeutectic β<br>
 <b>b. Crystals of proeutectic α</b> <br>
@@ -38,6 +41,8 @@ Q 6.  At any point b, the α fraction is given by the lever rule as<br>
 b. mn/bn<br>
 c. ab/be<br>
 d. be/ab<br>
+
+<img src="./images/quiz7.png" height="200px" width="300px"><br>
 
 Q 7.  The inflection in the cooling curve between points a and e is due to<br>
 a. Low temperature<br>
