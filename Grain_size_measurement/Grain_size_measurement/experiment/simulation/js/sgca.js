@@ -13,10 +13,6 @@ function navNext() {
     } else {
         simsubscreennum += 1;
         if (simsubscreennum == 1) {
-            var p3radio = document.getElementById('selectp3');
-            var p12radio = document.getElementById('selectp12');
-            if (p3radio.checked) sampletype = 1;
-            else if (p12radio.checked) sampletype = 2;
             //console.log(sampletype);
             document.getElementById("canvas0.5").style.display = "none";
         }
@@ -111,6 +107,7 @@ function magic() {
         };
     }
     if (simsubscreennum == 2) {
+        document.getElementById("info").style.visibility = "hidden";
         myInt = setInterval(function() {
             animatearrow();
         }, 500);
