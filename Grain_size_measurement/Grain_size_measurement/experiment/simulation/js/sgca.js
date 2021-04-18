@@ -201,7 +201,7 @@ function magic() {
         }, 4500)
         setTimeout(function() {
             validateAnswer(2, 0, "530px", "400px");
-        }, 2000)
+        }, 6000)
     }
     if (simsubscreennum == 7) {
         var type = sampletype;
@@ -216,7 +216,7 @@ function magic() {
             document.getElementById("p12text").style.visibility = "visible";
             document.getElementById("linedDisplayButtonPrev").style.visibility = "visible";
             document.getElementById("linedDisplayButton").style.visibility = "hidden";
-            document.getElementById("pumptext").innerText = "Line Intercept method";
+            document.getElementById("observeText").innerText = "Line Intercept method";
         }
         document.getElementById("linedDisplayButtonPrev").onclick = function() {
                 output.src = "./images/update/image1.jpg";
@@ -224,7 +224,7 @@ function magic() {
                 document.getElementById("p12text").style.visibility = "hidden";
                 document.getElementById("linedDisplayButton").style.visibility = "visible";
                 document.getElementById("linedDisplayButtonPrev").style.visibility = "hidden";
-                document.getElementById("pumptext").innerText = "Planimetric method";
+                document.getElementById("observeText").innerText = "Planimetric method";
 
             }
             //document.getElementById('p3').onclick=function() {
