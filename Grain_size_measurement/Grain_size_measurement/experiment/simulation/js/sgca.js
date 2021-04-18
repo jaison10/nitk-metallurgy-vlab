@@ -10,8 +10,7 @@ function navNext() {
     if (sample) {
         document.getElementById("canvas0.5").style.visibility = "visible";
         sample = 0;
-    }
-    else {
+    } else {
         simsubscreennum += 1;
         if (simsubscreennum == 1) {
             var p3radio = document.getElementById('selectp3');
@@ -41,7 +40,7 @@ var options2 = [
         "4. Both (2) and (3)."
     ],
     ["Alumina solution", "Silica solution", "Calcium Carbonate solution", "None of the above"],
-    ["Marbles Reagent", "2% Nital Reagent", "Carpenters Reagent", "Acetic-Picral"]
+    ["Acetic Picral", "2% Nital Reagent", "Carpenters Reagent", "Marbles Reagent"]
 ];
 
 function validateAnswer(qn, ans, left, top) {
@@ -66,8 +65,7 @@ function validateAnswer(qn, ans, left, top) {
             ca = $(this).children("option:selected").val();
             if (options2[qn][ans] == ca) {
                 document.getElementById("a").innerHTML = "Correct Answer!";
-            }
-            else {
+            } else {
                 document.getElementById("a").innerHTML = "Wrong! Answer is " + options2[qn][ans];
             }
             setTimeout(function() {
@@ -215,7 +213,7 @@ function magic() {
         // var contain = document.getElementById("magcon");
         // var x = document.getElementById("magx");
         document.getElementById("p3text").style.visibility = "visible";
-        document.getElementById("linedDisplayButton").onclick = function(){
+        document.getElementById("linedDisplayButton").onclick = function() {
             output.src = "./images/update/image2.jpg";
             document.getElementById("p3text").style.visibility = "hidden";
             document.getElementById("p12text").style.visibility = "visible";
@@ -223,79 +221,79 @@ function magic() {
             document.getElementById("linedDisplayButton").style.visibility = "hidden";
             document.getElementById("pumptext").innerText = "Line Intercept method";
         }
-        document.getElementById("linedDisplayButtonPrev").onclick = function(){
-            output.src = "./images/update/image1.jpg";
-            document.getElementById("p3text").style.visibility = "visible";
-            document.getElementById("p12text").style.visibility = "hidden";
-            document.getElementById("linedDisplayButton").style.visibility = "visible";
-            document.getElementById("linedDisplayButtonPrev").style.visibility = "hidden";
-            document.getElementById("pumptext").innerText = "Planimetric method";
+        document.getElementById("linedDisplayButtonPrev").onclick = function() {
+                output.src = "./images/update/image1.jpg";
+                document.getElementById("p3text").style.visibility = "visible";
+                document.getElementById("p12text").style.visibility = "hidden";
+                document.getElementById("linedDisplayButton").style.visibility = "visible";
+                document.getElementById("linedDisplayButtonPrev").style.visibility = "hidden";
+                document.getElementById("pumptext").innerText = "Planimetric method";
 
-        }
-        //document.getElementById('p3').onclick=function() {
-        // if (type == 1)
-        // /*return;
-		// 	else*/
-        // {
-        //     document.getElementById('p3text').style.visibility = "visible";
-        //     //document.getElementById('p12text').style.visibility="hidden";
-        //     /*if(slider.value==1)*/
-        //     output.src = "images/microscope/p3_50x.jpg";
-        //     //else if(slider.value==2) output.src="images/microscope/p3_100x.jpg";
-        //     //else output.src="images/microscope/p3_500x.jpg";
-        //     //type=1;
-        // }
-        // //};
-        // //document.getElementById('p12').onclick=function() { 
-        // if (type == 2)
-        // /*return;
-		// 	else*/
-        // {
-        //     document.getElementById('p12text').style.visibility = "visible";
-        //     //document.getElementById('p3text').style.visibility="hidden";
-        //     /*if(slider.value==1)*/
-        //     output.src = "images/microscope/p12_50x.jpg";
-        //     //else if(slider.value==2) output.src="images/microscope/p12_100x.jpg";
-        //     //else output.src="images/microscope/p12_500x.jpg";
-        //     //type=2;
-        // }
-        // //};
-        // slider.oninput = function() {
-        //     if (type == 1) {
-        //         if (this.value == 1) {
-        //             output.src = "images/microscope/p3_50x.jpg";
-        //             contain.title = "50x";
-        //             x.innerHTML = "50x";
-        //         }
-        //         else if (this.value == 2) {
-        //             output.src = "images/microscope/p3_100x.jpg";
-        //             contain.title = "100x";
-        //             x.innerHTML = "100x";
-        //         }
-        //         else {
-        //             output.src = "images/microscope/p3_500x.jpg";
-        //             contain.title = "500x";
-        //             x.innerHTML = "500x";
-        //         }
-        //     }
-        //     else {
-        //         if (this.value == 1) {
-        //             output.src = "images/microscope/p12_50x.jpg";
-        //             contain.title = "50x";
-        //             x.innerHTML = "50x";
-        //         }
-        //         else if (this.value == 2) {
-        //             output.src = "images/microscope/p12_100x.jpg";
-        //             contain.title = "100x";
-        //             x.innerHTML = "100x";
-        //         }
-        //         else {
-        //             output.src = "images/microscope/p12_500x.jpg";
-        //             contain.title = "500x";
-        //             x.innerHTML = "500x";
-        //         }
-        //     }
-        // };
+            }
+            //document.getElementById('p3').onclick=function() {
+            // if (type == 1)
+            // /*return;
+            // 	else*/
+            // {
+            //     document.getElementById('p3text').style.visibility = "visible";
+            //     //document.getElementById('p12text').style.visibility="hidden";
+            //     /*if(slider.value==1)*/
+            //     output.src = "images/microscope/p3_50x.jpg";
+            //     //else if(slider.value==2) output.src="images/microscope/p3_100x.jpg";
+            //     //else output.src="images/microscope/p3_500x.jpg";
+            //     //type=1;
+            // }
+            // //};
+            // //document.getElementById('p12').onclick=function() { 
+            // if (type == 2)
+            // /*return;
+            // 	else*/
+            // {
+            //     document.getElementById('p12text').style.visibility = "visible";
+            //     //document.getElementById('p3text').style.visibility="hidden";
+            //     /*if(slider.value==1)*/
+            //     output.src = "images/microscope/p12_50x.jpg";
+            //     //else if(slider.value==2) output.src="images/microscope/p12_100x.jpg";
+            //     //else output.src="images/microscope/p12_500x.jpg";
+            //     //type=2;
+            // }
+            // //};
+            // slider.oninput = function() {
+            //     if (type == 1) {
+            //         if (this.value == 1) {
+            //             output.src = "images/microscope/p3_50x.jpg";
+            //             contain.title = "50x";
+            //             x.innerHTML = "50x";
+            //         }
+            //         else if (this.value == 2) {
+            //             output.src = "images/microscope/p3_100x.jpg";
+            //             contain.title = "100x";
+            //             x.innerHTML = "100x";
+            //         }
+            //         else {
+            //             output.src = "images/microscope/p3_500x.jpg";
+            //             contain.title = "500x";
+            //             x.innerHTML = "500x";
+            //         }
+            //     }
+            //     else {
+            //         if (this.value == 1) {
+            //             output.src = "images/microscope/p12_50x.jpg";
+            //             contain.title = "50x";
+            //             x.innerHTML = "50x";
+            //         }
+            //         else if (this.value == 2) {
+            //             output.src = "images/microscope/p12_100x.jpg";
+            //             contain.title = "100x";
+            //             x.innerHTML = "100x";
+            //         }
+            //         else {
+            //             output.src = "images/microscope/p12_500x.jpg";
+            //             contain.title = "500x";
+            //             x.innerHTML = "500x";
+            //         }
+            //     }
+            // };
     }
 }
 

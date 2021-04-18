@@ -154,7 +154,7 @@
             <br>
             <img id="handCotton" src="images/hands_sample/hand_cotton.svg" height="500px" width="auto" style="visibility: hidden; position: absolute; top:-50px; z-index: 55; left:100px; transition: all 0.3s ease;">
             <img id="cap" src="images/etching/cap.svg" height="250px" width="auto" style="position:absolute; margin-left: -50px; margin-top: 205px;transition:all 0.5s ease; z-index: -1;">
-            <img id="reagent" src="images/Acetic_picral.png" height="250px" width="auto" style=" margin-left: -50px; margin-top: 205px;transition: all 0.7s ease; z-index: 30; position: absolute;">
+            <img id="reagent" src="images/Acetic_picral.png" height="250px" width="auto" style=" margin-left: -50px; margin-top: 205px;transition: all 0.7s ease; z-index: 60; position: absolute;">
             <img id="etchSample" src="images/etching/etching_with_hand.svg" height="350px" width="auto" style=" margin-left: 150px; margin-top: 100px; visibility: hidden; z-index: 100; transition-duration: 0.5s; ">
             <span id="note2" class="tooltip" style="font-family:verdana; font-size:18px;border-bottom:1px dotted ; color:red; position:absolute; visibility: hidden;">
                 <span id="10" class="tooltiptext" style="font-family:verdana; font-size:14px;color:white;width:610px;left:-600px;top:20px; text-align: justify;">Note:</br></br>Acetic Picral (ASTM etchant No. - 124) - It is a solution composed of 5 mL Acetic Acid, 6 g Picric Acid, 10 mL Water, 100 mL Ethanol, commonly used for Mg alloys with Al & Zn with Al + Zn < 5%</br></br>
@@ -330,7 +330,10 @@
     <!--Blinking Arrow	-->
     <img class="" id="arrow1" style="visibility:hidden" src="images/arrow1.png" />
 
-    <div id="copyright"> &copy; 2021 SOLVE - The Virtual Lab @ NITK Surathkal, Department of Water Resources & Ocean Engineering</div>
+    <div id="copyright"> &copy;
+        <script>
+            document.write(new Date().getFullYear())
+        </script> SOLVE - The Virtual Lab @ NITK Surathkal, Metallurgical and Materials engineering</div>
 
 </body>
 
