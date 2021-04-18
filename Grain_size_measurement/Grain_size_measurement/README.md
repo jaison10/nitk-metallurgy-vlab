@@ -5,11 +5,16 @@
 <b>Discipline | <b>Metallurgical and Materials Engineering
 :--|:--|
 <b> Lab | <b> Physical Metallurgy Lab
-<b> Experiment|     <b> 4. Optical microscopy of Non ferrous samples
+<b> Experiment|     <b> 3. Grain Size measurement
 
 <h5> About the Experiment : </h5> <br>
 
-This experiment allows us to obtain and observe microstructures of non ferrous alloys like Solder alloy (Pb-Sn) and Brass.  
+This experiment allows us to measure the grain size of the given sample using<br>
+<ul>
+<li>ASTM Grain Size Number</li>
+<li>Jefferies Planimetric Method</li>
+<li>Heyn's Intercept method</li>
+</ul> 
 
 <b>Name of Developer | <b> Dr. Pruthviraj U
 :--|:--|
@@ -28,5 +33,5 @@ Sr No | Name | Faculty or Student | Department| Institute | Email id
 5 | Arjun Krishna | Student | Metallurgical and Materials Engineering | National Institute of Technology Karnataka, Surathkal |arjunkrishna.171mt005@nitk.edu.in
 6 | Aishwarya Hegde | Student | Applied Mechanics and Hydraulics | National Institute of Technology Karnataka, Surathkal |aishwaryahegde29@gmail.com
 7 | Aishwarya Shetty | Student | Applied Mechanics and Hydraulics | National Institute of Technology Karnataka, Surathkal |aishwarya.shetty1995@gmail.com
-8 | Haneena | Student | Applied Mechanics and Hydraulics | National Institute of Technology Karnataka, Surathkal |haneenaatheeq@gmail.com
-9 | Jaison DSouza B | Student | Applied Mechanics and Hydraulics | National Institute of Technology Karnataka, Surathkal |jaisonj1010@gmail.com
+8 | Jaison DSouza B | Student | Applied Mechanics and Hydraulics | National Institute of Technology Karnataka, Surathkal |jaisonj1010@gmail.com 
+9 | Haneena | Student | Applied Mechanics and Hydraulics | National Institute of Technology Karnataka, Surathkal |haneenaatheeq@gmail.com
