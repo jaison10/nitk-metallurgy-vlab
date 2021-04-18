@@ -201,7 +201,7 @@ function magic() {
         }, 4500)
         setTimeout(function() {
             validateAnswer(2, 0, "530px", "400px");
-        }, 6000)
+        }, 5500)
     }
     if (simsubscreennum == 7) {
         var type = sampletype;
