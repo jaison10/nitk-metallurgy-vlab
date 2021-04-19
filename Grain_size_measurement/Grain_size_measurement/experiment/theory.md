@@ -6,7 +6,7 @@
 <p style="text-indent:50px;text-align:justify;">
 <ul>
     <li>
-        Jefferies Planimetric Method : This method involves counting the number of grains which lie in a rectangular or circular area marked on the microstructure. The grains, which are partly inside the marked area, are counted as half. From this, number of grains per unit area (NA) is determined and the grain diameter is calculated from average grain area (A) using the formula:
+        Jefferies Planimetric Method : This method involves counting the number of grains which lie in a rectangular or circular area marked on the microstructure. The grains, which are partly inside the marked area, are counted as half. From this, number of grains per unit area (N<sub>A</sub>) is determined and the grain diameter is calculated from average grain area (A) using the formula:
         d= (A)1/2 = 1/(NA)1/2
         The grain size is often computed from an ASTM grain size number as:
         N=2n-1
