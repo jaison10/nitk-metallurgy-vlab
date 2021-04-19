@@ -29,11 +29,7 @@
     </li>
 </ul>
 </p>
-<p style="text-indent:50px;text-align:justify;">Parts that are quenched usually must be aged, tempered or stress relieved to achieve the proper toughness, final hardness, and dimensional stability.
-</p>
-
-Prediction of quench severity of various quench media based on hardness and microstructure studies :
-
+<!-- 
 <center><img src="images/graph.jpg" height="300px"></center><br>
 <center>Mild Steel Applications</center><br>
-<center>Source : (<a href="https://www.semanticscholar.org/paper/Prediction-of-quench-severity-of-various-quench-on-Tiwary-Patil/0dbf0e4d579710b9c3f907ae3469a64bc9846cee">https://www.semanticscholar.org/paper/Prediction-of-quench-severity-of-various-quench-on-Tiwary-Patil/0dbf0e4d579710b9c3f907ae3469a64bc9846cee</a>)</center>
+<center>Source : (<a href="https://www.semanticscholar.org/paper/Prediction-of-quench-severity-of-various-quench-on-Tiwary-Patil/0dbf0e4d579710b9c3f907ae3469a64bc9846cee">https://www.semanticscholar.org/paper/Prediction-of-quench-severity-of-various-quench-on-Tiwary-Patil/0dbf0e4d579710b9c3f907ae3469a64bc9846cee</a>)</center> -->
