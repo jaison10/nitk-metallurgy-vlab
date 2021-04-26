@@ -2,53 +2,51 @@
 #### Please attempt the following questions
 
 <br>
-Q 1. )In calibration we use a _______to determine the true linear magnification for each objective, eyepiece and bellows<br>
-<b>a) stage micrometer</b> <br>
-b) stage nanometer<br>
-c) stage thermometer<br>
-d) stage millimeter <br><br>
 
-Q 2. NA =f(N Inside +N intercepted/2). In this equation ‘f’ represents ….. <br>
-a) James’ multiplier<br>
-b) Thomsons’ multiplier<br>
-<b>c) Jeffries’ multiplier</b><br>
-d) Albert multiplier<br>
+Q 1. Which of the following is the size of brass grain<br>
+a) 0.4mm<br>
+<b>b) 0.04mm</b><br>
+c) 0.004mm<br>
+d) 0.0004mm<br><br>
 
-Q 3. Which of the following is a precaution before measurement in the Hilliard Single Circle procedure?<br>
-a) Test circle radius must be smaller than the largest observed grain.<br>
-<b>b) Test circle diameter should never be smaller the the largest observed grain.</b><br>
-c) Test circle diameter must be equal to the largest observed grain.<br>
-d) Test circle diameter must be smaller than the smallest observed grain.<br>
+Q 2. Quartz grains are generally fine or small in shape and size during analysis of quartz.<br>
+a) True<br>
+<b>b) False</b><br>
 
-Q 4. In Abrams Three-Circle procedure , The test pattern consists of three concentric and equally spaced circles of circumference____<br>
-<b>a) 500mm</b><br>
-b) 400mm<br>
-c) 600mm<br>
-d) 300mm<br>
+Q 3. What is NAE? <br>
+a) Number of grains per square inch at 10X magnification.<br>
+<b>b) Number of grains per square inch at 100X magnification.</b><br>
+c) Number of grains per square inch at 50X magnification.<br>
+d) Number of grains per square inch at 500X magnification.<br>
 
-Q 5. The precision and bias of grain size measurements depends on…. <br>
-a) degree of hardness of the specimens selected and the areas on the polish planes <br>
-b) density of the specimens selected and the areas on the polish planes <br>
-<b>c) Representativeness of the specimens selected and the areas on the polish planes</b> <br>
-d) thickness of the specimens selected and the areas on the polish planes<br>
+Q 4. In Jefferies Planimetric Method, In equation n=2^(G-1), G represents <br>
+a) ASTM grain size number<br>
+b) ASTM grain size number<br>
+c) ASRN grain size number<br>
+<b>d) ASTM grain size number</b><br>
 
-Q 6. The region closest to the weld metal will have larger diameter and is called…..<br>
-a) Fine grain heat affected zone<br>
-b) Hot grain heat affected zone<br>
-<b>c) Coarse grain heat affected zone</b><br>
-d) cold grain heat affected zone<br>
+Q 5.The planimetric method which is a grain size measurement method describes… <br>
+<b>a) Isothermal transformation diagram</b><br>
+b)Density of grains per cubic millimeter volume<br>
+c) continuous cooling transformation diagram<br>
+d) logarithm scale<br>
 
-Q 7. )Which of the following instrument can be used for measuring Grain size? <br>
-a) Electrical microscope<br>
-<b>b) Optical microscope</b><br>
-c) Compound microscope<br>
-d) laser microscope<br>
+Q 6. The relation between average grain size and yield strength is formulated as: σ= σ0+k*d^(-0.5). Where k is a constant called____ <br>
+<b>a) Hall-petch slope</b><br>
+b) Hall-herald slope<br>
+c) James-petch slope<br>
+d) James-herald slope<br>
 
-Q 8. What is the approximate size of ferrite grain? <br>
-<b>a) 10 μm</b><br>
-b) 1000 μm<br>
-c) 50 μm <br>
-d) 500 μm <br>
+Q 7. In Germany in 1904, Emil Heyn published an intercept approach for measuring grain size. In this method_________ <br>
+<b>a) True line length is divided by the number of grains intercepted by the line.</b><br>
+b) True line length is divided by the number density of grains intercepted by the line.<br>
+c) True line length is divided by the area density of grains intercepted by the line.<br>
+d) True line length is divided by the average length of grains intercepted by the line.<br>
+
+Q 8. What is Grain intercept count?<br>
+a) Determination of the number of times a test line touches individual grains on the polish plane.<br>
+b) Determination of the number of times a test line does not touch individual grains on the polish plane.<br>
+<b>c) Determination of the number of times a test line cuts through individual grains on the polish plane.</b><br>
 
 <!-- Q 9. If the quenching medium cools the specimen at a faster rate, cracks might occur in the specimen. <br>
 <b>a) true</b><br>

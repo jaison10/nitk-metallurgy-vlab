@@ -40,11 +40,12 @@
             <h4 class="incanvas" style="font-family:verdana; ">Apparatus used:</h4>
             <p class="incanvas" style="font-family:verdana; font-size:14px;">Metallurgical Microscope, Polishing Machine with Abrasives, Belt Grinder, Abrasive paper, Flat Glass plate with Wooden framework, Electric Hot Air Blower, Cotton, Etchant(Marbles Reagent and Acetic picral), Specimen.</p>
             <br>
-            <span class="descont" style="border-bottom:1px dotted ; color:red; position:absolute; top:170px; z-index: 500; left:5px;">Description
+            <span class="descont" style="border-bottom:1px dotted ; color:red; position:absolute; top:165px; z-index: 500; left:5px;">Description
                 <span  class="desctext" style=" font-size:14px;">
                 <strong>Lattice </strong> : A Lattice is an ordered arrangement of atoms to form a crystal. It is the smallest repetitive unit, that repeats itself regularly in 3-dimensions to form the crystal. There are totally 14 recognized lattice arrangements known as Bravais Lattices. <br><br>
                 <strong>Magnesium alloys</strong> : Magnesium, the lightest structural metal, mixed with other metals such as aluminium, zinc, silicon, manganese, copper and zirconium form magnesium alloys. It has a hexagonal lattice structure which has a more complex plastic deformation than cubic latticed metals like aluminium. Hence, magnesium alloys are typically used as cast alloys.
-                </span></span>
+                </span>
+            </span>
             <img src="images/human.png" alt="Human" style="position:absolute; margin-left:20px;margin-top:5px;">
             <img src="images/table.png" height="300px" alt="Table" style="position:absolute; margin-left:150px;margin-top:40px;">
             <div style="position: absolute;left: 200px;top: 270px;z-index:100;height: 100px;width: 140px;" title="Belt Grinder"></div>
@@ -57,16 +58,22 @@
             <span class="circlebg" id="stepnumber">&nbsp;1&nbsp;</span>
             <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;">Select a sample to analyse its microstructure.</p>
             <br>
-            <span style="position: absolute; top:150px; left: 100px">
-                <input type="radio" id="selectp3" name="sampletype" value="1" checked>
-                <label for="selectp3">Pure Mg</label>
+            <span style="position: absolute; top:100px; left: 100px">
+                <label >Pure Mg</label>
             </span>
-            <!--  <span style="position: absolute; top:150px; left: 420px">
-                <input type="radio" id="selectp12" name="sampletype" value="2">
-                <label for="selectp12">P12 Martensitic Stainless Steel</label>
-                </span> -->
-            <img src="images/hands_sample/sample.svg" height="200px" style="position: absolute; top:150px; left:75px;z-index: -1;" />
-            <!-- <img src="images/hands_sample/sample.svg" height="200px" style="position: absolute; top:150px; left:400px;z-index: -1;" /> -->
+
+            <img src="images/hands_sample/sample.svg" height="200px" style="position: absolute; top:90px; left:5px;z-index: -1;" />
+
+            
+            <div id="info" style="position: absolute; visibility: block; border-style: solid; border-width: thin; width: 560px; height: 200px; top: 270px; left:100px; border-radius: 6px;">
+                <span style="position: absolute; width: 500px; height: 50px; top: 10px; left: 40px;"> <b>Grain</b> - Small sized, randomly oriented and 
+                    distributed crystallites composing the solid metal. Their structure and size determines the physical and mechanical properties of
+                     the metal. <br><br><br>
+                     <b> Grain Boundaries</b> - A planar defect separating regions of different crystal orientation within a polycrystalline solid. It is the 
+                     interface between the two grains and tends to decrease the electrical and thermal conductivity of the material.
+                    </span>
+            </div>
+
         </div>
 
         <!--Step2	-->
@@ -181,9 +188,9 @@
 
         <!--Note	-->
         <div class="simsubscreen" id="canvas7" style="visibility:hidden">
-            <strong id="titlestep" class="incanvas">Observations </strong>
+            <strong id="titlestep" class="incanvas" style="top:40px;">Observations </strong>
             <br/>
-            <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;">Planimetric method</p>
+            <p id="observeText" class="steptext" style="position: absolute; font-family:verdana; font-size:15px; top: 20px;">Planimetric method</p>
             <br>
             <br>
             <!-- <div class="slidecontainer" id="magcon" style="width:150px; margin:auto;" title="50x">
@@ -201,35 +208,35 @@
 
                 <br>
                 <br> N
-                <subscript>1</subscript>(number of full grains in circle) = 33
+                <sub>1</sub>(number of full grains in circle) = 33
 
                 <br>
                 <br> N
-                <subscript>2</subscript> (number of grains intercepted by circle) = 22
+                <sub>2</sub> (number of grains intercepted by circle) = 22
                 <br>
                 <br> N
-                <subscript>A</subscript> = f*(N
-                <subscript>1</subscript> + N
-                <subscript>2</subscript>/2) ( N
-                <subscript>A</subscript> = number of grains per mm
-                <superscript></superscript> at 1x)
+                <sub>A</sub> = f*(N
+                <sub>1</sub> + N
+                <sub>2</sub>/2) ( N
+                <sub>A</sub> = number of grains per mm
+                <sup></sup> at 1x)
                 <br>
                 <br> Where f is jefferies multiplier = (magnifications
-                <superscript>2</superscript>)/circle area
+                <sup>2</sup>)/circle area
                 <br>
                 <br> Circle here has 20 mm radius and magnification is 200x
                 <br>
                 <br> So f = (200 * 200)/(π*20*20)
                 <br> &nbsp; &nbsp; &nbsp; &nbsp;= 32
                 <br> N
-                <subscript>A</subscript> = 32*(33 + 22/2)
+                <sub>A</sub> = 32*(33 + 22/2)
                 <br> &nbsp; &nbsp; &nbsp; = 1408 number of grains per mm
-                <superscript>2</superscript> at 1x
+                <sup>2</sup> at 1x
                 <br>
                 <br> ASTM grain size, G, can be found using the equation
                 <br>
                 <br>
-                <b>G = 3.322 * (log N<subscript>A</subscript>) - 2.95 (at 100x) </b>
+                <b>G = 3.322 * (log N<sub>A</sub>) - 2.95 (at 100x) </b>
                 <br> G = 3.322 * (log 1408) - 2.95
                 <br> &nbsp; &nbsp; = 7.51
             </div>
@@ -294,14 +301,14 @@
                 <br>Average grain diameter d = 4.65 / 200(magnification) = 0.023255 mm
                 <br>
                 <br>d = 1/(N
-                <subscript>A</subscript>1/2)
+                <sub>A</sub>1/2)
                 <br>Substituting d = 0.23255
                 <br>
                 <br>N
-                <subscript>A</subscript> = 18.5
+                <sub>A</sub> = 18.5
                 <br>
                 <br>G = 3.322 * (log N
-                <subscript>A</subscript>) - 2.95
+                <sub>A</sub>) - 2.95
                 <br> &nbsp; &nbsp; = 1.26
             </div>
             <div style="position: absolute; left: 85%; top: 90%;">

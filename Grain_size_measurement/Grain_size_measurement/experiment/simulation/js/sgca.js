@@ -13,10 +13,6 @@ function navNext() {
     } else {
         simsubscreennum += 1;
         if (simsubscreennum == 1) {
-            var p3radio = document.getElementById('selectp3');
-            var p12radio = document.getElementById('selectp12');
-            if (p3radio.checked) sampletype = 1;
-            else if (p12radio.checked) sampletype = 2;
             //console.log(sampletype);
             document.getElementById("canvas0.5").style.display = "none";
         }
@@ -111,6 +107,7 @@ function magic() {
         };
     }
     if (simsubscreennum == 2) {
+        document.getElementById("info").style.visibility = "hidden";
         myInt = setInterval(function() {
             animatearrow();
         }, 500);
@@ -204,7 +201,7 @@ function magic() {
         }, 4500)
         setTimeout(function() {
             validateAnswer(2, 0, "530px", "400px");
-        }, 2000)
+        }, 5500)
     }
     if (simsubscreennum == 7) {
         var type = sampletype;
@@ -219,7 +216,7 @@ function magic() {
             document.getElementById("p12text").style.visibility = "visible";
             document.getElementById("linedDisplayButtonPrev").style.visibility = "visible";
             document.getElementById("linedDisplayButton").style.visibility = "hidden";
-            document.getElementById("pumptext").innerText = "Line Intercept method";
+            document.getElementById("observeText").innerText = "Line Intercept method";
         }
         document.getElementById("linedDisplayButtonPrev").onclick = function() {
                 output.src = "./images/update/image1.jpg";
@@ -227,7 +224,7 @@ function magic() {
                 document.getElementById("p12text").style.visibility = "hidden";
                 document.getElementById("linedDisplayButton").style.visibility = "visible";
                 document.getElementById("linedDisplayButtonPrev").style.visibility = "hidden";
-                document.getElementById("pumptext").innerText = "Planimetric method";
+                document.getElementById("observeText").innerText = "Planimetric method";
 
             }
             //document.getElementById('p3').onclick=function() {

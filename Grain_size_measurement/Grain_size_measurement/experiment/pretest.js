@@ -79,79 +79,76 @@
 // Write your MCQs here --- Start --- --------------------
 
   const myQuestions = [
-  {
-      question: "In calibration we use a _______to determine the true linear magnification for each objective, eyepiece and bellows",
+    {
+      question: "Which of the following is the size of brass grain?",
       answers: {
-        a: " stage micrometer",
-        b: "stage nanometer",
-        c: "stage thermometer",
-        d: "stage millimeter"
-      },
-      correctAnswer: "a"
-    },{
-      question: "NA =f(N Inside +N intercepted/2). In this equation ‘f’ represents …..",
-      answers: {
-        a: "James’ multiplier",
-        b: "Thomsons’ multiplier",
-        c: "Jeffries’ multiplier",
-        d: "Albert multiplier"
-      },
-      correctAnswer: "c"
-    },{
-      question: "Which of the following is a precaution before measurement in the Hilliard Single Circle procedure.?",
-      answers: {
-        a: "Test circle radius must be smaller than the largest observed grain.",
-        b: "Test circle diameter should never be smaller the the largest observed grain.",
-        c: "Test circle diameter must be equal to the largest observed grain.",
-        d: "Test circle diameter must be smaller than the smallest observed grain."
+        a: "0.4mm",
+        b: "0.04mm",
+        c: "0.004mm",
+        d: "0.0004mm"
       },
       correctAnswer: "b"
-    },{
-      question: "In Abrams Three-Circle procedure , The test pattern consists of three concentric and equally spaced circles of circumference____",
+  },{
+      question: "Quartz grains are generally fine or small in shape and size during analysis of quartz.",
       answers: {
-        a: "500mm",
-        b: "400mm",
-        c: "600mm",
-        d: "300mm"
-      },
-      correctAnswer: "a"
-    },{
-      question: "The precision and bias of grain size measurements depends on….",
-      answers: {
-        a: "degree of hardness of the specimens selected and the areas on the polish planes",
-        b: "density of the specimens selected and the areas on the polish planes",
-        c: "Representativeness of the specimens selected and the areas on the polish planes",
-        d: "thickness of the specimens selected and the areas on the polish planes"
-      },
-      correctAnswer: "c"
-    },{
-      question: "The region closest to the weld metal will have larger diameter and is called…..",
-      answers: {
-        a: "Fine grain heat affected zone",
-        b: "Hot grain heat affected zone",
-        c: "Coarse grain heat affected zone",
-        d: "cold grain heat affected zone"
-      },
-      correctAnswer: "c"
-    },{
-      question: ")Which of the following instrument can be used for measuring Grain size? ",
-      answers: {
-        a: "Electrical microscope",
-        b: "Optical microscope",
-        c: "Compound microscope",
-        d: "laser microscope"
+        a: "True",
+        b: "False",
       },
       correctAnswer: "b"
-    },{
-      question: "What is the approximate size of ferrite grain?",
+  },{
+      question: "What is NAE?",
       answers: {
-        a: "10 μm",
-        b: "1000 μm",
-        c: "50 μm",
-        d: "500 μm"
+        a: "Number of grains per square inch at 10X magnification.",
+        b: "Number of grains per square inch at 100X magnification.",
+        c: "Number of grains per square inch at 50X magnification.",
+        d: "Number of grains per square inch at 500X magnification."
+      },
+      correctAnswer: "b"
+  },{
+      question: "In Jefferies Planimetric Method, In equation n=2^(G-1), G represents",
+      answers: {
+        a: "ASTM grain size number",
+        b: "ASTM grain size number",
+        c: "ASRN grain size number",
+        d: "ASTM grain size number"
+      },
+      correctAnswer: "d"
+  },{
+      question: "The planimetric method which is a grain size measurement method describes…",
+      answers: {
+        a: "Isothermal transformation diagram",
+        b: "Density of grains per cubic millimeter volume",
+        c: "continuous cooling transformation diagram",
+        d: "logarithm scale"
       },
       correctAnswer: "a"
-    }
+  },{
+      question: "The relation between average grain size and yield strength is formulated as: σ= σ0+k*d^(-0.5). Where k is a constant called____",
+      answers: {
+        a: "Hall-petch slope",
+        b: "Hall-herald slope",
+        c: "James-petch slope",
+        d: "James-herald slope"
+      },
+      correctAnswer: "a"
+  },{
+      question: "In Germany in 1904, Emil Heyn published an intercept approach for measuring grain size. In this method_________ ",
+      answers: {
+        a: "True line length is divided by the number of grains intercepted by the line.",
+        b: "True line length is divided by the number density of grains intercepted by the line.",
+        c: "True line length is divided by the area density of grains intercepted by the line.",
+        d: "True line length is divided by the average length of grains intercepted by the line."
+      },
+      correctAnswer: "a"
+  },{
+      question: "What is Grain intercept count?",
+      answers: {
+        a: "Determination of the number of times a test line touches individual grains on the polish plane.",
+        b: "Determination of the number of times a test line does not touch individual grains on the polish plane.",
+        c: "Determination of the number of times a test line cuts through individual grains on the polish plane."
+      },
+      correctAnswer: "c"
+  }
   ];
 
 // ---------------------------- End -------------------------------
