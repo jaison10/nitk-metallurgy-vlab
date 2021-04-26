@@ -11,41 +11,39 @@ function navNext() {
     }
     if (sample) {
         document.getElementById("canvas0.5").style.visibility = "visible";
-        console.log(simsubscreennum);
+
         // document.getElementById('nextButton').style.visibility = "hidden";
         // if (document.getElementById('solder_alloy1').checked) {
         // document.getElementById('nextButton').style.visibility = "visible";
 
         // }
-        // console.log(simsubscreennum);
+
         sample = 0;
     } else {
 
         if (simsubscreennum == 0) {
 
 
-            console.log("Inside 0.5 canvas");
-            console.log('true');
             // if (document.getElementById('solder_alloy').checked) {
             //     selectedSample = "solder_alloy";
-            //     console.log("Solder alloy chosen!");
+
 
 
             // } else
             if (document.getElementById('brass').checked) {
                 selectedSample = "brass";
-                console.log("Brass is chosen");
+
                 document.getElementById('nextButton').style.visibility = "visible";
 
 
             } else if (document.getElementById('solder_alloy1').checked) {
                 selectedSample = "solder_alloy1";
-                console.log("X2 is chosen");
+
                 document.getElementById('nextButton').style.visibility = "visible";
 
             } else if (document.getElementById('solder_alloy2').checked) {
                 selectedSample = "solder_alloy2";
-                console.log("X3 is chosen");
+
                 document.getElementById('nextButton').style.visibility = "visible";
 
             } else {
@@ -53,14 +51,14 @@ function navNext() {
                 alert('Select a sample to proceed!');
                 simsubscreennum--;
                 sample = 0;
-                console.log('Im here');
+
             }
 
 
 
 
 
-            console.log(selectedSample);
+
 
         }
         simsubscreennum += 1;
@@ -69,7 +67,7 @@ function navNext() {
             //var p12radio = document.getElementById('selectp12');
             //if (p3radio.checked) sampletype = 1;
             //else if (p12radio.checked) sampletype = 2;
-            //console.log(sampletype);
+
 
             document.getElementById("canvas0.5").style.display = "none";
             document.getElementById('nextButton').style.visibility = "hidden";
@@ -163,7 +161,7 @@ function myStopFunction() {
 
 //-------------------------------------function magic starts here----------------------------------------------------
 function magic() {
-    console.log(simsubscreennum);
+
 
     if (simsubscreennum == 1) {
         myInt = setInterval(function() {
@@ -237,7 +235,7 @@ function magic() {
         document.getElementById('nextButton').style.visibility = "hidden";
 
         if (selectedSample == "brass") {
-            console.log('brass');
+
 
             document.getElementById("reagent").src = "images/afc_bottle.png";
 
@@ -248,7 +246,6 @@ function magic() {
         if (selectedSample == "solder_alloy" || selectedSample == "solder_alloy1" || selectedSample == "solder_alloy2") {
 
 
-            console.log('solder_alloy');
             document.getElementById('pumptext2').innerText = "Etch the specimen with Nital 2% reagent by swabbing for a few seconds. Wash and dry.";
             document.getElementById('10_1').innerText = "Nital reagent : Nital is the name given to an oxidizing etchant solution composed of aqueous nitric acid and ethanol. ";
 
@@ -326,7 +323,7 @@ function magic() {
             document.getElementById("arrow1").style.transform = "rotate(180deg)";
         }, 5500)
         if (selectedSample == "brass") {
-            console.log('brass');
+
             document.getElementById("lsw").src = "images/brass_micro_reading.png";
             document.getElementById("lsw").style.left = "55px";
             document.getElementById("lsw").style.top = "76px";
@@ -430,7 +427,7 @@ function magic() {
 
         }
         if (selectedSample == "solder_alloy1" || selectedSample == "solder_alloy2") {
-            console.log('solder_alloy');
+
             if (selectedSample == "solder_alloy1") {
                 document.getElementById("preview").src = "./images/PbSnX2_100x.png";
                 document.getElementById('n1').innerText = "X2 : Bearing metal";
