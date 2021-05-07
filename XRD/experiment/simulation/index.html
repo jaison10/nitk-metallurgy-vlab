@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SOLVE</title>
+    <link rel="stylesheet" href="css/sgca.css" />
+    <script type="text/javascript" src="js/jquerymin.js"></script>
+    <script type="text/javascript" src="js/sgca.js"></script>
+    <script>
+        var simsubscreennum = 0;
+        var temp = 0;
+        var lnt = 0;
+        var sample = 1;
+        var n;
+        var sampletype = 1;
+    </script>
+    <style>
+
+    </style>
+</head>
+
+<body style="margin:0; font-family:verdana; font-size:14px;">
+
+    <!--Simulation Screen start		-->
+    <div id="simscreen">
+
+        <!--Title of Simulation		-->
+        <div id="title">
+            <h4>Determination of crystal structure of a powder sample by X-Ray Diffractometer
+            </h4>
+        </div>
+
+        <!--SubScreen Home	-->
+        <div class="simsubscreen" id="canvas0">
+            <h4 class="incanvas" style="font-family:verdana;top:15px;position: relative; ">Objective</h4>
+            <p class="incanvas" style="font-family:verdana; font-size:14px;top:10px;position: relative;">To identify the unknown powder sample by indexing of peaks with the help of obtained XRD pattern.</p>
+            </br>
+            <h4 class="incanvas" style="font-family:verdana;top:-5px;position: relative; ">Apparatus used:</h4>
+            <p class="incanvas" style="font-family:verdana; font-size:14px;top:-7px;position: relative; ">X-Ray Diffractometer, Sample and Sample holder.
+            </p>
+            <br>
+            <span class="descont" style="border-bottom:1px dotted ; color:red; position:absolute; top:120px; z-index: 500;">Description
+                <span  class="desctext" style=" font-size:16px;">
+              
+                <strong>Diffractometer</strong>: A diffractometer is a measuring instrument for analyzing the structure of a material from the scattering pattern produced when a beam of radiation or particles (such as X-rays or neutrons) interacts with it. <br><br>
+                <strong>X-Rays</strong> : An X-ray, or X-radiation, is a penetrating form of high-energy electromagnetic radiation. Most X-rays have a wavelength ranging from 10 picometers to 10 nanometers, corresponding to frequencies in the range 30 petahertz to 30 exahertz and energies in the range 124 eV to 124 keV.<br><br>
+                <strong>Monochromatic radiation</strong>: Monochromatic light is light (optical radiation) where the optical spectrum contains only a single optical frequency. <br><br>
+                <strong>D-spacing</strong>: The d-spacing can be described as the distance between planes of atoms that give rise to diffraction peaks. Each peak in a diffractogram results from a corresponding d-spacing. <br><br>
+                
+            
+            </span></span>
+            <img src="images/human.png" alt="Human" style="position:absolute; margin-left:20px;margin-top:28px;">
+            <img src="images/table.png" height="300px" alt="Table" style="position:absolute; margin-left:150px;margin-top:68px;">
+            <div style="position: absolute;left: 200px;top: 270px;z-index:100;height: 100px;width: 140px;" title="Belt Grinder"></div>
+            <div style="position: absolute;left: 360px;top: 260px;z-index:100;height: 110px;width: 110px;" title="Polish Velvet"></div>
+            <div style="position: absolute;left: 480px;top: 220px;z-index:100;height: 160px;width: 130px;" title="Microscope"></div>
+        </div>
+
+        <div class="simsubscreen" id="canvas0.5" style="visibility: hidden;">
+            <strong id="titlestep" class="incanvas">STEP </strong>
+            <span class="circlebg" id="stepnumber">&nbsp;1&nbsp;</span>
+            <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;"> Select a sample to analyse its microstructure.</p>
+            <br>
+            <!--span style="position: absolute; top:150px; left: 170px">
+                <input type="radio" id="selectp3" name="sampletype" value="1" checked>
+                <label for="selectp3">P3 Austenitic Stainless Steel</label>
+                    Mild Steel
+                </span-->
+            <!--span style="position: absolute; top:150px; left: 420px; margin-left: 60px;">
+                <input type="radio" id="selectp12" name="sampletype" value="2">
+                <label for="selectp12">P12 Martensitic Stainless Steel</label>
+                    Grey Cast Iron
+                </span-->
+            <img src="images/hands_sample/sample.svg" height="200px" style="position: absolute; top:130px; left: -80px; z-index: -1;" />
+            <img src="images/hands_sample/sample.svg" height="200px" style="position: absolute; top:130px; left:320px;z-index: -1;" />
+            <span style="position: absolute; top:302px; width: 300px; ">
+                <input type="radio" id="solder_alloy" name="sampletype" value="1" onclick="solder_select();" >
+                <label for="solder_alloy"> <b>Solder alloy (Pb-Sn)</b><br></label>   
+                <br>
+                <input type="radio" id="solder_alloy1" name="sampletype" style="visibility: hidden;" value="1_1" >
+                 <label  id="sa1" for="solder_alloy1" style="position:absolute;left:5px;font-size:14px;">X2 : Bearing metal (Sn-60%, Sb - 10%, Pb-27%, Cu-3%)</label>
+                    <br>
+                <input type="radio" id="solder_alloy2" name="sampletype" style="visibility: hidden;position: absolute;top: 73px;" value="1_2" >
+                <label  id="sa2" for="solder_alloy2" style="position:absolute;left:5px;top:73px;font-size:14px;">X3 : Lead Base Bearing metal (Pb-74%, Sn- 10%, Sb-16%, Cu-Remainder)</label>
+                    <br>
+                </span>
+            <span style="position: absolute; top:300px; left:400px;width: 300px;">
+                <input type="radio" id="brass" name="sampletype" value="2" unchecked="true">
+                <label for="brass"><b>Brass</b><br></label>   
+                    <br>Brass is an alloy made from copper and zinc and a small percentage of other metals like iron, nickel, lead, tin, aluminum and antimony. 
+                    <br>
+                   
+                </span>
+        </div>
+
+        <!--Step2	-->
+        <div class="simsubscreen" id="canvas1" style="visibility:hidden">
+            <strong id="titlestep" class="incanvas">STEP </strong>
+            <span class="circlebg" id="stepnumber">&nbsp;2&nbsp;</span>
+            <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;">Obtain a flat surface on the specimen by belt grinding.</p>
+            <br>
+            <img id="belt" src="images/beltgrinder/beltgrinder.svg" height="500px" width="auto">
+            <div style="position: absolute;left: 152px;top: 235px;width: 380px;height: 250px;z-index: 100;" title="Belt Grinder"></div>
+            <div id="samplebelt" style="position: absolute;left: 352px;top: 135px;width: 150px;height: 165px;z-index: 200;"></div>
+            <img id="beltSample" src="images/beltgrinder/hand_sample.svg" height="500px" width="auto" style="position: absolute; top:-100px; z-index: 20; left:150px; transition: all 1s ease;">
+            <img id="rr" src="images/rr.svg" height="10px" style="position: absolute; top:380px; left:200px; visibility: hidden; transition-duration: 0.5s;">
+            <img id="rr1" src="images/rr.svg" height="10px" style="position: absolute; top:380px; left:200px; visibility: hidden; transition-duration: 0.5s;">
+            <img id="rr2" src="images/rr.svg" height="10px" style="position: absolute; top:380px; left:200px; visibility: hidden; transition-duration: 0.5s;">
+            <img id="rr3" src="images/rr.svg" height="10px" style="position: absolute; top:380px; left:200px; visibility: hidden; transition-duration: 0.5s;">
+            <img id="rr4" src="images/rr.svg" height="10px" style="position: absolute; top:380px; left:200px; visibility: hidden; transition-duration: 0.5s;">
+            <img id="rrc" src="images/rrc.svg" height="40px" style="position: absolute; top:430px; left:180px; visibility: hidden; transition: all 2s linear;">
+            <img id="rrc1" src="images/rrc.svg" height="40px" style="position: absolute; top:420px; left:463px; visibility: hidden; transition: all 2s linear;">
+            <!--span style="position: absolute; top: 490px; left:300px;"><strong>Belt Grinder</strong></span-->
+        </div>
+
+        <!--Step3	-->
+        <div class="simsubscreen" id="canvas2" style="visibility:hidden">
+            <strong id="titlestep" class="incanvas">STEP </strong>
+            <span class="circlebg" id="stepnumber">&nbsp;3&nbsp;</span>
+            <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;">Support a polish paper of 1/0 fineness on a flat glass plate. Polish the specimens rubbing in forward direction only.</p>
+            <br>
+            <br>
+            <img id="glassPaper" src="images/polish_velvet/polish_paper.svg" height="500px" width="auto" style="margin-top: -100px;">
+            <img id="beltSample2" src="images/beltgrinder/hand_sample.svg" height="400px" width="auto" style="position: absolute; top:-65px; z-index: 20; left:170px; transition: all 0.3s ease;">
+            <span style="position: absolute; top: 305px; left:250px;"><strong>1/0 Polish paper</strong></span>
+            <!--Note-->
+            <span id="note1" class="tooltip" style="font-family:verdana; font-size:18px;border-bottom:1px dotted ; color:red; position:absolute; visibility: hidden;">
+                <span id="10" class="tooltiptext" style="font-family:verdana; font-size:14px;color:white;width:600px;left:-650px;top:265px;text-align: justify;">Note:<br><br>Move to the next finer paper (2/0 and 3/0) once the scratches on the specimen are uniform. While changing from one paper to another, the specimen and your hands should be cleaned free from the abrasive of the previous paper, and the specimen turned through 90°, so that the scratches from the previous paper are at right angles to the scratches from the next paper. </br></br>
+                <input id="ok" type="button" name="ok" value="Ok" />&nbsp;&nbsp;&nbsp;</span>
+            </span>
+        </div>
+
+        <!--Step4	-->
+        <div class="simsubscreen" id="canvas3" style="visibility:hidden">
+            <strong id="titlestep" class="incanvas">STEP </strong>
+            <span class="circlebg" id="stepnumber">&nbsp;4&nbsp;</span>
+            <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;"> Finish polishing the specimens on 4/0 abrasive paper, wash hands and specimens.</p>
+            <br>
+            <br>
+            <img id="glassPaper2" src="images/polish_velvet/polish_paper_2.svg" height="500px" width="auto">
+            <img id="beltSample3" src="images/beltgrinder/hand_sample.svg" height="500px" width="auto" style=" position: absolute; top:-50px; z-index: 20; left:100px; transition: all 0.3s ease;">
+            <span style="position: absolute; top: 390px; left:250px;"><strong>4/0 Polish paper</strong></span>
+        </div>
+
+        <!--Step5	-->
+        <div class="simsubscreen" id="canvas4" style="visibility:hidden">
+            <strong id="titlestep" class="incanvas">STEP </strong>
+            <span class="circlebg" id="stepnumber">&nbsp;5&nbsp;</span>
+            <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;">Do the fine polishing on the disc polishing unit.</p>
+            <br>
+            <br>
+            <img id="velvet" src="images/polish_velvet/velvet.svg" height="440px" width="auto" style="margin-left: 75px; margin-top: 80px;" title="Polish Velvet">
+            <div style="position: absolute;left: 200px;top: 165px;width: 300px;height: 365px;z-index: 100;" title="Polish Velvet"></div>
+            <img id="handBottle" src="images/polish_velvet/velvet_water_alumina.svg" height="440px" width="auto" style="position: absolute; top:-40px; z-index: 20; left:-150px; transition: all 0.7s ease;">
+            <img id="velvetSample" src="images/polish_velvet/hand_sample.svg" height="440px" width="auto" style="visibility: hidden; position: absolute; top:-40px; z-index: 20; left:-220px; transition: all 0.7s ease;">
+            <img id="drop" src="images/polish_velvet/drop.svg" height="100px" style="visibility: hidden; position: absolute; z-index: 30; left:280px; top:257px; transition: all 0.4s ease-in;">
+            <div id="velveton" style="position: absolute; width: 10px; height: 6px; background-color: green; left:326px; top:246px; z-index: 200; cursor: pointer; opacity: 0.4;"></div>
+            <div id="velvetoff" style="position: absolute; width: 10px; height: 6px; background-color: red; left:355px; top:246px; z-index: 200; cursor: pointer;opacity: 0.4;"></div>
+            <div id="onoff" style="position: absolute; width:40px; height:15px; background-color: white; left:325px; top:216px; z-index: 102;">OFF</div>
+            <div id='arrows'>
+                <img id="r0" src="images/r0.svg" height="10px" style="position: absolute;left: 310px;top:325px;opacity: 0; transition: all 0.1s linear;">
+                <img id="r1" src="images/r1.svg" height="20px" style="position: absolute;left: 360px;top: 328px;opacity: 0; transition: all 0.1s linear;">
+                <img id="r2" src="images/r2.svg" height="30px" style="position: absolute;left: 390px;top:340px;opacity: 0; transition: all 0.1s linear;">
+                <img id="r3" src="images/r3.svg" height="25px" style="position: absolute;left: 370px;top: 358px;opacity: 0; transition: all 0.1s linear;">
+                <img id="r4" src="images/r4.svg" height="8px" style="position: absolute;left: 310px;top: 380px;opacity: 0; transition: all 0.1s linear;">
+                <img id="r5" src="images/r5.svg" height="25px" style="position: absolute;left: 290px;top: 362px;opacity: 0; transition: all 0.1s linear;">
+                <img id="r6" src="images/r6.svg" height="30px" style="position: absolute;left: 280px;top: 340px;opacity: 0; transition: all 0.1s linear;">
+                <img id="r7" src="images/r7.svg" height="20px" style="position: absolute;left: 280px;top:332px;opacity: 0; transition: all 0.1s linear;">
+            </div>
+            <!--span style="position: absolute; top: 145px; left:295px;"><strong>Polish Velvet</strong></span-->
+            <span id="note3" class="tooltip" style="font-family:verdana; font-size:18px;border-bottom:1px dotted ; color:red; position:absolute; visibility: hidden;">
+                <span id="10" class="tooltiptext" style="font-family:verdana; font-size:14px;color:white;width:510px;left:-500px;top:-15px; text-align: justify;">Note:</br>After fine polishing, clean off the polished surface of the specimens with water and dry it with an electric hot air blower.</br></br>
+                <input id="ok3" type="button" name="ok" value="Ok" />&nbsp;&nbsp;&nbsp;</span>
+            </span>
+        </div>
+
+        <!--Step6-->
+        <div class="simsubscreen" id="canvas5" style="visibility:hidden">
+            <strong id="titlestep" class="incanvas">STEP </strong>
+            <span class="circlebg" id="stepnumber">&nbsp;6&nbsp;</span>
+            <p id="pumptext2" class="steptext" style="font-family:verdana; font-size:14px;"></p>
+            <br>
+            <br>
+            <img id="handCotton" src="images/hands_sample/hand_cotton.svg" height="500px" width="auto" style="visibility: hidden; position: absolute; top:-50px; z-index: 5; left:100px; transition: all 0.3s ease;">
+            <img id="cap" src="images/etching/cap.svg" height="250px" width="auto" style="position:absolute; margin-left: -50px; margin-top: 189px;transition:all 0.5s ease; z-index: -1;">
+            <img id="reagent" src="images/bottle_without_cap.png" height="250px" width="auto" style="margin-left: -50px; margin-top: 190px;transition: all 0.7s ease; z-index: 30; position: absolute;">
+            <img id="etchSample" src="images/etching/etching_with_hand.svg" height="350px" width="auto" style=" margin-left: 150px; margin-top: 100px; visibility: hidden; z-index: 100; transition-duration: 0.5s;position: absolute; ">
+            <span id="note2" class="tooltip" style="font-family:verdana; font-size:18px;border-bottom:1px dotted ; color:red; position:absolute; visibility: hidden;left: 600px;">
+                <span id="10" class="tooltiptext" style="font-family:verdana; font-size:14px;color:white;width:610px;left:-600px;top:20px; text-align: justify;">Note:</br><p id="10_1"></p></br>
+                <input id="ok2" type="button" name="ok" value="Ok" />&nbsp;&nbsp;&nbsp;</span>
+            </span>
+
+        </div>
+
+        <!--Step7	-->
+        <div class="simsubscreen" id="canvas6" style="visibility: hidden;">
+            <strong id="titlestep" class="incanvas">STEP </strong>
+            <span class="circlebg" id="stepnumber">&nbsp;7&nbsp;</span>
+            <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;">Examine both specimens under the microscope and compare the structural features. </p>
+            <br>
+            <img id="microscope" src="images/microscope/man_microscope_specimen.svg" height="800px" style="margin-top: -180px; visibility: hidden; transition: all 1s ease; ">
+            <img id="scz" src="images/scope_brass.png" height="400px" style="position: absolute;left: 210px;top: 67px;transition: all 0.5s ease 0s;opacity: 0;">
+            <img id="preview" src="images/PbSnX2_100x.png" height="230px" style="position: absolute;width:250px; top: 32px; left: 495px; transition-duration: 0.5s; border-radius: 50%; opacity: 0; filter: blur(0px);">
+            <!-- <img id="preview2" src="images/microscope/gci_sq50x.jpg" height="230px" style="position: absolute;top: 269px;left: 495px;transition-duration: 0.5s;border-radius: 50%;opacity: 0;filter: blur(0px);"> -->
+            <img id="lup" src="images/microscope/lens_up.svg" height="70px" style="position: absolute;top: 30px;left: 70px;opacity: 0;transition: all 0.3s ease 0s;visibility: hidden;transform: rotate(-87deg);z-index: 100;">
+            <img id="ldn" src="images/microscope/lens_down.svg" height="70px" style="position: absolute;top: 30px;left: 160px;opacity: 0;transition: all 0.3s ease 0s;visibility: hidden;transform: rotate(-93deg);z-index: 100;">
+            <img id="man" src="images/microscope/man.svg" height="400px" style="position: absolute; margin-top: 25px; transition: all 1s ease; visibility: hidden;">
+            <div id="vsc" style="transition: all 0.5s ease 0s;position: absolute;left: 100px;top: 78px;height: 60px;width: 60px;border-radius: 50%;background-color: teal;opacity: 0;"></div>
+            <img id="zl" src="images/microscope/zoom_lens.svg" height="180px" style="position: absolute;left: -15px;top: 145px;opacity: 0;transform: rotate(-100deg);transition: all 0.5s ease 0s;">
+            <img id="lsw" src="images/pbsn_reading.png" height="160px" style="position: absolute;left: 30px; top: 75px; height: 170px; transition: all 1s ease 0s; opacity: 0;">
+            <strong id="n1" style="position:absolute;top: 245px; opacity: 0; left: 230px;transform: rotate(-21deg);"></strong>
+            <!-- <strong id="n2" style="position:absolute;top: 310px;left: 230px;transform: rotate(12deg);opacity: 0;">Grey Cast Iron</strong> -->
+        </div>
+
+        <!--Note	-->
+        <div class="simsubscreen" id="canvas7" style="visibility:hidden">
+            <strong id="titlestep" style="position:absolute;top:5px;font-weight:800;font-size:15px;" class="incanvas">Observations </strong><br>
+            <p id="pumptext" class="steptext" style=" position:absolute;top:20px;left:5px;font-family:verdana; font-size:14px;">View the microstructures at different magnification levels and compare the microstructural features.</p>
+            <br>
+            <div class="slidecontainer" id="magcon" style="position:absolute;top:75px;left:280px;width:180px; margin:auto;" title="">
+                <center><span id="magx"></span></center>
+                <input type="range" min="1" max="3" value="1" class="slider" id="mag">
+            </div>
+            <!--div id="switch" style="position: absolute; top: 100px; left:230px; padding: 5px;">
+                    <button id="p3" style="padding: 5px;border-radius: 5px; cursor: pointer;">P3 Austenitic Steel</button>
+                    <button id="p12" style="padding: 5px;border-radius: 5px; cursor: pointer;">P12 Martensitic Steel</button>
+                    </div-->
+            <img id="final" src="images/PbSnX2_500x.png" width="260px" style=" visibility:hidden;position:absolute;top: 130px; left: 230px; border-radius: 15px;" height="220px">
+            <img id="final1" src="images/PbSnX3_500x.png" width="260px" style="visibility:hidden;position:absolute;top: 130px; left: 230px; border-radius: 15px;" height="220px">
+            <img id="final2" src="images/Brass_1000x.png" width="260px" style="visibility:hidden;position:absolute;top: 130px; left: 230px; border-radius: 15px;" height="220px">
+
+            <strong style="position:absolute;top:330px;left:0px;visibility: hidden;">PbSn:X2(Bearing metal)</strong>
+            <strong style="position:absolute;top:330px;left:250px;visibility: hidden;">PbSn:X3(lead base bearing metal)</strong>
+            <strong style="position:absolute;top:330px;left:590px;visibility: hidden;">Brass</strong>
+            <!-- <img id="final" src="" width="320px" style="position:absolute;top: 100px; border-radius: 10px; cursor: help;">
+            <img id="final1" src="" width="320px" style="position:absolute;top: 100px; left:370px; border-radius: 10px; cursor: help;">
+            <img id="final2" src="" width="320px" style="position:absolute;top: 100px; left:370px; border-radius: 10px; cursor: help;">
+
+            <strong style="position:absolute;top:345px;left:100px;">Solder alloy:X2 (Bearing metal)</strong>
+            <strong style="position:absolute;top:345px;left:100px;">Solder alloy:X3 (lead base bearing metal)</strong>
+            <strong style="position:absolute;top:345px;left:480px;">Brass</strong> -->
+            <div id="mstext" style="position: absolute; left:5px;top:380px;visibility: hidden;">
+                <!-- Number of phases : 2 (<b>Solder alloy (Pb-Sn)</b>) -->
+                <!-- <br> Features of each phase : -->
+
+                <p>Brass specimen is etched using Acidified Ferric Chloride.
+                </p>
+                <p>In the etched microstructure, Alpha phase appears as a light region (Zn precipitate) and Beta phase appears as the Dark region.
+                </p>
+
+            </div>
+            <div id="gcitext" style="position: absolute; left:5px;top:380px;visibility: hidden;">
+                <!-- Number of phases : 3 (<b>Brass</b>) -->
+                <!-- <br> Features of each phase: -->
+
+                <p>X2 (Bearing metal) : </p>
+                <p>X2 specimen is etched using 2% Nital. In the etched microstructure, White cuboids of Sb-Sn, white needles of Cu6Sn5 and dark Pb-Sn-Sb eutectic matrix can be observed.</p><br>
+
+
+            </div>
+            <div id="gcitext1" style="position: absolute; left:5px;top:380px;visibility: hidden;">
+                <!-- Number of phases : 3 (<b>Brass</b>) -->
+                <!-- <br> Features of each phase: -->
+
+
+                <p>X3 (Lead base bearing metal) :</p>
+                <p>X3 specimen is etched using 2% Nital. In the etched microstructure, (shown under observation) : white cuboids of Sb-Sn, Black & white matrix of ternary eutectic Pb-Sn-Sb and dark globules of lead can be observed.</p><br>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="questDiv" style="position:absolute; font-size: 14px; background-color:grey; color:white; padding:7.5px; border-radius:5px; visibility:hidden; text-align:justify; z-index: 200;">
+        <p id="q"></p>
+        <select id="answer">
+            </select>
+        <p id="a"></p>
+    </div>
+
+    <!--Trial text	-->
+    <div id="">
+        <p id="trial" style="text-transform: uppercase;visibility :hidden;font-weight: bold;font-family:verdana; "><strong>Trial = </strong></p>
+    </div>
+
+    <!--next  Arrow	-->
+    <div id="nav">
+        <img id="nextButton" onclick="navNext(); " src="images/Next.png" />
+    </div>
+
+    <!--Blinking Arrow	-->
+    <img class="" id="arrow1" style="visibility:hidden" src="images/arrow1.png" />
+
+    <div id="copyright"> &copy;
+        <script>
+            document.write(new Date().getFullYear())
+        </script> SOLVE - The Virtual Lab @ NITK Surathkal, Metallurgical and Materials engineering</div>
+</body>
+
+</html>

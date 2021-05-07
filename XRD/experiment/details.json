@@ -1,0 +1,71 @@
+{
+
+    "details": [{
+        "Experiment": "Optical microscopy of Non ferrous samples",
+        "Lab": "Physical Metallurgy Lab",
+        "Discipline": "Metallurgical and Materials Engineering",
+        "Technology": "HTML, Javascript, CSS, JQuery"
+    }],
+
+    "developer": [{
+        "Developer": "Dr. Pruthviraj U",
+        "Institute": "National Institute of Technology Karnataka, Surathkal",
+        "InstituteAcronym": "NITK"
+    }],
+
+    "contributer": [
+
+        {
+            "Contributer": "Rohit V Halakatti (15IT233)",
+            "Institute": "National Institute of Technology Karnataka, Surathkal",
+            "InstituteAcronym": "NITK"
+        },
+
+        {
+            "Contributer": "M R Ashrit (16CO122)",
+            "Institute": "National Institute of Technology Karnataka, Surathkal",
+            "InstituteAcronym": "NITK"
+        },
+
+        {
+            "Contributer": "Jatin Patil (17MT017)",
+            "Institute": "National Institute of Technology Karnataka, Surathkal",
+            "InstituteAcronym": "NITK"
+        },
+
+        {
+            "Contributer": "Iteesha V A (17MT016)",
+            "Institute": "National Institute of Technology Karnataka, Surathkal",
+            "InstituteAcronym": "NITK"
+        },
+
+        {
+            "Contributer": "Arjun Krishna (17MT005)",
+            "Institute": "National Institute of Technology Karnataka, Surathkal",
+            "InstituteAcronym": "NITK"
+        },
+
+        {
+            "Contributer": "Aishwarya Hegde",
+            "Institute": "National Institute of Technology Karnataka, Surathkal",
+            "InstituteAcronym": "NITK"
+        },
+
+        {
+            "Contributer": "Aishwarya Shetty",
+            "Institute": "National Institute of Technology Karnataka, Surathkal",
+            "InstituteAcronym": "NITK"
+        },
+        {
+            "Contributer": "Haneena",
+            "Institute": "National Institute of Technology Karnataka, Surathkal",
+            "InstituteAcronym": "NITK"
+        },
+        {
+            "Contributer": "Jaison DSouza B",
+            "Institute": "National Institute of Technology Karnataka, Surathkal",
+            "InstituteAcronym": "NITK"
+        }
+    ]
+
+}
