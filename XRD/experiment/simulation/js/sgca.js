@@ -9,74 +9,11 @@ function navNext() {
         document.getElementById("man").style.display = "none";
         document.getElementById("microscope").style.display = "none";
     }
-    if (sample) {
-        document.getElementById("canvas0.5").style.visibility = "visible";
 
-        // document.getElementById('nextButton').style.visibility = "hidden";
-        // if (document.getElementById('solder_alloy1').checked) {
-        // document.getElementById('nextButton').style.visibility = "visible";
-
-        // }
-
-        sample = 0;
-    } else {
-
-        if (simsubscreennum == 0) {
-
-
-            // if (document.getElementById('solder_alloy').checked) {
-            //     selectedSample = "solder_alloy";
-
-
-
-            // } else
-            if (document.getElementById('brass').checked) {
-                selectedSample = "brass";
-
-                document.getElementById('nextButton').style.visibility = "visible";
-
-
-            } else if (document.getElementById('solder_alloy1').checked) {
-                selectedSample = "solder_alloy1";
-
-                document.getElementById('nextButton').style.visibility = "visible";
-
-            } else if (document.getElementById('solder_alloy2').checked) {
-                selectedSample = "solder_alloy2";
-
-                document.getElementById('nextButton').style.visibility = "visible";
-
-            } else {
-                selectedSample = "null";
-                alert('Select a sample to proceed!');
-                simsubscreennum--;
-                sample = 0;
-
-            }
-
-
-
-
-
-
-
-        }
         simsubscreennum += 1;
-        if (simsubscreennum == 1) {
-            //var p3radio = document.getElementById('selectp3');
-            //var p12radio = document.getElementById('selectp12');
-            //if (p3radio.checked) sampletype = 1;
-            //else if (p12radio.checked) sampletype = 2;
-
-
-            document.getElementById("canvas0.5").style.display = "none";
-            document.getElementById('nextButton').style.visibility = "hidden";
-
-        }
         document.getElementById('canvas' + (simsubscreennum)).style.visibility = "visible";
         // document.getElementById('nextButton').style.visibility = "visible";
         magic();
-    }
 }
 
 function solder_select() {
@@ -167,14 +104,14 @@ function magic() {
         myInt = setInterval(function() {
             animatearrow();
         }, 500);
-        document.getElementById('arrow1').style = "visibility:visible ;position:absolute; left: 360px; top: 250px; height: 40px; z-index: 10;";
+        document.getElementById('arrow1').style = "visibility:visible ;position:absolute; left: 320px; top: 150px; height: 30px; z-index: 10;";
         document.getElementById("arrow1").style.WebkitTransform = "rotate(180deg)";
         // Code for IE9
         document.getElementById("arrow1").style.msTransform = "rotate(180deg)";
         // Standard syntax
         document.getElementById("arrow1").style.transform = "rotate(180deg)";
-        document.getElementById('samplebelt').onclick = function() {
-            this.onclick = null;
+        document.getElementById("handSample").style.cursor = "pointer";
+        document.getElementById('handSample').onclick = function() {
             step1();
         };
     }
@@ -707,137 +644,75 @@ function magic() {
 
 function step1() {
     myStopFunction();
-    setTimeout(function() {
-        document.getElementById('rr').style.visibility = "visible";
-        document.getElementById('rr').style.marginLeft = "230px";
-        document.getElementById('rrc').style.visibility = "visible";
-        document.getElementById('rrc').style.transform = "rotate(1080deg)";
-        document.getElementById("rrc").style.WebkitTransform = "rotate(1080deg)";
-        document.getElementById("rrc").style.msTransform = "rotate(1080deg)";
-        document.getElementById('rrc1').style.visibility = "visible";
-        document.getElementById('rrc1').style.transform = "rotate(1080deg)";
-        document.getElementById("rrc1").style.WebkitTransform = "rotate(1080deg)";
-        document.getElementById("rrc1").style.msTransform = "rotate(1080deg)";
-    }, 1100);
-    setTimeout(function() {
-        document.getElementById('beltSample').style.top = "-50px";
-        document.getElementById('beltSample').style.left = "100px";
-        document.getElementById('beltSample').style.marginLeft = "-14px";
-        document.getElementById('beltSample').style.marginTop = "63px";
-    }, 100);
-    setTimeout(function() {
-        document.getElementById('rr').style.display = "none";
-        document.getElementById('rr1').style.visibility = "visible";
-        document.getElementById('rr1').style.marginLeft = "230px";
-    }, 1400);
-    setTimeout(function() {
-        document.getElementById('rr1').style.display = "none";
-        document.getElementById('rr2').style.visibility = "visible";
-        document.getElementById('rr2').style.marginLeft = "230px";
-    }, 1800);
-    setTimeout(function() {
-        document.getElementById('rr2').style.display = "none";
-        document.getElementById('rr3').style.visibility = "visible";
-        document.getElementById('rr3').style.marginLeft = "230px";
-    }, 2200);
-    setTimeout(function() {
-        document.getElementById('rr3').style.display = "none";
-        document.getElementById('rr4').style.visibility = "visible";
-        document.getElementById('rr4').style.marginLeft = "230px";
-    }, 2600);
-    setTimeout(function() {
-        document.getElementById('beltSample').style.marginLeft = "0px";
-        document.getElementById('beltSample').style.marginTop = "0px";
-        document.getElementById('rrc').style.display = "none";
-        document.getElementById('rrc1').style.display = "none";
-        document.getElementById('rr4').style.display = "none";
-    }, 3000);
-    setTimeout(function() {
-        document.getElementById('nextButton').style.visibility = "visible";
-    }, 5500)
+    document.getElementById("handSample").classList.add("placeSample");
+    setTimeout(function(){
+        document.getElementById("handSample").style.visibility = "hidden";
+        // document.getElementById("stageWithoutSample").style.visibility = "hidden";
+        // document.getElementById("stageWithSample").style.visibility = "visible";
+        document.getElementById("samplePlaced").style.visibility = "visible";
+        
+        document.getElementById("pumptext").innerText = "Restore the emitter & receiver to initial position."
+        document.getElementById("stepnumber").innerText = "2";
+        myInt = setInterval(function() {
+            animatearrow();
+        }, 500);
+        document.getElementById('arrow1').style = "visibility:visible ;position:absolute; left: 340px; top: 150px; height: 30px; z-index: 10;";
+        document.getElementById("arrow1").style.WebkitTransform = "rotate(180deg)";
+        // Code for IE9
+        document.getElementById("arrow1").style.msTransform = "rotate(180deg)";
+        // Standard syntax
+        document.getElementById("arrow1").style.transform = "rotate(180deg)";
+        document.getElementById("restoreButton").style.visibility = "visible";
+        document.getElementById("restoreButton").style.cursor = "pointer";
+        document.getElementById('restoreButton').onclick = function() {
+            step2();
+        };
+    },2000);
 }
 
 function step2() {
     myStopFunction();
-    setTimeout(function() {
-        document.getElementById('beltSample2').style.marginLeft = "-14px";
-        document.getElementById('beltSample2').style.marginTop = "50px";
-    }, 300);
+    document.getElementById("restoreButton").style.visibility = "hidden";
+    document.getElementById("initialEmitter").classList.add("restoreEmitter");
+    document.getElementById("initialRec").classList.add("restoreRec");
+    setTimeout(()=>{
+        document.getElementById("initialEmitter").style.visibility = "hidden";
+        document.getElementById("initialRec").style.visibility = "hidden";
+        document.getElementById("newEmitter").style.visibility = "visible";
+        document.getElementById("newRec").style.visibility = "visible";
 
-    setTimeout(function() {
-        document.getElementById('beltSample2').style.marginLeft = "-100px";
-    }, 1300);
-    setTimeout(function() {
-        document.getElementById('beltSample2').style.marginLeft = "-14px";
-        document.getElementById('beltSample2').style.marginTop = "0px";
-    }, 1700);
-    setTimeout(function() {
-        document.getElementById('beltSample2').style.marginTop = "50px";
-    }, 2100);
-    setTimeout(function() {
-        document.getElementById('beltSample2').style.marginLeft = "-100px";
-    }, 2500);
-    setTimeout(function() {
-        document.getElementById('beltSample2').style.marginLeft = "-14px";
-        document.getElementById('beltSample2').style.marginTop = "0px";
-    }, 2900);
-    setTimeout(function() {
-        document.getElementById('beltSample2').style.marginTop = "50px";
-    }, 3300);
-    setTimeout(function() {
-        document.getElementById('beltSample2').style.marginLeft = "-100px";
-    }, 3700);
-
-    setTimeout(function() {
-        document.getElementById('beltSample2').style.marginLeft = "-14px";
-        document.getElementById('beltSample2').style.marginTop = "0px";
-        document.getElementById("note1").style.visibility = "visible";
-        document.getElementById("ok").onclick = function() {
-            setTimeout(function() {
-                document.getElementById('nextButton').style.visibility = "visible";
-            }, 1000);
-            document.getElementById("note1").style.display = "none";
-        }
-    }, 4500);
+        // Showing start button and arrow
+        document.getElementById("pumptext").innerText = "Start the XRD experiment."
+        document.getElementById("stepnumber").innerText = "3";
+        myInt = setInterval(function() {
+            animatearrow();
+        }, 500);
+        document.getElementById('arrow1').style = "visibility:visible ;position:absolute; left: 340px; top: 150px; height: 30px; z-index: 10;";
+        document.getElementById("arrow1").style.WebkitTransform = "rotate(180deg)";
+        // Code for IE9
+        document.getElementById("arrow1").style.msTransform = "rotate(180deg)";
+        // Standard syntax
+        document.getElementById("arrow1").style.transform = "rotate(180deg)";
+        document.getElementById("startButton").style.visibility = "visible";
+        document.getElementById("startButton").style.cursor = "pointer";
+        document.getElementById('startButton').onclick = function() {
+            step3();
+        };
+    },2000);
 }
 
 function step3() {
     myStopFunction();
-    setTimeout(function() {
-        document.getElementById('beltSample3').style.visibility = "visible";
-        document.getElementById('beltSample3').style.marginLeft = "-14px";
-        document.getElementById('beltSample3').style.marginTop = "50px";
-    }, 300);
+    document.getElementById("startButton").style.visibility = "hidden";
+    document.getElementById("newEmitter").classList.add("moveEmitter");
+    document.getElementById("newRec").classList.add("moveRec");
+    setTimeout(()=>{
+        document.getElementById("newEmitter").style.visibility = "hidden";
+        document.getElementById("newRec").style.visibility = "hidden";
+        document.getElementById("finalEmitter").style.visibility = "visible";
+        document.getElementById("finalRec").style.visibility = "visible";
 
-    setTimeout(function() {
-        document.getElementById('beltSample3').style.marginLeft = "-100px";
-    }, 1300);
-    setTimeout(function() {
-        document.getElementById('beltSample3').style.marginLeft = "-14px";
-        document.getElementById('beltSample3').style.marginTop = "0px";
-    }, 1700);
-    setTimeout(function() {
-        document.getElementById('beltSample3').style.marginTop = "50px";
-    }, 2100);
-    setTimeout(function() {
-        document.getElementById('beltSample3').style.marginLeft = "-100px";
-    }, 2500);
-    setTimeout(function() {
-        document.getElementById('beltSample3').style.marginLeft = "-14px";
-        document.getElementById('beltSample3').style.marginTop = "0px";
-    }, 2900);
-    setTimeout(function() {
-        document.getElementById('beltSample3').style.marginTop = "50px";
-    }, 3300);
-    setTimeout(function() {
-        document.getElementById('beltSample3').style.marginLeft = "-100px";
-    }, 3700);
-
-    setTimeout(function() {
-        document.getElementById('beltSample3').style.marginLeft = "-14px";
-        document.getElementById('beltSample3').style.marginTop = "0px";
-        validateAnswer(0, 1, "50px", "130px");
-    }, 4500);
+    },3000)
 }
 
 function step4() {

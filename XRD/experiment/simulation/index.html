@@ -51,16 +51,13 @@
             
             </span></span>
             <img src="images/human.png" alt="Human" style="position:absolute; margin-left:20px;margin-top:28px;">
-            <img src="images/table.png" height="300px" alt="Table" style="position:absolute; margin-left:150px;margin-top:68px;">
-            <div style="position: absolute;left: 200px;top: 270px;z-index:100;height: 100px;width: 140px;" title="Belt Grinder"></div>
-            <div style="position: absolute;left: 360px;top: 260px;z-index:100;height: 110px;width: 110px;" title="Polish Velvet"></div>
-            <div style="position: absolute;left: 480px;top: 220px;z-index:100;height: 160px;width: 130px;" title="Microscope"></div>
+            <img src="images/tracedNew.png" height="300px" alt="Table" style="position:absolute; left: 300px; width:300px; height: 270px; top: 230px;">
         </div>
 
-        <div class="simsubscreen" id="canvas0.5" style="visibility: hidden;">
+        <div class="simsubscreen" id="canvas1" style="visibility: hidden;">
             <strong id="titlestep" class="incanvas">STEP </strong>
             <span class="circlebg" id="stepnumber">&nbsp;1&nbsp;</span>
-            <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;"> Select a sample to analyse its microstructure.</p>
+            <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;"> Place the sample.</p>
             <br>
             <!--span style="position: absolute; top:150px; left: 170px">
                 <input type="radio" id="selectp3" name="sampletype" value="1" checked>
@@ -72,30 +69,29 @@
                 <label for="selectp12">P12 Martensitic Stainless Steel</label>
                     Grey Cast Iron
                 </span-->
-            <img src="images/hands_sample/sample.svg" height="200px" style="position: absolute; top:130px; left: -80px; z-index: -1;" />
-            <img src="images/hands_sample/sample.svg" height="200px" style="position: absolute; top:130px; left:320px;z-index: -1;" />
-            <span style="position: absolute; top:302px; width: 300px; ">
-                <input type="radio" id="solder_alloy" name="sampletype" value="1" onclick="solder_select();" >
-                <label for="solder_alloy"> <b>Solder alloy (Pb-Sn)</b><br></label>   
-                <br>
-                <input type="radio" id="solder_alloy1" name="sampletype" style="visibility: hidden;" value="1_1" >
-                 <label  id="sa1" for="solder_alloy1" style="position:absolute;left:5px;font-size:14px;">X2 : Bearing metal (Sn-60%, Sb - 10%, Pb-27%, Cu-3%)</label>
-                    <br>
-                <input type="radio" id="solder_alloy2" name="sampletype" style="visibility: hidden;position: absolute;top: 73px;" value="1_2" >
-                <label  id="sa2" for="solder_alloy2" style="position:absolute;left:5px;top:73px;font-size:14px;">X3 : Lead Base Bearing metal (Pb-74%, Sn- 10%, Sb-16%, Cu-Remainder)</label>
-                    <br>
-                </span>
-            <span style="position: absolute; top:300px; left:400px;width: 300px;">
-                <input type="radio" id="brass" name="sampletype" value="2" unchecked="true">
-                <label for="brass"><b>Brass</b><br></label>   
-                    <br>Brass is an alloy made from copper and zinc and a small percentage of other metals like iron, nickel, lead, tin, aluminum and antimony. 
-                    <br>
-                   
-                </span>
+            <img id="handSample" src="images/hand_screw.png" height="200px" style="position: absolute; top:80px; left: 350px; z-index: 1; width:130px; height:70px;" />
+            <img id="samplePlaced" src="images/sample.png" height="200px" style="visibility: hidden; position: absolute; top:313px; left: 308px; z-index: 1; width:30px; height:30px;" />
+
+            <img id="initialEmitter" src="images/emitterNew.png" height="200px" style="position: absolute; top:190px; left: 100px; z-index: -1; width:230px; height:220px; " />
+            <img id="stageWithoutSample" src="images/stage without.png" height="200px" style="visibility: block; position: absolute; top:200px; left:230px;z-index: -1; width:230px; height: 300px;"/>
+            <img id="stageWithSample" src="images/stageNewWith.png" height="200px" style="visibility: hidden; position: absolute; top:230px; left:214px ;z-index: -1; width:260px; height: 240px;" />
+            <img id="initialRec" src="images/receiverNew.png" height="200px" style="position: absolute; width: 290px; height: 270px; top:110px; left:320px;z-index: -1;" />
+            
+            <button id="restoreButton" class="buttons" style="position: absolute; visibility: hidden; top: 100px; left: 350px;" >Restore</button>
+            <!-- STEP 2 -->
+            <img id="newEmitter" src="images/emitterNew.png" height="200px" style="visibility: hidden; position: absolute; top: 225px; left: 110px; z-index: -1; width: 230px; height: 220px; transform: rotate(-40deg);" />
+            <img id="newRec" src="images/receiverNew.png" height="200px" style="visibility: hidden; position: absolute; width: 290px; height: 270px; top: 180px; left: 325px; z-index: -1; transform: rotate(45deg);" />
+            
+            <button id="startButton" class="buttons" style="position: absolute; visibility: hidden; top: 100px; left: 350px;" >Start</button>
+            <!-- Step3 -->
+            <img id="finalEmitter" src="images/emitterNew.png" height="200px" style="visibility: hidden; position: absolute; top: 155px; left: 110px; z-index: -1; width: 230px; height: 220px; transform: rotate(20deg);" />
+            <img id="finalRec" src="images/receiverNew.png" height="200px" style="visibility: hidden; position: absolute; width: 290px; height: 270px; top: 70px; left: 295px; z-index: -1; transform: rotate(-20deg);" />
+
+
         </div>
 
         <!--Step2	-->
-        <div class="simsubscreen" id="canvas1" style="visibility:hidden">
+        <div class="simsubscreen" id="canvas2" style="visibility:hidden">
             <strong id="titlestep" class="incanvas">STEP </strong>
             <span class="circlebg" id="stepnumber">&nbsp;2&nbsp;</span>
             <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;">Obtain a flat surface on the specimen by belt grinding.</p>

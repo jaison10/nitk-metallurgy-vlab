@@ -182,3 +182,78 @@
 .descont:hover .desctext {
     visibility: visible;
 }
+
+
+
+/* XRD ADDITIONS */
+.buttons{
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.placeSample {
+    animation: placeS 2s;
+}
+
+@keyframes placeS {
+    0% {
+        top:80px; left: 350px;
+    }
+    100% {
+        top:290px; left: 310px;
+    }
+}
+
+.restoreEmitter {
+    animation: restoringE 2s;
+}
+
+@keyframes restoringE {
+    0% {
+        top:190px; left: 100px;
+    }
+    100% {
+        top: 225px; left: 110px; transform: rotate(-40deg);
+    }
+}
+
+.restoreRec {
+    animation: restoringR 2s;
+}
+
+@keyframes restoringR {
+    0% {
+        top:110px; left:320px;
+    }
+    100% {
+        top: 180px; left: 325px; transform: rotate(45deg);
+    }
+}
+
+
+.moveEmitter {
+    animation: moveE 3s;
+}
+
+@keyframes moveE {
+    0% {
+        top: 225px; left: 110px; z-index: -1; transform: rotate(-40deg);
+    }
+    100% {
+        top: 155px; left: 110px; z-index: -1; transform: rotate(20deg);
+    }
+}
+.moveRec {
+    animation: moveR 3s;
+}
+
+@keyframes moveR {
+    0% {
+        top: 180px; left: 325px; z-index: -1; transform: rotate(45deg);
+    }
+    100% {
+        top: 70px; left: 295px; z-index: -1; transform: rotate(-20deg);
+    }
+}
