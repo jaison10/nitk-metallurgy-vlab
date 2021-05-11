@@ -199,10 +199,10 @@
 
 @keyframes placeS {
     0% {
-        top:80px; left: 350px;
+        top: 0px; left: 270px;
     }
     100% {
-        top:290px; left: 310px;
+        top: 140px; left: 220px;
     }
 }
 
