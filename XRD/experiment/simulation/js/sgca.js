@@ -12,7 +12,7 @@ function navNext() {
 
         simsubscreennum += 1;
         document.getElementById('canvas' + (simsubscreennum)).style.visibility = "visible";
-        // document.getElementById('nextButton').style.visibility = "visible";
+        document.getElementById('nextButton').style.visibility = "visible"; 
         magic();
 }
 
@@ -101,7 +101,13 @@ function magic() {
 
 
     if (simsubscreennum == 1) {
-        myInt = setInterval(function() {
+        document.getElementById("sampleDesc").style.visibility = "visible";
+        document.getElementById("sampleDescText").style.visibility = "visible";
+    }
+    if (simsubscreennum == 2) {
+        document.getElementById("sampleDesc").style.visibility = "hidden";
+        document.getElementById("sampleDescText").style.visibility = "hidden";
+       myInt = setInterval(function() {
             animatearrow();
         }, 500);
         document.getElementById('arrow1').style = "visibility:visible ;position:absolute; left: 320px; top: 150px; height: 30px; z-index: 10;";
@@ -113,23 +119,6 @@ function magic() {
         document.getElementById("handSample").style.cursor = "pointer";
         document.getElementById('handSample').onclick = function() {
             step1();
-        };
-    }
-    if (simsubscreennum == 2) {
-        myInt = setInterval(function() {
-            animatearrow();
-        }, 500);
-        document.getElementById('nextButton').style.visibility = "hidden";
-
-        document.getElementById('arrow1').style = "visibility:visible ;position:absolute; left: 340px; top: 220px; height: 40px; z-index: 10;";
-        document.getElementById("arrow1").style.WebkitTransform = "rotate(180deg)";
-        // Code for IE9
-        document.getElementById("arrow1").style.msTransform = "rotate(180deg)";
-        // Standard syntax
-        document.getElementById("arrow1").style.transform = "rotate(180deg)";
-        document.getElementById('beltSample2').onclick = function() {
-            this.onclick = null;
-            step2();
         };
     }
     if (simsubscreennum == 3) {
