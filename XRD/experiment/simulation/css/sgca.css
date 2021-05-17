@@ -277,3 +277,16 @@
         transform: rotate(-20deg);
     }
 }
+
+.moveOutputPC {
+    animation: moveOPC 3s;
+}
+
+@keyframes moveOPC {
+    0% {
+        width: 280px; height: 350px; top: 195px; left: 460px;
+    }
+    100% {
+        width: 800px; height: 1050px; top: -190px; left: -50px;
+    }
+}

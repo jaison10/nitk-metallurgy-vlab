@@ -51,7 +51,7 @@
             
             </span></span>
             <img src="images/human.png" alt="Human" style="position:absolute; margin-left:20px;margin-top:28px;">
-            <img src="images/tracedNew.png" height="300px" alt="Table" style="position:absolute; left: 300px; width:300px; height: 270px; top: 230px;">
+            <img src="images/completeWithSample.png"  alt="XRD" style="position:absolute; left: 240px; width:350px; height: 185px; top: 290px;">
         </div>
 
         <div class="simsubscreen" id="canvas1" style="visibility: hidden;">
@@ -59,39 +59,8 @@
             <span class="circlebg" id="stepnumber">&nbsp;1&nbsp;</span>
             <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;"> Place the sample.</p>
             <br>
-            <!--span style="position: absolute; top:150px; left: 170px">
-                <input type="radio" id="selectp3" name="sampletype" value="1" checked>
-                <label for="selectp3">P3 Austenitic Stainless Steel</label>
-                    Mild Steel
-                </span-->
-            <!--span style="position: absolute; top:150px; left: 420px; margin-left: 60px;">
-                <input type="radio" id="selectp12" name="sampletype" value="2">
-                <label for="selectp12">P12 Martensitic Stainless Steel</label>
-                    Grey Cast Iron
-                </span-->
 
-
-                <!-- ADDDDDDD -->
-
-            <!-- <img id="handSample" src="images/hand_sample.png" height="200px" style="position: absolute; top: 0px; left: 270px; z-index: 1; width: 300px; height: 240px;" />
-            <img id="samplePlaced" src="images/sssss.png" height="200px" style="visibility: hidden; position: absolute; top:313px; left: 308px; z-index: 1; width:30px; height:30px;" />
-
-            <img id="initialEmitter" src="images/emitterNew.png" height="200px" style="position: absolute; top:190px; left: 100px; z-index: -1; width:230px; height:220px; " />
-            <img id="stageWithoutSample" src="images/stage without.png" height="200px" style="visibility: block; position: absolute; top:200px; left:230px;z-index: -1; width:230px; height: 300px;"/>
-            <img id="stageWithSample" src="images/stageNewWith.png" height="200px" style="visibility: hidden; position: absolute; top:230px; left:214px ;z-index: -1; width:260px; height: 240px;" />
-            <img id="initialRec" src="images/receiverNew.png" height="200px" style="position: absolute; width: 290px; height: 270px; top:110px; left:320px;z-index: -1;" />
-            
-            <button id="restoreButton" class="buttons" style="position: absolute; visibility: hidden; top: 100px; left: 350px;" >Restore</button>
-           
-            <img id="newEmitter" src="images/emitterNew.png" height="200px" style="visibility: hidden; position: absolute; top: 225px; left: 110px; z-index: -1; width: 230px; height: 220px; transform: rotate(-40deg);" />
-            <img id="newRec" src="images/receiverNew.png" height="200px" style="visibility: hidden; position: absolute; width: 290px; height: 270px; top: 180px; left: 325px; z-index: -1; transform: rotate(45deg);" />
-            
-            <button id="startButton" class="buttons" style="position: absolute; visibility: hidden; top: 100px; left: 350px;" >Start</button>
-
-            <img id="finalEmitter" src="images/emitterNew.png" height="200px" style="visibility: hidden; position: absolute; top: 155px; left: 110px; z-index: -1; width: 230px; height: 220px; transform: rotate(20deg);" />
-            <img id="finalRec" src="images/receiverNew.png" height="200px" style="visibility: hidden; position: absolute; width: 290px; height: 270px; top: 70px; left: 295px; z-index: -1; transform: rotate(-20deg);" />
- -->
-            <img id="sampleDesc" src="images/sssss.png" height="200px" style="visibility: hidden; position: absolute; top: 203px; left: 238px; z-index: 1; width: 160px; height: 120px;" />
+            <img id="sampleDesc" src="images/path847.png" height="200px" style="visibility: hidden; position: absolute; top: 203px; left: 238px; z-index: 1; width: 160px; height: 70px;" />
             <p id="sampleDescText" style="position: absolute; visibility: hidden; top: 50px; left: 50px;">Give me something to add here.</p>
         </div>
 
@@ -101,69 +70,84 @@
             <span class="circlebg" id="stepnumber">&nbsp;2&nbsp;</span>
             <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;">Obtain a flat surface on the specimen by belt grinding.</p>
             <br>
-            <!-- <img id="belt" src="images/beltgrinder/beltgrinder.svg" height="500px" width="auto">
-            <div style="position: absolute;left: 152px;top: 235px;width: 380px;height: 250px;z-index: 100;" title="Belt Grinder"></div>
-            <div id="samplebelt" style="position: absolute;left: 352px;top: 135px;width: 150px;height: 165px;z-index: 200;"></div>
-            <img id="beltSample" src="images/beltgrinder/hand_sample.svg" height="500px" width="auto" style="position: absolute; top:-100px; z-index: 20; left:150px; transition: all 1s ease;">
-            <img id="rr" src="images/rr.svg" height="10px" style="position: absolute; top:380px; left:200px; visibility: hidden; transition-duration: 0.5s;">
-            <img id="rr1" src="images/rr.svg" height="10px" style="position: absolute; top:380px; left:200px; visibility: hidden; transition-duration: 0.5s;">
-            <img id="rr2" src="images/rr.svg" height="10px" style="position: absolute; top:380px; left:200px; visibility: hidden; transition-duration: 0.5s;">
-            <img id="rr3" src="images/rr.svg" height="10px" style="position: absolute; top:380px; left:200px; visibility: hidden; transition-duration: 0.5s;">
-            <img id="rr4" src="images/rr.svg" height="10px" style="position: absolute; top:380px; left:200px; visibility: hidden; transition-duration: 0.5s;">
-            <img id="rrc" src="images/rrc.svg" height="40px" style="position: absolute; top:430px; left:180px; visibility: hidden; transition: all 2s linear;">
-            <img id="rrc1" src="images/rrc.svg" height="40px" style="position: absolute; top:420px; left:463px; visibility: hidden; transition: all 2s linear;"> -->
 
+            <img id="handSample" src="images/hand_sample.png"  style="position: absolute; visibility: hidden; top: 0px; left: 270px; z-index: 4; width: 300px; height: 240px;" />
+            <img id="samplePlaced" src="images/path847.png" style="visibility: hidden; position: absolute; top: 322px; left: 310px; z-index: 4; width: 27px; height: 12px;" />
 
-            <img id="handSample" src="images/hand_sample.png" height="200px" style="position: absolute; top: 0px; left: 270px; z-index: 1; width: 300px; height: 240px;" />
-            <img id="samplePlaced" src="images/sssss.png" height="200px" style="visibility: hidden; position: absolute; top:313px; left: 308px; z-index: 1; width:30px; height:30px;" />
-
-            <img id="initialEmitter" src="images/emitterNew.png" height="200px" style="position: absolute; top:190px; left: 100px; z-index: -1; width:230px; height:220px; " />
-            <img id="stageWithoutSample" src="images/stage without.png" height="200px" style="visibility: block; position: absolute; top:200px; left:230px;z-index: -1; width:230px; height: 300px;"/>
-            <img id="stageWithSample" src="images/stageNewWith.png" height="200px" style="visibility: hidden; position: absolute; top:230px; left:214px ;z-index: -1; width:260px; height: 240px;" />
-            <img id="initialRec" src="images/receiverNew.png" height="200px" style="position: absolute; width: 290px; height: 270px; top:110px; left:320px;z-index: -1;" />
+            <img id="initialEmitter" src="images/emitterNew.png"  style="position: absolute; visibility: hidden; top:190px; left: 100px; z-index: 3; width:230px; height:220px; " />
+            <img id="stageWithoutSample" src="images/stage without.png"style="visibility: hidden; position: absolute; top:200px; left:230px;z-index: 3; width:230px; height: 300px;"/>
+            <img id="stageWithSample" src="images/stageNewWith.png"  style="visibility: hidden; position: absolute; top:230px; left:214px ;z-index: -1; width:260px; height: 240px;" />
+            <img id="initialRec" src="images/receiverNew.png"  style="position: absolute; visibility: hidden; width: 290px; height: 270px; top:110px; left:320px;z-index: 3;" />
             
-            <button id="restoreButton" class="buttons" style="position: absolute; visibility: hidden; top: 100px; left: 350px;" >Restore</button>
-            <!-- STEP 2 -->
-            <img id="newEmitter" src="images/emitterNew.png" height="200px" style="visibility: hidden; position: absolute; top: 225px; left: 110px; z-index: -1; width: 230px; height: 220px; transform: rotate(-40deg);" />
-            <img id="newRec" src="images/receiverNew.png" height="200px" style="visibility: hidden; position: absolute; width: 290px; height: 270px; top: 180px; left: 325px; z-index: -1; transform: rotate(45deg);" />
-            
-            <button id="startButton" class="buttons" style="position: absolute; visibility: hidden; top: 100px; left: 350px;" >Start</button>
-            <!-- Step3 -->
-            <img id="finalEmitter" src="images/emitterNew.png" height="200px" style="visibility: hidden; position: absolute; top: 155px; left: 110px; z-index: -1; width: 230px; height: 220px; transform: rotate(20deg);" />
-            <img id="finalRec" src="images/receiverNew.png" height="200px" style="visibility: hidden; position: absolute; width: 290px; height: 270px; top: 70px; left: 295px; z-index: -1; transform: rotate(-20deg);" />
-
-
-
-            <!--span style="position: absolute; top: 490px; left:300px;"><strong>Belt Grinder</strong></span-->
         </div>
 
         <!--Step3	-->
-        <div class="simsubscreen" id="canvas2" style="visibility:hidden">
+        <div class="simsubscreen" id="canvas3" style="visibility:hidden">
             <strong id="titlestep" class="incanvas">STEP </strong>
             <span class="circlebg" id="stepnumber">&nbsp;3&nbsp;</span>
             <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;">Support a polish paper of 1/0 fineness on a flat glass plate. Polish the specimens rubbing in forward direction only.</p>
             <br>
-            <br>
-            <img id="glassPaper" src="images/polish_velvet/polish_paper.svg" height="500px" width="auto" style="margin-top: -100px;">
-            <img id="beltSample2" src="images/beltgrinder/hand_sample.svg" height="400px" width="auto" style="position: absolute; top:-65px; z-index: 20; left:170px; transition: all 0.3s ease;">
-            <span style="position: absolute; top: 305px; left:250px;"><strong>1/0 Polish paper</strong></span>
-            <!--Note-->
-            <span id="note1" class="tooltip" style="font-family:verdana; font-size:18px;border-bottom:1px dotted ; color:red; position:absolute; visibility: hidden;">
-                <span id="10" class="tooltiptext" style="font-family:verdana; font-size:14px;color:white;width:600px;left:-650px;top:265px;text-align: justify;">Note:<br><br>Move to the next finer paper (2/0 and 3/0) once the scratches on the specimen are uniform. While changing from one paper to another, the specimen and your hands should be cleaned free from the abrasive of the previous paper, and the specimen turned through 90°, so that the scratches from the previous paper are at right angles to the scratches from the next paper. </br></br>
-                <input id="ok" type="button" name="ok" value="Ok" />&nbsp;&nbsp;&nbsp;</span>
-            </span>
+            <img id="pc" src="images/Computer.png" style="position: absolute; visibility: hidden; width: 800px; height: 1050px; top: -190px; left: -50px; z-index: 1;" />
+            <button id="gotoPCsetup" class="buttons" style="position: absolute; visibility: hidden; width:100px; top: 220px; left: 320px; z-index: 2;" >Start</button>
+            <img id="window" src="images/window.png" style="visibility: hidden; position: absolute; width: 450px; height: 248px; top: 100px; left: 115px; z-index: 3; " />
+            <p id="windowBarText" style="position: absolute; visibility: hidden; height: 23px; width: 220px; left: 145px; top: 96px; z-index:3; font-size:15px;">Prepare absolute scan</p>
+            <div id="contentInsideBox" style="visibility: hidden;">
+                <p style="position: absolute; height: 30px; width: 220px; left: 145px; top: 130px; z-index:3; font-size:12px;">Configuration</p>
+                <p style="position: absolute; height: 16px; width: 170px; left: 145px; top: 156px; z-index:3; border-radius:5px;  border: 2px solid gray; font-size:10px;">Programmable XY with manual2</p>
+                <p style="position: absolute; height: 30px; width: 220px; left: 145px; top: 180px; z-index:3; font-size:12px;">Scan axis</p>
+                <p style="position: absolute; height: 16px; width: 170px; left: 145px; top: 206px; z-index:3; border-radius:5px;  border: 2px solid gray; font-size:10px;">Gonio</p>
+                
+                <p style="position: absolute; height: 30px; width: 220px; left: 340px; top: 125px; z-index:3; font-size:12px;">Start angle</p>
+                <p style="position: absolute; height: 15px; width: 80px; left: 455px;  top: 125px; z-index:3; border-radius:5px;  border: 2px solid gray; font-size:10px;">19.9946</p>
+                <p style="position: absolute; height: 30px; width: 220px; left: 340px; top: 146px; z-index:3; font-size:12px;">End angle</p>
+                <p style="position: absolute; height: 15px; width: 80px; left: 455px;  top: 148px; z-index:3; border-radius:5px;  border: 2px solid gray; font-size:10px;">80.0000</p>
+                <p style="position: absolute; height: 30px; width: 220px; left: 340px; top: 170px; z-index:3; font-size:12px;">Step size</p>
+                <p style="position: absolute; height: 15px; width: 80px; left: 455px;  top: 170px; z-index:3; border-radius:5px;  border: 2px solid gray; font-size:10px;">0.0262606</p>
+                <p style="position: absolute; height: 30px; width: 220px; left: 340px; top: 192px; z-index:3; font-size:12px;">Time per step</p>
+                <p style="position: absolute; height: 15px; width: 80px; left: 455px;  top: 192px; z-index:3; border-radius:5px;  border: 2px solid gray; font-size:10px;">10.200</p>
+                <p style="position: absolute; height: 30px; width: 220px; left: 340px; top: 214px; z-index:3; font-size:12px;">Next time per step</p>
+                <p style="position: absolute; height: 15px; width: 80px; left: 455px;  top: 215px; z-index:3; border-radius:5px;  border: 2px solid gray; font-size:10px;">7.140</p>
+                <p style="position: absolute; height: 30px; width: 220px; left: 340px; top: 237px; z-index:3; font-size:12px;">Scan speed</p>
+                <p style="position: absolute; height: 15px; width: 80px; left: 455px;  top: 237px; z-index:3; border-radius:5px;  border: 2px solid gray; font-size:10px;">0.656514</p>
+                <p style="position: absolute; height: 30px; width: 220px; left: 340px; top: 259px; z-index:3; font-size:12px;">Pre-set counts</p>
+                <p style="position: absolute; height: 15px; width: 80px; left: 455px;  top: 259px; z-index:3; border-radius:5px;  border: 2px solid gray; font-size:10px;">10000</p>
+                <p style="position: absolute; height: 30px; width: 220px; left: 340px; top: 280px; z-index:3; font-size:12px;">Number of steps</p>
+                <p style="position: absolute; height: 15px; width: 80px; left: 455px;  top: 281px; z-index:3; border-radius:5px;  border: 2px solid gray; font-size:10px;">2285</p>
+                <p style="position: absolute; height: 30px; width: 220px; left: 340px; top: 301px; z-index:3; font-size:12px;">Estimated time</p>
+                <p style="position: absolute; height: 15px; width: 80px; left: 455px;  top: 302px; z-index:3; border-radius:5px;  border: 2px solid gray; font-size:10px;">00:01:39</p>
+            </div>
+            
+            <button id="startButtonOfSetup" class="buttons" style="position: absolute; visibility: hidden; height:25px; width: 80px; top: 345px; left: 475px; z-index: 3;" >Proceed</button>
+            
+            <img id="samplePlacedStep3" src="images/path847.png" style="visibility: hidden; position: absolute; top: 322px; left: 310px; z-index: 4; width: 27px; height: 12px;" />
+
+            <img id="initialEmitterStep3" src="images/emitterNew.png"  style="position: absolute; visibility: hidden; top:190px; left: 100px; z-index: 3; width:230px; height:220px; " />
+            <img id="stageWithoutSampleStep3" src="images/stage without.png"style="visibility: hidden; position: absolute; top:200px; left:230px;z-index: 3; width:230px; height: 300px;"/>
+            <img id="stageWithSampleStep3" src="images/stageNewWith.png"  style="visibility: hidden; position: absolute; top:230px; left:214px ;z-index: -1; width:260px; height: 240px;" />
+            <img id="initialRecStep3" src="images/receiverNew.png"  style="position: absolute; visibility: hidden; width: 290px; height: 270px; top:110px; left:320px;z-index: 3;" />
+
+            <!-- <button id="restoreButton" class="buttons" style="position: absolute; visibility: hidden; top: 100px; left: 350px;" >Restore</button> -->
+            <img id="newEmitter" src="images/emitterNew.png" height="200px" style="visibility: hidden; position: absolute; top: 225px; left: 110px; z-index: -1; width: 230px; height: 220px; transform: rotate(-40deg);" />
+            <img id="newRec" src="images/receiverNew.png" height="200px" style="visibility: hidden; position: absolute; width: 290px; height: 270px; top: 180px; left: 325px; z-index: -1; transform: rotate(45deg);" />
+            
+            <button id="startButton" class="buttons" style="position: absolute; visibility: hidden; top: 100px; left: 350px; width:100px; height:30px;" >Start</button>
+            <img id="finalEmitter" src="images/emitterNew.png" height="200px" style="visibility: hidden; position: absolute; top: 155px; left: 110px; z-index: -1; width: 230px; height: 220px; transform: rotate(20deg);" />
+            <img id="finalRec" src="images/receiverNew.png" height="200px" style="visibility: hidden; position: absolute; width: 290px; height: 270px; top: 70px; left: 295px; z-index: -1; transform: rotate(-20deg);" />
+            
+            <img id="pcLittle" src="images/Computer.png" style="position: absolute; visibility: hidden; width: 280px; height: 350px; top: 195px; left: 460px; z-index: 4;" />
+            <button id="outputButton" class="buttons" style="position: absolute; visibility: hidden; top: 325px; left: 560px; height:25px; width:80px; z-index:4;" >Output</button>
+            <img id="XRDgraph" src="images/xrdOutput.png" style="position: absolute; visibility: hidden; width: 480px; height: 250px; top: 115px; left: 100px; z-index: 4;" />
+
         </div>
 
         <!--Step4	-->
-        <div class="simsubscreen" id="canvas3" style="visibility:hidden">
+        <div class="simsubscreen" id="canvas4" style="visibility:hidden">
             <strong id="titlestep" class="incanvas">STEP </strong>
             <span class="circlebg" id="stepnumber">&nbsp;4&nbsp;</span>
             <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;"> Finish polishing the specimens on 4/0 abrasive paper, wash hands and specimens.</p>
             <br>
             <br>
-            <img id="glassPaper2" src="images/polish_velvet/polish_paper_2.svg" height="500px" width="auto">
-            <img id="beltSample3" src="images/beltgrinder/hand_sample.svg" height="500px" width="auto" style=" position: absolute; top:-50px; z-index: 20; left:100px; transition: all 0.3s ease;">
-            <span style="position: absolute; top: 390px; left:250px;"><strong>4/0 Polish paper</strong></span>
+           
         </div>
 
         <!--Step5	-->
