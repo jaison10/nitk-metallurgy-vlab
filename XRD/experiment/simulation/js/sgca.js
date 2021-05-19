@@ -6,10 +6,10 @@ function navNext() {
         document.getElementById('canvas' + temp).style.visibility = "hidden";
     }
 
-        simsubscreennum += 1;
-        document.getElementById('canvas' + (simsubscreennum)).style.visibility = "visible";
-        document.getElementById('nextButton').style.visibility = "visible"; 
-        magic();
+    simsubscreennum += 1;
+    document.getElementById('canvas' + (simsubscreennum)).style.visibility = "visible";
+    document.getElementById('nextButton').style.visibility = "visible";
+    magic();
 }
 
 
@@ -119,11 +119,11 @@ function magic() {
         document.getElementById("initialRec").style.visibility = "hidden";
         document.getElementById("stageWithoutSample").style.visibility = "hidden";
         document.getElementById("samplePlaced").style.visibility = "hidden";
-        
+
         document.getElementById('gotoPCsetup').style.visibility = 'visible';
         document.getElementById('pc').style.visibility = 'visible';
         document.getElementById("gotoPCsetup").style.cursor = "pointer";
-        document.getElementById('gotoPCsetup').onclick = function(){
+        document.getElementById('gotoPCsetup').onclick = function() {
             showPCOptions();
         }
     }
@@ -154,16 +154,16 @@ function magic() {
 function placeSampleFunction() {
     myStopFunction();
     document.getElementById("handSample").classList.add("placeSample");
-    setTimeout(function(){
+    setTimeout(function() {
         document.getElementById("handSample").style.visibility = "hidden";
         // document.getElementById("stageWithoutSample").style.visibility = "hidden";
         document.getElementById("samplePlaced").style.visibility = "visible";
         document.getElementById('nextButton').style.visibility = "visible";
-        
-    },2000);
+
+    }, 2000);
 }
 
-function showPCOptions(){
+function showPCOptions() {
     document.getElementById("gotoPCsetup").style.visibility = "hidden";
     document.getElementById("pc").style.visibility = "visible";
     document.getElementById("window").style.visibility = "visible";
@@ -171,12 +171,14 @@ function showPCOptions(){
     document.getElementById("contentInsideBox").style.visibility = "visible";
     document.getElementById("startButtonOfSetup").style.visibility = "visible";
     document.getElementById("startButtonOfSetup").style.cursor = "pointer";
-    document.getElementById("startButtonOfSetup").onclick = function(){
+    document.getElementById("startButtonOfSetup").onclick = function() {
         xrdBegin();
     }
 }
 
-function xrdBegin(){
+function xrdBegin() {
+    document.getElementById("pumptext3").innerText = "Switch on the apparatus after ensuring all safety procedures are in place and wait for the program to deliver the XRD output.";
+
     // Hiding
     document.getElementById("pc").style.visibility = "hidden";
     document.getElementById("window").style.visibility = "hidden";
@@ -190,15 +192,14 @@ function xrdBegin(){
     document.getElementById("samplePlacedStep3").style.visibility = "visible";
     document.getElementById("initialEmitterStep3").style.visibility = "visible";
     document.getElementById("stageWithoutSampleStep3").style.visibility = "visible";
-    
+
     document.getElementById("initialEmitterStep3").classList.add("restoreEmitter");
     document.getElementById("initialRecStep3").classList.add("restoreRec");
-    setTimeout(()=>{
+    setTimeout(() => {
         document.getElementById("initialEmitterStep3").style.visibility = "hidden";
         document.getElementById("initialRecStep3").style.visibility = "hidden";
         document.getElementById("newEmitter").style.visibility = "visible";
         document.getElementById("newRec").style.visibility = "visible";
-
         // Showing start button and arrow
         myInt = setInterval(function() {
             animatearrow();
@@ -214,7 +215,7 @@ function xrdBegin(){
         document.getElementById('startButton').onclick = function() {
             moveXRDEquip();
         };
-    },2000);
+    }, 2000);
 }
 
 
@@ -224,25 +225,26 @@ function moveXRDEquip() {
     document.getElementById("startButton").style.visibility = "hidden";
     document.getElementById("newEmitter").classList.add("moveEmitter");
     document.getElementById("newRec").classList.add("moveRec");
-    setTimeout(()=>{
+    setTimeout(() => {
         document.getElementById("newEmitter").style.visibility = "hidden";
         document.getElementById("newRec").style.visibility = "hidden";
         document.getElementById("finalEmitter").style.visibility = "visible";
         document.getElementById("finalRec").style.visibility = "visible";
-    },3000);
+    }, 3000);
     setTimeout(() => {
+
         document.getElementById("pcLittle").style.visibility = "visible";
         document.getElementById("outputButton").style.visibility = "visible";
         document.getElementById("outputButton").style.cursor = "pointer";
-        document.getElementById("outputButton").onclick = function(){
+        document.getElementById("outputButton").onclick = function() {
             displayOutput();
         }
     }, 4000);
 }
 
-function displayOutput(){
+function displayOutput() {
     document.getElementById("outputButton").style.visibility = "hidden";
-
+    document.getElementById("pumptext3").innerText = "Interpret the output data by comparing it to respective JCPDS Files to identify the crystal structure of the sample under consideration.";
     document.getElementById("finalEmitter").style.visibility = "hidden";
     document.getElementById("finalRec").style.visibility = "hidden";
     document.getElementById("stageWithoutSampleStep3").style.visibility = "hidden";
@@ -254,5 +256,5 @@ function displayOutput(){
         document.getElementById("pc").style.visibility = "visible";
         document.getElementById("XRDgraph").style.visibility = "visible";
     }, 3000);
-    
+
 }
