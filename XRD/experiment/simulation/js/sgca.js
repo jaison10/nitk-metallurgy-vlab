@@ -128,21 +128,18 @@ function magic() {
         }
     }
     if (simsubscreennum == 4) {
-        myInt = setInterval(function() {
-            animatearrow();
-        }, 500);
-        document.getElementById('nextButton').style.visibility = "hidden";
-
-        document.getElementById('arrow1').style = "visibility:visible ;position:absolute; left: 75px; top: 270px; height: 40px; z-index: 10;";
-        document.getElementById("arrow1").style.WebkitTransform = "rotate(90deg)";
-        // Code for IE9
-        document.getElementById("arrow1").style.msTransform = "rotate(90deg)";
-        // Standard syntax
-        document.getElementById("arrow1").style.transform = "rotate(90deg)";
-        document.getElementById('handBottle').onclick = function() {
-            this.onclick = null;
-            step4();
-        };
+        document.getElementById("pumptext3").innerText = "";
+        document.getElementById("pumptext4").innerText = "Observation 1";
+        document.getElementById("nextButton").style.visibility = "hidden";
+        document.getElementById("XRDgraph").style.visibility = "hidden";
+        document.getElementById("pcLittle").style.visibility = "hidden";
+        document.getElementById("XRDgraphStep4").style.visibility = "visible";
+        document.getElementById("slide1_content").style.visibility = "visible";
+        document.getElementById("gotoobserve2").style.visibility = "visible";
+        document.getElementById("gotoobserve2").style.cursor = "pointer";
+        document.getElementById("gotoobserve2").onclick = function(){
+            displaySlide2Content();
+        }
     }
 
     if (simsubscreennum == 5) {
@@ -255,19 +252,21 @@ function displayOutput() {
         document.getElementById("pcLittle").style.visibility = "hidden";
         document.getElementById("pc").style.visibility = "visible";
         document.getElementById("XRDgraph").style.visibility = "visible";
-        document.getElementById("gotoobserve2").style.visibility = "visible";
-        document.getElementById("gotoobserve2").style.cursor = "pointer";
+        // document.getElementById("gotoobserve2").style.visibility = "visible";
+        // document.getElementById("gotoobserve2").style.cursor = "pointer";
+        document.getElementById("nextButton").style.visibility = "visible";
+        document.getElementById("nextButton").style.cursor = "pointer";
+        document.getElementById("nextButton").style.zIndex = 5;
     }, 3000);
-
-    document.getElementById("gotoobserve2").onclick = function(){
-        displaySlide2Content();
-    }
 }
+
 function displaySlide2Content(){
+    document.getElementById("XRDgraphStep4").style.visibility = "hidden";
+    document.getElementById("slide1_content").style.visibility = "hidden";
+    document.getElementById("pumptext4").innerText = "Observation 2";
     document.getElementById("gotoobserve2").style.visibility = "hidden";
     document.getElementById("gotoobserve1").style.visibility = "visible";
     document.getElementById("gotoobserve1").style.cursor = "pointer";
-    document.getElementById("XRDgraph").style.visibility = "hidden";
     document.getElementById("slide2_1").style.visibility = "visible";
     document.getElementById("slide2_content").style.visibility = "visible";
     document.getElementById("nextArrow").style.visibility = 'visible';
@@ -288,6 +287,7 @@ function displaySlide2Next(){
     document.getElementById("prevArrow").style.cursor = "pointer";
     document.getElementById("slide2NextTable").style.visibility = "visible";
     document.getElementById("slide2Next_content").style.visibility = "visible";
+    document.getElementById("finalResult").style.visibility = "visible";
     document.getElementById("prevArrow").onclick = function(){
         displaySlide2Prev();
     }
@@ -295,13 +295,17 @@ function displaySlide2Next(){
 function displaySlide1(){
     document.getElementById("slide2_1").style.visibility = "hidden";
     document.getElementById("slide2_content").style.visibility = "hidden";
-    document.getElementById("XRDgraph").style.visibility = "visible";
     document.getElementById("gotoobserve2").style.visibility = "visible";
     document.getElementById("gotoobserve1").style.visibility = "hidden";
     document.getElementById("nextArrow").style.visibility = 'hidden';
     document.getElementById("prevArrow").style.visibility = 'hidden';
     document.getElementById("slide2Next_content").style.visibility = "hidden";
     document.getElementById("slide2NextTable").style.visibility = "hidden";
+    document.getElementById("XRDgraphStep4").style.visibility = "visible";
+    document.getElementById("slide1_content").style.visibility = "visible";
+    document.getElementById("gotoobserve2").style.visibility = "visible";
+    document.getElementById("finalResult").style.visibility = "hidden";
+    document.getElementById("pumptext4").innerText = "Observation 1"
 }
 function displaySlide2Prev(){
     document.getElementById("slide2NextTable").style.visibility = "hidden";
@@ -310,4 +314,5 @@ function displaySlide2Prev(){
     document.getElementById("nextArrow").style.visibility = 'visible';
     document.getElementById("prevArrow").style.visibility = 'hidden';
     document.getElementById("slide2Next_content").style.visibility = "hidden";
+    document.getElementById("finalResult").style.visibility = "hidden";
 }

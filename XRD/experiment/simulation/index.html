@@ -138,15 +138,7 @@
 
             <img id="pcLittle" src="images/Computer.png" style="position: absolute; visibility: hidden; width: 280px; height: 350px; top: 195px; left: 460px; z-index: 4;" />
             <button id="outputButton" class="buttons" style="position: absolute; visibility: hidden; top: 325px; left: 560px; height:25px; width:80px; z-index:4;">Output</button>
-            <img id="XRDgraph" src="images/observe1.png" style="position: absolute; visibility: hidden; width: 480px; height: 240px; top: 105px; left: 100px; z-index: 4;" />
-            <button id="gotoobserve2" class="buttons" style="position: absolute; visibility: hidden; height:25px; width: 80px; top: 345px; left: 475px; z-index: 3;">Next</button>
-            <button id="gotoobserve1" class="buttons" style="position: absolute; visibility: hidden; height:25px; width: 80px; top: 345px; left: 475px; z-index: 3;">Prev</button>
-            <img id="slide2_1" src="images/observe2.png" style="position: absolute; visibility: hidden; width: 450px; height: 160px; top: 105px; left: 120px; z-index: 4;" />
-            <p id="slide2_content" style="position: absolute; visibility: hidden; font-size:12px; top:280px; width:430px; left:125px; z-index:4">The table above shows the rules hkl values must satisfy for the HCP (Hexagonal Closed Packing) crystal structure</p>
-            <img id="nextArrow" src="images/arrow-2.png" style="position: absolute; visibility: hidden; width: 25px; height: 60px; top: 205px; left: 570px; z-index: 4;" />
-            <img id="prevArrow" src="images/arrow-2.png" style="position: absolute; visibility: hidden; width: 25px; height: 60px; top: 205px; left: 94px; z-index: 4; transform: rotate(180deg);" />
-            <img id="slide2NextTable" src="images/slide2nextTable.PNG" style="position: absolute; visibility: hidden; width: 450px; height: 202px; top: 142px; left: 120px; z-index: 4;" />
-            <p id="slide2Next_content" style="position: absolute; visibility: hidden; font-size:12px; top:92px; width:430px; left:125px; z-index:4">The calculated hkl and d-spacing (interplanar spacing) values are displayed corresponding to the 2θ values.</p>
+            <img id="XRDgraph" src="images/observe1.png" style="position: absolute; visibility: hidden; width: 480px; height: 260px; top: 105px; left: 100px; z-index: 4;" />
             
         </div>
 
@@ -154,9 +146,26 @@
         <div class="simsubscreen" id="canvas4" style="visibility:hidden">
             <strong id="titlestep" class="incanvas">STEP </strong>
             <span class="circlebg" id="stepnumber">&nbsp;4&nbsp;</span>
-            <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;"> </p>
+            <p id="pumptext4" class="steptext" style="font-family:verdana; font-size:14px;"> </p>
             <br>
             <br>
+            <img id="XRDgraphStep4" src="images/observe1.png" style="position: absolute; visibility: hidden; width: 640px; height: 340px; top: 105px; left: 30px; z-index: 4;" />
+            <p id="slide1_content" style="position: absolute; visibility: hidden; font-size:12px; top: 50px; width: 700px; left: 25px; z-index:4">The given XRD plot is obtained from the computer after performing XRD analysis. The hkl values are given corresponding to the peaks in the graph.</p>
+            <button id="gotoobserve2" class="buttons" style="position: absolute; visibility: hidden; height:25px; width: 80px; top: 475px; left: 605px; z-index: 3;">Next</button>
+            <button id="gotoobserve1" class="buttons" style="position: absolute; visibility: hidden; height:25px; width: 80px; top: 475px; left: 605px; z-index: 3;">Prev</button>
+            <img id="slide2_1" src="images/observe2.png" style="position: absolute; visibility: hidden; width: 610px; height: 230px; top: 85px; left: 50px; z-index: 4;" />
+            <p id="slide2_content" style="position: absolute; visibility: hidden; font-size: 12px; top: 340px; width: 620px; left: 50px; z-index: 4;">The table above shows the rules hkl values must satisfy for the HCP (Hexagonal Closed Packing) crystal structure</p>
+            <img id="nextArrow" src="images/arrow-2.png" style="position: absolute; visibility: hidden; width: 25px; height: 60px; top: 205px; left: 680px; z-index: 4;" />
+            <img id="prevArrow" src="images/arrow-2.png" style="position: absolute; visibility: hidden; width: 25px; height: 60px; top: 205px; left: 4px; z-index: 4; transform: rotate(180deg);" />
+            <img id="slide2NextTable" src="images/slide2nextTable.PNG" style="position: absolute; visibility: hidden; width: 610px; height: 262px; top: 95px; left: 50px; z-index: 4;" />
+            <p id="slide2Next_content" style="position: absolute; visibility: hidden; font-size: 12px; top: 40px; width: 600px; left: 52px; z-index: 4;">The calculated hkl and d-spacing (interplanar spacing) values are displayed corresponding to the 2θ values.</p>
+            
+            <p id="finalResult" style="position: absolute; visibility: hidden; font-size: 12px; top: 370px; width: 620px; left: 52px; z-index: 4;">
+                <b>Result:</b>  It can be observed that the table displayed satisfies this condition, hence it can be confirmed that the sample obtained has an HCP crystal lattice. </br>
+                The d-spacing outputted by the computer corresponds to the d-spacing values of Pure Mg. It must be noted that these d-spacing values are unique to Pure Mg. </br>
+                Therefore it can be confirmed from XRD analysis that the sample obtained is Pure Mg having a HCP crystal structure.
+            </p>
+
 
         </div>
 
