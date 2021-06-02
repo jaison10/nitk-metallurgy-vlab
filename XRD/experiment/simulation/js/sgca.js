@@ -255,6 +255,56 @@ function displayOutput() {
         document.getElementById("pcLittle").style.visibility = "hidden";
         document.getElementById("pc").style.visibility = "visible";
         document.getElementById("XRDgraph").style.visibility = "visible";
+        document.getElementById("gotoobserve2").style.visibility = "visible";
+        document.getElementById("gotoobserve2").style.cursor = "pointer";
     }, 3000);
 
+    document.getElementById("gotoobserve2").onclick = function(){
+        displaySlide2Content();
+    }
+}
+function displaySlide2Content(){
+    document.getElementById("gotoobserve2").style.visibility = "hidden";
+    document.getElementById("gotoobserve1").style.visibility = "visible";
+    document.getElementById("gotoobserve1").style.cursor = "pointer";
+    document.getElementById("XRDgraph").style.visibility = "hidden";
+    document.getElementById("slide2_1").style.visibility = "visible";
+    document.getElementById("slide2_content").style.visibility = "visible";
+    document.getElementById("nextArrow").style.visibility = 'visible';
+    document.getElementById("nextArrow").style.cursor = "pointer";
+
+    document.getElementById("nextArrow").onclick = function(){
+        displaySlide2Next();
+    }
+    document.getElementById("gotoobserve1").onclick = function(){
+        displaySlide1();
+    }
+}
+function displaySlide2Next(){
+    document.getElementById("slide2_1").style.visibility = "hidden";
+    document.getElementById("slide2_content").style.visibility = "hidden";
+    document.getElementById("nextArrow").style.visibility = 'hidden';
+    document.getElementById("prevArrow").style.visibility = 'visible';
+    document.getElementById("prevArrow").style.cursor = "pointer";
+    document.getElementById("slide2NextTable").style.visibility = "visible";
+    document.getElementById("prevArrow").onclick = function(){
+        displaySlide2Prev();
+    }
+}
+function displaySlide1(){
+    document.getElementById("slide2_1").style.visibility = "hidden";
+    document.getElementById("slide2_content").style.visibility = "hidden";
+    document.getElementById("XRDgraph").style.visibility = "visible";
+    document.getElementById("gotoobserve2").style.visibility = "visible";
+    document.getElementById("gotoobserve1").style.visibility = "hidden";
+    document.getElementById("nextArrow").style.visibility = 'hidden';
+    document.getElementById("prevArrow").style.visibility = 'hidden';
+    document.getElementById("slide2NextTable").style.visibility = "hidden";
+}
+function displaySlide2Prev(){
+    document.getElementById("slide2NextTable").style.visibility = "hidden";
+    document.getElementById("slide2_1").style.visibility = "visible";
+    document.getElementById("slide2_content").style.visibility = "visible";
+    document.getElementById("nextArrow").style.visibility = 'visible';
+    document.getElementById("prevArrow").style.visibility = 'hidden';
 }
