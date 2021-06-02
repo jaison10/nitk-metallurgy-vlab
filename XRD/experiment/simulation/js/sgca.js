@@ -287,6 +287,7 @@ function displaySlide2Next(){
     document.getElementById("prevArrow").style.visibility = 'visible';
     document.getElementById("prevArrow").style.cursor = "pointer";
     document.getElementById("slide2NextTable").style.visibility = "visible";
+    document.getElementById("slide2Next_content").style.visibility = "visible";
     document.getElementById("prevArrow").onclick = function(){
         displaySlide2Prev();
     }
@@ -299,6 +300,7 @@ function displaySlide1(){
     document.getElementById("gotoobserve1").style.visibility = "hidden";
     document.getElementById("nextArrow").style.visibility = 'hidden';
     document.getElementById("prevArrow").style.visibility = 'hidden';
+    document.getElementById("slide2Next_content").style.visibility = "hidden";
     document.getElementById("slide2NextTable").style.visibility = "hidden";
 }
 function displaySlide2Prev(){
@@ -307,4 +309,5 @@ function displaySlide2Prev(){
     document.getElementById("slide2_content").style.visibility = "visible";
     document.getElementById("nextArrow").style.visibility = 'visible';
     document.getElementById("prevArrow").style.visibility = 'hidden';
+    document.getElementById("slide2Next_content").style.visibility = "hidden";
 }
