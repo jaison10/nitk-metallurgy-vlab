@@ -18,7 +18,7 @@ Due to the random orientation of the powdered sample material, all possible diff
 </p>
 
 
-<center><img src="images/image1.png" style=" margin-left: auto;margin-right: auto;" width="70%" height="300px"></center><br>
+<center><img src="images/image1.png" style=" margin-left: auto;margin-right: auto;" width="60%" height="300px"></center><br>
 <center>Schematic diagram of a XRay powder diffractometer</center><br>
 <center><a href="http://prism.mit.edu/xray/Basics%20of%20X-Ray%20Powder%20Diffraction.pdf" target="_blank">Source </a></center>
 <br><br>
