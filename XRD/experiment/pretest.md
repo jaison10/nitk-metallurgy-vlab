@@ -2,7 +2,7 @@
 #### Please attempt the following questions
 
 <br>
-<img src="./images/quiz1.png" height="200px" width="300px" ><br>
+<!-- <img src="./images/quiz1.png" height="200px" width="300px" ><br> -->
 Q 1.  X-ray diffractometers are not used to identify which of these physical properties? <br>
 a. Metals<br>
 b. Polymeric materials<br>
@@ -27,7 +27,7 @@ b. Quartz<br>
 c. Polymers<br>
 <b>d. Metal with next lower atomic number</b><br>
 
-<img src="./images/quiz5.png" height="200px" width="300px"><br>
+<!-- <img src="./images/quiz5.png" height="200px" width="300px"><br> -->
 
 Q 5.  The detector in X-ray diffraction that detects the visible radiation is<br>
 a. Proportional counter<br>
@@ -42,7 +42,7 @@ b. Ionization region<br>
 c. Proportional region<br>
 d. Passivation region<br>
 
-<img src="./images/quiz7.png" height="200px" width="300px"><br>
+<!-- <img src="./images/quiz7.png" height="200px" width="300px"><br> -->
 
 Q 7.  Are the intensities of the diffraction peaks of a given compound in a mixture proportional to the fraction of the material in the mixture in diffractometers?<br>
 a. No<br>
