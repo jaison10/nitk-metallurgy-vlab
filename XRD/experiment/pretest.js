@@ -78,125 +78,101 @@
     // Write your MCQs here --- Start --- --------------------
 
     const myQuestions = [{
-            question: "What is the line that defines the solubility limit of A in B and B in A from the figure?",
+            question: "X-ray diffractometers are not used to identify which of these physical properties?",
             answers: {
-                a: "Solidus line",
-                b: "Liquidus line",
-                c: "Solidus line and Liquidus line",
-                d: "Solvus line"
+                a: "Metals",
+                b: "Polymeric materials",
+                c: "Ceramics",
+                d: "Liquids"
             },
             correctAnswer: "d"
         },
         {
-            question: "Three phases (L+α+β) coexist at point E. This point is called ___________. ",
+            question: "In a powder diffractometer, the sharpness of the lines is greatly determined by? ",
             answers: {
-                a: "Peritectic point",
-                b: "Eutectic point",
-                c: "Eutectic point or composition",
-                d: "Eutectoid point"
+                a: "Quality of the sample, size of the slit",
+                b: "Thickness of the slit, amount of the sample",
+                c: "Quality of the slit, size of the sample",
+                d: "Composition of the sample"
             },
             correctAnswer: "c"
         },
         {
-            question: "In hypoeutectic alloys micro structure at room temperature consists of",
+            question: "The atomic numbers of the zirconium, molybdenum, palladium and tin are 40, 42, 46 and 50 respectively, then the suitable filter for x-radiation from molybdenum is",
             answers: {
-                a: "Proeutectic β and α",
-                b: "Proeutectic α and eutectic mixture (α+β)",
-                c: "Eutectic mixture (α+β)",
-                d: "Proeutectic β and eutectic mixture (α+β)"
+                a: "Palladium",
+                b: "Zirconium",
+                c: "Tin",
+                d: "Uranium"
             },
             correctAnswer: "b"
         },
         {
-            question: "Why Pb-Sn eutectic alloys are used for soldering purpose?",
+            question: "The material used to construct the filter in X-ray diffraction is",
             answers: {
-                a: "The melting point at eutectic point is maximum",
-                b: "The melting point at the eutectic point is constant",
-                c: "The boiling point at the eutectic point is maximum",
-                d: "The melting point at the eutectic point is minimum"
+                a: "Metal with next higher atomic number",
+                b: "Quartz",
+                c: "Polymers",
+                d: "Metal with next lower atomic number"
             },
             correctAnswer: "d"
         },
         {
-            question: "Crystals of which material begin to form at point a from the figure?",
+            question: "The detector in X-ray diffraction that detects the visible radiation is",
             answers: {
-                a: "Crystals of proeutectic β",
-                b: "Crystals of proeutectic α",
-                c: "Crystals of eutectic (α+β)",
-                d: "Crystals of proeutectic α and β"
+                a: "Proportional counter",
+                b: "Scintillation counter ",
+                c: "Silicon diode",
+                d: "Quartz"
             },
             correctAnswer: "b"
         },
         {
-            question: "At any point b, the α fraction is given by the lever rule as",
+            question: "In gas phase detectors in XRD, high voltage is applied in the region of",
             answers: {
-                a: "bn/mn",
-                b: "mn/bn",
-                c: "ab/be",
-                d: "be/ab"
+                a: "Geiger counter region",
+                b: "Ionization region",
+                c: "Proportional region",
+                d: "Passivation region"
             },
             correctAnswer: "a"
         },
         {
-            question: "The inflection in the cooling curve between points a and e is due to",
+            question: "Are the intensities of the diffraction peaks of a given compound in a mixture proportional to the fraction of the material in the mixture in diffractometers?",
             answers: {
-                a: "Low temperature",
-                b: "Latent heat",
-                c: "High temperature",
-                d: "Specific heat"
+                a: "No",
+                b: "Yes",
             },
             correctAnswer: "b"
         },
         {
-            question: "At the eutectic point (e) the eutectic reaction proceeds at a constant temperature as ",
+            question: "Line intensities in diffractometers depend on ______ and kind of atomic reflection centres in each set of plates. ",
             answers: {
-                a: "F = 0",
-                b: "F = 1 ",
-                c: "F = 2 ",
-                d: "F = 3"
+                a: "Number",
+                b: "Position ",
+                c: "Length ",
+                d: "Distance between lines"
             },
             correctAnswer: "a"
         },
         {
-            question: "Any composition left of point c or right of a point will cool and solidify like a",
+            question: "When certain geometric requirements are satisfied, X-rays scattered from a crystalline solid can constructively interfere with each other and produce a diffracted beam.",
             answers: {
-                a: "Eutectic",
-                b: "Isomorphous system",
-                c: "Proeutectic",
-                d: "Eutectoid"
+                a: "False",
+                b: "True",
             },
             correctAnswer: "b"
         },
         {
-            question: "A 34.6% Pb-Sn alloy is cooled just below the eutectic temperature (183°C). What is the fraction of proeutectic α and eutectic mixture (α+β)?",
+            question: "The X-ray diffraction is based upon",
             answers: {
-                a: "70% and 30%",
-                b: "36% and 64%",
-                c: "30% and 70%",
-                d: "64% and 36%"
+                a: "Quantum equation",
+                b: "Boltzmann equation",
+                c: "Pascal equation",
+                d: "Bragg’s equation"
             },
             correctAnswer: "d"
         },
-        {
-            question: "On heating, one solid phase results in another solid phase and a liquid phase during _____________ reaction.",
-            answers: {
-                a: "Eutectoid",
-                b: "Peritectic",
-                c: "Eutectic",
-                d: "Peritectoid"
-            },
-            correctAnswer: "b"
-        },
-        {
-            question: "A first solid phase results in a second solid phase and another third solid phase on cooling during _______________ reaction.",
-            answers: {
-                a: "Eutectoid",
-                b: "Peritectic",
-                c: "Eutectic",
-                d: "Peritectoid"
-            },
-            correctAnswer: "a"
-        }
     ];
 
     // ---------------------------- End -------------------------------
