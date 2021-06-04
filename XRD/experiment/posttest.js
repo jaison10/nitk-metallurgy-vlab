@@ -78,125 +78,115 @@
     // Write your MCQs here --- Start --- --------------------
 
     const myQuestions = [{
-            question: "A first solid phase results in a second solid plus another third solid phase upon heating during ___________ reaction.",
+            question: " Plot drawn in x-ray diffraction spectra analysis is _______ vs _________",
             answers: {
-                a: "Eutectoid",
-                b: "Peritectoid",
-                c: "Peritectic",
-                d: "Eutectic"
+                a: "Intensity Vs angle",
+                b: "interatomic distance vs angle",
+                c: "Intensity vs l",
+                d: "l vs Angle"
             },
             correctAnswer: "b"
         },
         {
-            question: "Which phase will crystallize first just below the liquidus line?",
+            question: " Which type of X-rays are emitted from an atom when an electron is removed from K- shell are",
             answers: {
-                a: "(L+α) phase",
-                b: "(L+β) phase",
-                c: "α phase",
-                d: "β phase"
+                a: "K-lines",
+                b: "L-lines",
+                c: "M-lines",
+                d: "P-lines"
             },
             correctAnswer: "c"
         },
         {
-            question: "At what temperature, all liquid and α will convert to β?",
+            question: "One of the widely used target material for generation of X-ray spectral line is",
             answers: {
-                a: "Eutectic temperature",
-                b: "Eutectoid temperature",
-                c: "Peritectoid temperature",
-                d: "Peritectic temperature"
+                a: "Zinc",
+                b: "Gold",
+                c: "Silicon dioxide",
+                d: "Molybdenum"
             },
             correctAnswer: "d"
         },
         {
-            question: "Any composition left and right of P will generate",
+            question: "The minimum wavelength of X-radiation from a metal ________ as the applied voltage increases",
             answers: {
-                a: "Excess of liquid and α",
-                b: "Excess of liquid and β",
-                c: "Excess of α and liquid",
-                d: "Excess of β and liquid"
+                a: "Increases",
+                b: "Remains same",
+                c: "Decreases",
+                d: "Variable with metal"
             },
             correctAnswer: "c"
         },
         {
-            question: "How much copper is present in deoxidized copper?",
+            question: "The most common instrument used for photographic recording of diffraction patterns is?",
             answers: {
-                a: "> 99.9%",
-                b: "> 99.85%",
-                c: "> 99.5%",
-                d: "> 99.35%"
+                a: "Gamma camera",
+                b: "Debye-Scherrer powder camera",
+                c: "Optical microscope",
+                d: "Scintillation counter"
             },
             correctAnswer: "b"
         },
         {
-            question: "What is the melting point of Copper? ",
+            question: "Which of the following information about the compounds present in a solid sample do we get from an X-ray diffractometer? ",
             answers: {
-                a: "1084",
-                b: "600",
-                c: "419",
-                d: "2562"
+                a: "Quantitative and qualitative",
+                b: "Quantitative",
+                c: "Theoretical",
+                d: "Either quantitative or qualitative"
             },
             correctAnswer: "a"
         },
         {
-            question: "Brass is an alloy of copper and",
+            question: "The frequency of X-radiation from a target material __________, as the atomic number increases.",
             answers: {
-                a: "Tin",
-                b: "Tin and zinc",
-                c: "Nickel",
-                d: "Zinc"
+                a: "Decreases",
+                b: "Remains same",
+                c: "Variable with metal",
+                d: "Increases"
             },
             correctAnswer: "d"
         },
         {
-            question: "α brasses contain _______ of zinc.",
+            question: "Longer wavelengths of Ka line between copper and molybdenum are produced by?",
             answers: {
-                a: "0%",
-                b: "<=36%",
-                c: ">36%",
-                d: "100%"
+                a: "Molybdenum",
+                b: "Copper",
+                c: "Both",
+                d: "None"
             },
             correctAnswer: "b"
         },
         {
-            question: "Yellow metal is more commonly known as",
+            question: "Bragg’s equation is",
             answers: {
-                a: "Cartridge brass",
-                b: "Naval brass",
-                c: "Muntz metal",
-                d: "Admiralty brass"
+                a: "nλ = 2",
+                b: "n = 2d",
+                c: "nλ = 2d sinθ",
+                d: "nλ = 2f"
             },
             correctAnswer: "c"
         },
         {
-            question: "Which brass alloy has high tensile strength and can be used for cast molding?",
+            question: "How are x-rays produced?",
             answers: {
-                a: "Manganese brass",
-                b: "Free cutting brass",
-                c: "Standard brass",
-                d: "Gilding metal"
+                a: "Loss of inner shell e– one of the outer e– will fall into the vacant orbital with the simultaneous emission of X-ray photon",
+                b: "By heating electrons by UV radiation.",
+                c: "Knocking only e-",
+                d: "None of the above"
             },
             correctAnswer: "a"
         },
         {
-            question: "Which brass alloy is used to make imitation jewelry and decorative work?",
+            question: "X-Ray wavelength lies between",
             answers: {
-                a: "Gilding metal",
-                b: "Standard brass",
-                c: "Admiralty brass",
-                d: "Free cutting brass"
+                a: "10 ^ (-2) - 10nm",
+                b: "100 ^ (-2) - 1000nm",
+                c: "1 ^ (-2) - 10nm",
+                d: "10 ^ 2 - 1000nm"
             },
             correctAnswer: "a"
         },
-        {
-            question: "Which brass alloy is suitable for high-speed machining?",
-            answers: {
-                a: "Gilding metal",
-                b: "Leaded brass",
-                c: "High tensile brass",
-                d: "Muntz metal"
-            },
-            correctAnswer: "b"
-        }
     ];
 
     // ---------------------------- End -------------------------------

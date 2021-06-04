@@ -1,74 +1,68 @@
 ## Post test
 <br>
-Q 1.  A first solid phase results in a second solid plus another third solid phase upon heating during ___________ reaction.<br>
-a. Eutectoid<br>
-<b>b. Peritectoid</b> <br>
-c. Peritectic<br>
-d. Eutectic<br>
+Q 1.   Plot drawn in x-ray diffraction spectra analysis is _______ vs _________<br>
+a. Intensity Vs angle<br>
+<b>b. interatomic distance vs angle</b> <br>
+c.  Intensity vs l<br>
+d. l vs Angle<br>
 
-Q 2.  Which phase will crystallize first just below the liquidus line?<br>
-a. (L+α) phase<br>
-b. (L+β) phase<br>
-<b>c. α phase</b><br>
-d. β phase<br>
+Q 2.   Which type of X-rays are emitted from an atom when an electron is removed from K- shell are<br>
+a. K-lines<br>
+b. L-lines<br>
+<b>c. M-lines</b><br>
+d. P-lines<br>
 
-Q 3.  At what temperature, all liquid and α will convert to β?<br>
-a. Eutectic temperature<br>
-b. Eutectoid temperature<br>
-c. Peritectoid temperature<br>
-<b>d. Peritectic temperature</b> <br>
+Q 3.  One of the widely used target material for generation of X-ray spectral line is<br>
+a. Zinc<br>
+b. Gold<br>
+c. Silicon dioxide<br>
+<b>d. Molybdenum</b> <br>
 
-Q 4.  Any composition left and right of P will generate<br>
-a. Excess of liquid and α<br>
-b. Excess of liquid and β<br>
-<b>c. Excess of α and liquid</b> <br>
-d. Excess of β and liquid<br>
+Q 4.  The minimum wavelength of X-radiation from a metal ________ as the applied voltage increases<br>
+a. Increases<br>
+b. Remains same<br>
+<b>c. Decreases</b> <br>
+d. Variable with metal<br>
 
-Q 5.  How much copper is present in deoxidized copper?<br>
-a. > 99.9%<br>
-<b>b. > 99.85%</b> <br>
-c. > 99.5%<br>
-d. > 99.35%<br>
+Q 5.  The most common instrument used for photographic recording of diffraction patterns is?<br>
+a. Gamma camera<br>
+<b>b. Debye-Scherrer powder camera</b> <br>
+c. Optical microscope<br>
+d. Scintillation counter<br>
 
 
-Q 6.  What is the melting point of Copper? <br>
-<b>a. 1084 </b> <br>
-b. 600<br>
-c. 419<br>
-d. 2562<br>
+Q 6.  Which of the following information about the compounds present in a solid sample do we get from an X-ray diffractometer? <br>
+<b>a. Quantitative and qualitative </b> <br>
+b. Quantitative<br>
+c. Theoretical<br>
+d. Either quantitative or qualitative<br>
 
-Q 7.  Brass is an alloy of copper and<br>
-a. Tin<br>
-b. Tin and zinc<br>
-c. Nickel<br>
-<b>d. Zinc  </b> <br>
+Q 7. The frequency of X-radiation from a target material __________, as the atomic number increases.<br>
+a. Decreases<br>
+b. Remains same<br>
+c. Variable with metal<br>
+<b>d. Increases  </b> <br>
 
-Q 8.  α brasses contain _______ of zinc.<br>
-a. 0%<br>
-<b>b. <=36%</b> <br>
-c. >36%<br>
-d. 100%<br>
+Q 8. Longer wavelengths of Ka line between copper and molybdenum are produced by?<br>
+a. Molybdenum<br>
+<b>b. Copper</b> <br>
+c. Both<br>
+d. None<br>
 
-Q 9.  Yellow metal is more commonly known as<br>
-a. Cartridge brass<br>
-b. Naval brass<br>
-<b>c. Muntz metal</b> <br>
-d. Admiralty brass<br>
+Q 9.  Bragg’s equation is<br>
+a. nλ = 2<br>
+b. n = 2d<br>
+<b>c. nλ = 2d sinθ</b> <br>
+d. nλ = 2f<br>
 
-Q 10.  Which brass alloy has high tensile strength and can be used for cast molding?<br>
-<b>a. Manganese brass</b> <br>
-b. Free cutting brass<br>
-c. Standard brass<br>
-d. Gilding metal<br>
+Q 10.  How are x-rays produced?<br>
+<b>a. Loss of inner shell e– one of the outer e– will fall into the vacant orbital with the simultaneous emission of X-ray photon</b> <br>
+b. By heating electrons by UV radiation.<br>
+c. Knocking only e-<br>
+d. None of the above<br>
 
-Q 11.  Which brass alloy is used to make imitation jewelry and decorative work?<br>
-<b>a. Gilding metal </b> <br>
-b. Standard brass<br>
-c. Admiralty brass<br>
-d. Free cutting brass<br>
-
-Q 12.  Which brass alloy is suitable for high-speed machining?<br>
-a. Gilding metal<br>
-<b>b. Leaded brass </b> <br>
-c. High tensile brass<br>
-d. Muntz metal<br>
+Q 11.  X-Ray wavelength lies between<br>
+<b>a. 10 ^ (-2) - 10nm </b> <br>
+b. 100 ^ (-2) - 1000nm<br>
+c. 1 ^ (-2) - 10nm<br>
+d. 10 ^ 2 - 1000nm<br>
