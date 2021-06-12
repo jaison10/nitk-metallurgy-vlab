@@ -95,7 +95,7 @@
                 c: "M-lines",
                 d: "P-lines"
             },
-            correctAnswer: "c"
+            correctAnswer: "a"
         },
         {
             question: "One of the widely used target material for generation of X-ray spectral line is",
