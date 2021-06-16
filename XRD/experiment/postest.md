@@ -7,9 +7,9 @@ c.  Intensity vs l<br>
 d. l vs Angle<br>
 
 Q 2.   Which type of X-rays are emitted from an atom when an electron is removed from K- shell are<br>
-a. K-lines<br>
+<b>a. K-lines</b><br>
 b. L-lines<br>
-<b>c. M-lines</b><br>
+c. M-lines<br>
 d. P-lines<br>
 
 Q 3.  One of the widely used target material for generation of X-ray spectral line is<br>
