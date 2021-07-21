@@ -5,7 +5,7 @@
 <b>Discipline | <b>Metallurgical and Materials Engineering
 :--|:--|
 <b> Lab | <b> Physical Metallurgy Lab
-<b> Experiment|     <b> 4. Optical microscopy of Non ferrous samples
+<b> Experiment|     <b> 4. Determination of crystal structure of a powder sample by X-RAY Diffractometer. 
 
 <h5> About the Experiment : </h5> <br>
 
